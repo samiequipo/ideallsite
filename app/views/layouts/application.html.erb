@@ -2,47 +2,59 @@
 <html>
 
 <head>
-    <title>Luis Castro | Ceo Comercial</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+	<title>Luis Castro | Ceo Comercial</title>
+	<%= csrf_meta_tags %>
+	<%= csp_meta_tag %>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <!-- Bootstrap core CSS -->
-    <link href="startbootstrap-agency-gh-pages/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="startbootstrap-agency-gh-pages/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="startbootstrap-agency-gh-pages/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	<!-- Custom fonts for this template -->
+	<link href="startbootstrap-agency-gh-pages/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="startbootstrap-agency-gh-pages/css/agency.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="startbootstrap-agency-gh-pages/css/agency.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
-    <%= render 'layouts/navbar'%>
-    <%= yield %>
+	<%= render 'layouts/messages' %>	
+  <%= render 'layouts/navbar'%>
+  <%= yield %>
+	<div id="results"></div>
 </body>
 
 <footer>
-    <!-- Bootstrap core JavaScript -->
-    <script src="startbootstrap-agency-gh-pages/vendor/jquery/jquery.min.js"></script>
-    <script src="startbootstrap-agency-gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="startbootstrap-agency-gh-pages/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Contact form JavaScript -->
-    <script src="startbootstrap-agency-gh-pages/js/jqBootstrapValidation.js"></script>
-    <script src="startbootstrap-agency-gh-pages/js/contact_me.js"></script>
-    <!-- Custom scripts for this template -->
-    <script src="startbootstrap-agency-gh-pages/js/agency.min.js"></script>
-    <!-- Portfolio scripts for this template -->
-    <script src="startbootstrap-agency-gh-pages/js/portfolio.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script src="startbootstrap-agency-gh-pages/vendor/jquery/jquery.min.js"></script>
+	<script src="startbootstrap-agency-gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="startbootstrap-agency-gh-pages/vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+	<!-- Custom scripts for this template -->
+	<script src="startbootstrap-agency-gh-pages/js/agency.min.js"></script>
+	
+	<!-- Portfolio scripts for this template -->
+	<script src="startbootstrap-agency-gh-pages/js/portfolio.js"></script>
+
+	<!-- Portfolio- Promotion script -->
+	<script>
+		function imgSlider(captureImage, color, letter) {
+				document.querySelector('.starbucks').src = captureImage;
+				document.querySelector('.circle').style.background = color;
+				document.querySelector('.letter').style.color = color;
+				document.querySelector('.btn--portfolio').style.background = color;
+		}
+	</script>
 </footer>
 
 </html>
