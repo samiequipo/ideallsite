@@ -21,6 +21,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
+	<!-- Glider Js for carousel plano -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+
 	<!-- Custom styles for this template -->
 	<link href="startbootstrap-agency-gh-pages/css/agency.css" rel="stylesheet">
 </head>
@@ -43,18 +46,84 @@
 	<!-- Custom scripts for this template -->
 	<script src="startbootstrap-agency-gh-pages/js/agency.min.js"></script>
 	
-	<!-- Portfolio scripts for this template -->
-	<script src="startbootstrap-agency-gh-pages/js/portfolio.js"></script>
-
-	<!-- Portfolio- Promotion script -->
+	<!-- Promotion script -->
 	<script>
 		function imgSlider(captureImage, color, letter) {
-				document.querySelector('.starbucks').src = captureImage;
+			document.querySelector('.starbucks').src = captureImage;
 				document.querySelector('.circle').style.background = color;
 				document.querySelector('.letter').style.color = color;
 				document.querySelector('.btn--portfolio').style.background = color;
 		}
 	</script>
+
+	<!-- Plano gliderJs scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+	<script>
+		window.addEventListener('load', function () {
+			const glider = new Glider(document.querySelector('.carousel__lista_main'), {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: '.carousel__indicadores_main',
+				arrows: {
+					prev: '.carousel__anterior_main',
+					next: '.carousel__siguiente_main'
+				},
+				responsive: [{
+					// screens greater than >= 775px
+					breakpoint: 450,
+					settings: {
+						// Set to `auto` and provide item width to adjust to viewport
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				}, 
+				{
+					// screens greater than >= 1024px
+					breakpoint: 800,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						draggable: true,
+						scrollLock: true,
+						autoplay: 2,
+						animationDuration: 3000,
+						animationTimingFunc: 'linear',
+						rewind: true,
+					}
+				}]
+			});
+
+			function sliderAuto(slider, miliseconds) {
+				const slidesCount = slider.track.childElementCount;
+				let slideTimeout = null;
+				let nextIndex = 1;
+
+				function slide() {
+					slideTimeout = setTimeout(
+						function () {
+							if (nextIndex >= slidesCount) {
+								nextIndex = 0;
+							}
+							slider.scrollItem(nextIndex++);
+						},
+						miliseconds
+					);
+				}
+
+				slider.ele.addEventListener('glider-animated', function () {
+					window.clearInterval(slideTimeout);
+					slide();
+				});
+
+				slide();
+			}
+				
+			sliderAuto(glider, 4000)
+		});
+	</script>
+
 </footer>
 
 </html>

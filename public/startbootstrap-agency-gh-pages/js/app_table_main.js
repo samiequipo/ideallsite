@@ -1,6 +1,6 @@
 window.addEventListener('load', function () {
 	const glider = new Glider(document.querySelector('.carousel__lista_main'), {
-		slidesToShow: 1,
+		slidesToShow: 3,
 		slidesToScroll: 1,
 		dots: '.carousel__indicadores_main',
 		arrows: {
@@ -19,7 +19,7 @@ window.addEventListener('load', function () {
 			// screens greater than >= 1024px
 			breakpoint: 800,
 			settings: {
-				slidesToShow: 1,
+				slidesToShow: 3,
 				slidesToScroll: 1,
 				draggable: true,
 				scrollLock: true,
@@ -57,5 +57,5 @@ window.addEventListener('load', function () {
 		slide();
 	}
 
-	sliderAuto(glider, 400000)
+	sliderAuto(glider, 3000)
 });

@@ -965,3 +965,72 @@ ul.social-buttons li a:hover {
   background-color: #e43220;
   clip-path: circle(600px at right 800px);
 }
+
+/* Carousel Planos */
+
+.contenedor {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor_main {
+  position: relative;
+}
+
+.carousel__anterior_main,
+.carousel__siguiente_main {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: #fff;
+  opacity: 20%;
+}
+
+.carousel__anterior_main:hover,
+.carousel__siguiente_main:hover {
+  opacity: 100%;
+}
+
+.carousel__anterior_main {
+  left: -30px;
+}
+
+.carousel__siguiente_main {
+  right: -30px;
+}
+
+.carousel__lista_main {
+  overflow: hidden;
+}
+
+.carousel__elemento_main {
+  text-align: center;
+}
+
+.carousel__indicadores_main .glider-dot {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  opacity: 0.2;
+  border-radius: 0;
+}
+
+.carousel__indicadores_main .glider-dot:hover {
+  opacity: 0.5;
+}
+
+.carousel__indicadores_main .glider-dot.active {
+  opacity: 1;
+}
+
+/* Responsive Table Pricing */
