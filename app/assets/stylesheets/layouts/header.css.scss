@@ -1,0 +1,86 @@
+/* header */
+.section_masthead {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #161616;
+}
+
+.section_masthead__circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      180deg,
+      rgb(51, 255, 144),
+      rgba(121, 232, 133, 0.795)
+    ),
+    asset-url("couples.jpg"); 
+
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: circle(58.9% at 100% 72%);
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .textBox {
+  position: relative;
+  max-width: 37.5rem;
+  margin-right: 1.25rem;
+}
+
+.content .textBox h2 {
+  color: #fff;
+  font-size: 3em;
+  margin-bottom: 0.625rem;
+  line-height: 1.4em;
+  font-weight: 700;
+}
+
+.content .texBox p {
+  color: #fff;
+}
+
+.content .textBox a {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.5rem 1.25rem;
+  background-color: #e51e2a;
+  color: #fff;
+  border-radius: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.07rem;
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 40px;
+  }
+
+  .section_masthead {
+    padding: 150px 40px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content .textBox .content .imbBox {
+    max-width: 100%;
+  }
+}
