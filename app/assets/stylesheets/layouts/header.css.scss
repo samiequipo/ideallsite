@@ -2,12 +2,12 @@
 .section_masthead {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 122vh;
   padding: 2.75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #161616;
+  background-color: #fff;
 }
 
 .section_masthead__circle {
@@ -18,19 +18,41 @@
   height: 100%;
   background-image: linear-gradient(
       180deg,
-      rgb(51, 255, 144),
-      rgba(121, 232, 133, 0.795)
+      rgba(3, 250, 209, 0.98) 0%,
+      rgba(121, 232, 133, 0.095) 60%
     ),
     asset-url("couples.jpg"); 
 
-  background-position: top;
   background-size: cover;
+  background-position-y: 2.1rem;
   background-repeat: no-repeat;
-  clip-path: circle(58.9% at 100% 72%);
+  clip-path: circle(58.9% at 103% 63%);
+}
+
+.section_masthead__redondo {
+  position: absolute;
+  top: 18%;
+  left: 6%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  clip-path: circle(9.2% at 50% 50%);
+}
+
+.section_masthead__redondo:after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 8%;
+  width: 100%;
+  height: 100%;
+  background-image: #fff;
+  clip-path: circle(9.2% at 50% 50%);
 }
 
 .content {
   position: relative;
+  margin-top: 5%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -40,15 +62,14 @@
 .content .textBox {
   position: relative;
   max-width: 37.5rem;
-  margin-right: 1.25rem;
 }
 
-.content .textBox h2 {
-  color: #fff;
+.textBox--h2{
+  color: rgba(14, 14, 14, 0.945);
   font-size: 3em;
   margin-bottom: 0.625rem;
-  line-height: 1.4em;
-  font-weight: 700;
+  line-height: 0.9em;
+  font-weight: bold;
 }
 
 .content .texBox p {
@@ -69,11 +90,11 @@
 
 @media (max-width: 991px) {
   header {
-    padding: 40px;
+    padding: 2.5rem;
   }
 
   .section_masthead {
-    padding: 150px 40px;
+    padding: 9.375rem 2.5rem;
   }
 
   .content {

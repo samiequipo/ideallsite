@@ -1,0 +1,32 @@
+.promo_social {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(34, 34, 34);
+}
+
+.promo_social .logo {
+  position: relative;
+  max-width: 13.125rem;
+}
+
+.promo_social .navigation {
+  position: relative;
+  display: flex;
+}
+
+.promo_social .navigation li {
+  list-style: none;
+}
+
+.promo_social .navigation li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 2.5rem;
+}
