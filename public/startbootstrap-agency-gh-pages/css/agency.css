@@ -167,6 +167,7 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
   #mainNav {
+    padding-right: 2rem;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
@@ -873,12 +874,16 @@ ul.social-buttons li a:hover {
   color: #fff;
 }
 
-.btn--white {
+.btn--white::after {
+  background-color: #2b2b2b;
+}
+
+.btn--white-2 {
   background-color: #e43220;
   color: #fff;
 }
 
-.btn--white::after {
+.btn--white-2::after {
   background-color: #e43220;
 }
 

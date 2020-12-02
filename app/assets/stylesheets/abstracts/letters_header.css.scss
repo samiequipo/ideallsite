@@ -1,18 +1,25 @@
-.ml7 {
-  position: relative;
-  font-weight: 900;
-  font-size: 3.7em;
-}
-.ml7 .text-wrapper-h {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
+.second-h{
+   position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
   overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 10s linear infinite;
+  transition-delay: 28s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
-.ml7 .letter-h {
-  transform-origin: 0 100%;
-  display: inline-block;
-  line-height: 1em;
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+
+    background-position: 500%;
+  }
 }
