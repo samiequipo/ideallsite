@@ -24,7 +24,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #fff !important;
 }
 
 h1,
@@ -39,17 +39,13 @@ h6 {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.page-section {
-  padding: 100px 0;
-}
-
-.page-section h2.section-heading {
+.page-section-2 h2.section-heading {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
 }
 
-.page-section h3.section-subheading {
+.page-section-2 h3.section-subheading {
   font-size: 16px;
   font-weight: 400;
   font-style: italic;
