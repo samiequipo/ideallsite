@@ -12,4 +12,6 @@ class Contact < ApplicationRecord
             length: {maximum: 50}, format: { with: VALID_EMAIL_REGEX }
   validates :phone, presence: true, numericality: { only_integer: true }, length: {minimum:9, maximum: 9},
             format: { with: VALID_PHONE_REGEX } 
+  
+  belongs_to :region          
 end

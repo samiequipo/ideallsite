@@ -1,12 +1,11 @@
 class ContactsController < ApplicationController
+  def new
+    @contact = Contact.new
+  end
+  
   def create
     #byebug
-    @contact = Contact.new(
-                    first_name: params[:contact][:first_name], 
-                    last_name:  params[:contact][:last_name],
-                    email:      params[:contact][:email],
-                    phone:      params[:contact][:phone]
-    )
+    @contact = Contact.new(contact_params)
 
     if @contact.save
       respond_to do |format|
@@ -21,5 +20,9 @@ class ContactsController < ApplicationController
         format.json { head :ok }
       end
     end
+  end
+
+  def contact_params
+    params.require(:contact).permit(:first_name, :last_name, :email, :phone, :region_id)
   end
 end
