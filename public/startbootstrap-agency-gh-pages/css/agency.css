@@ -39,6 +39,10 @@ h6 {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.page-section {
+  padding: 6rem 0;
+}
+
 .page-section-2 h2.section-heading {
   font-size: 40px;
   margin-top: 0;

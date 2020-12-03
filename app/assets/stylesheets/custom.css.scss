@@ -1,10 +1,13 @@
 @import 'bootstrap/dist/css/bootstrap';
 
+@import "abstracts/letters_header.css";
+@import "abstracts/background_animated.css";
+@import "abstracts/cloudy_background.css";
+
 @import "layouts/header.css";
 @import "layouts/promo_social.css";
 
-@import "abstracts/letters_header.css";
-@import "abstracts/background_animated.css";
-
 @import "components/buttons.css";
+
+@import "modals/modal_form.css";
 
