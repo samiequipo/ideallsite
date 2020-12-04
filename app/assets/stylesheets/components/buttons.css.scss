@@ -1,11 +1,12 @@
 .btn:link, .btn:visited {
   border-radius: 10rem;
   display: inline-block;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 1.5rem;
   text-decoration: none;
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
-  font-size: 1.2rem; }
+  font-size: .9rem; 
+}
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -32,7 +33,8 @@
 
 .btn--white {
   background-color: #fff;
-  color: #777; }
+  color: #777; 
+}
   .btn--white::after {
     background-color: #fff; }
 

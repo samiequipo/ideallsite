@@ -13,15 +13,10 @@
 <section class="section_masthead">
   <%# Couples %>
   <div class="section_masthead__circle"></div>
-  
-  <%# circle into couples %>
-  <div class="section_masthead__redondo">
-    <%= image_tag '800mbps.png', class:"img-redondo" %>
-  </div>
-  <div class="section_masthead__redondo-2"></div>
-  
+
+   
   <%# Figures up animation %>
-  <div class="figure-h">
+  <%# <div class="figure-h">
     <div class='white'>
       <div class='squares'>
         <div class='square'></div>
@@ -36,38 +31,22 @@
         <div class='square'></div>
       </div>
     </div>
-  </div>
-
-  <%# black promotion under nav %>
-  <div class="promo_social">
-    <a href="#">
-      <img src="images/logo.png" class="logo" alt="">
-    </a>
-
-    <div class="toggle" onclick="ToggleMenu()"></div>
-
-    <ul class="navigation">
-      <li><a>Home</a></li>
-      <li><a>Menu</a></li>
-      <li><a>What's new</a></li>
-      <li><a>Contact</a></li>
-    </ul>
-  </div>
+  </div> %>
 
   <%# Content title subtitle and button %>
-    <div class="textBox">
+  <div class="content_masthead">
+
+    <div class="textBox_masthead">
       <h3 class="textBox--h2">You deserve ultra</h3>
       <h3 class="textBox--h2">Taste the Feeling</h3>
-      
       <h3 class="second-h">tasted the feeling</h3>
-          
-      <p class="textBox--p">
+      <p class="textBox--p mt-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
         mattis, pulvinar dapibus leo.
       </p>
-
-      <%= link_to "Learn more", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>  
+      <%= link_to "Ver Planos", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark mt-3", role: "button" %>  
     </div>
+  </div>
 </section>
 
 <%# Waves %>
