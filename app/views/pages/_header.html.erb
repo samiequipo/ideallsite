@@ -13,6 +13,12 @@
 <section class="section_masthead">
   <%# Couples %>
   <div class="section_masthead__circle"></div>
+
+  <%# circle into couples %>
+  <div class="section_masthead__redondo">
+    <%= image_tag '800mbps.png', class:"img-redondo" %>
+  </div>
+  <div class="section_masthead__redondo-2"></div>
   
   <%# Figures up animation %>
   <%# <div class="figure-h">
@@ -33,6 +39,7 @@
   </div> %>
 
   <%# Content title subtitle and button %>
+  <div class="content_masthead">
     <div class="textBox">
       <h3 class="textBox--h2">You deserve ultra</h3>
       <h3 class="textBox--h2">Taste the Feeling</h3>
@@ -46,6 +53,7 @@
 
       <%= link_to "Learn more", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>  
     </div>
+  </div>
 </section>
 
 <%# Waves %>
