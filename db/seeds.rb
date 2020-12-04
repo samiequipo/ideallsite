@@ -3,10 +3,20 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   movies = Movie.create([{ name: 'Star Wars' }, '{' name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', 'movie': movies.first)
 #if Rails.env.development?
+
 
 AdminUser.create!(email: 'sjdacosta@ideall.com', password: 'ferrari1992', password_confirmation: 'ferrari1992') 
 AdminUser.create!(email: 'luiscastro@ideall.com', password: 'lamborghini1993', password_confirmation: 'lamborghini1993') 
 puts 'AdminUser created!'
+
+['Aveiro', 'Azores', 'Beja', 'Braga', 'Bragança', 'Castelo Branco',
+'Coimbra', 'Évora', 'Faro', 'Guarda','Leiria', 'Lisboa', 'Madeira', 
+'Portalegre', 'Porto', 'Santarém', 'Setúbal', 'Viana do Castelo','Vila Real', 'Viseu'].each do |district|
+  
+  Region.create!(name: district)
+end
+
+puts 'Region created!'
