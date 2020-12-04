@@ -10,6 +10,12 @@
   background-color: #fff;
 }
 
+.logo_masthead{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
 .section_masthead__circle {
   position: absolute;
   top: 0;
@@ -43,6 +49,8 @@
   align-items: center;
 }
 
+@media (max-width: 2px) {}
+
 .section_masthead__redondo .img-redondo{
   width: 180px;
   height: 94px;
@@ -60,7 +68,6 @@
 
 .content {
   position: relative;
-  margin-top: 5%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -75,8 +82,8 @@
 .textBox--h2{
   color: rgba(14, 14, 14, 0.945);
   font-size: 3em;
-  margin-bottom: 0.625rem;
-  line-height: 0.9em;
+  margin-bottom: 1rem;
+  line-height: 1em;
   font-weight: bold;
 }
 

@@ -11,11 +11,16 @@
 %>
 
 <section class="section_masthead">
+  <%# Couples %>
   <div class="section_masthead__circle"></div>
+  
+  <%# circle into couples %>
   <div class="section_masthead__redondo">
     <%= image_tag '800mbps.png', class:"img-redondo" %>
   </div>
   <div class="section_masthead__redondo-2"></div>
+  
+  <%# Figures up animation %>
   <div class="figure-h">
     <div class='white'>
       <div class='squares'>
@@ -31,10 +36,9 @@
         <div class='square'></div>
       </div>
     </div>
-    
-    <div class='grey'></div>
   </div>
 
+  <%# black promotion under nav %>
   <div class="promo_social">
     <a href="#">
       <img src="images/logo.png" class="logo" alt="">
@@ -50,6 +54,7 @@
     </ul>
   </div>
 
+  <%# Content title subtitle and button %>
   <div class="content px-lg-0">
     <div class="textBox">
       <h3 class="textBox--h2">You deserve ultra</h3>
@@ -65,9 +70,9 @@
       <%= link_to "Learn more", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>  
     </div>
   </div>
-
 </section>
 
+<%# Waves %>
 <div class="curve-upper">
   <div style="height: 150px; overflow: hidden;" >
     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
@@ -76,5 +81,6 @@
   </div>
 </div>
 
+<%# Distint services under waves and form modals press button %>
 <%= render "pages/experience" %>
 <%= render "contacts/modal_contacts" %>
