@@ -1,4 +1,5 @@
 <section class="section_masthead">
+  
   <%# Couples %>
   <div class="section_masthead__circle"></div>
 
@@ -9,7 +10,7 @@
   <div class="section_masthead__redondo-2"></div>
   
   <%# Figures up animation %>
-  <%# <div class="figure-h">
+  <div class="figure-h">
     <div class='white'>
       <div class='squares'>
         <div class='square'></div>
@@ -24,21 +25,14 @@
         <div class='square'></div>
       </div>
     </div>
-  </div> %>
+  </div>
 
   <%# Content title subtitle and button %>
-  <div class="content_masthead">
-    <div class="textBox">
-      <h3 class="textBox--h2">You deserve ultra</h3>
-      <h3 class="textBox--h2">Taste the Feeling</h3>
-      <div class="text-3">And I'm a <span class="typing"></span></div>
-
-      <p class="textBox--p">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
-        mattis, pulvinar dapibus leo.
-      </p>
-      <%= link_to "Learn more", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>  
-    </div>
+  <div class="home-content">
+    <div class="textBox--h2">You deserve ultra</div>
+    <div class="textBox--h2">fast internet for</div>
+    <div class="textBox--h3 my-3"><span class="typing"></span></div>
+    <%= link_to "Learn more", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
   </div>
 </section>
 

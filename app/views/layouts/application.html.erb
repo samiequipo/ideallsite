@@ -11,18 +11,19 @@
 	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 	<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-	<!-- Swiper style -->
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
 	<!-- Custom fonts for this template -->
 	<link href="startbootstrap-agency-gh-pages/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
 
 	<!-- Glider Js for carousel plano -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+
+	<!-- Typied Js for text -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 
 	<!-- Custom styles for this template -->
 	<link href="startbootstrap-agency-gh-pages/css/agency.css" rel="stylesheet">
@@ -126,30 +127,6 @@
 				
 			sliderAuto(glider, 4000)
 		});
-	</script>
-
-	<script>
-	// Wrap every letter in a span
-		var textWrapper = document.querySelector('.ml7 .letters');
-		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter-h'>$&</span>");
-
-		anime.timeline({loop: true})
-			.add({
-				targets: '.ml7 .letter-h',
-				translateY: ["1.1em", 0],
-				translateX: ["0.55em", 0],
-				translateZ: 0,
-				rotateZ: [180, 0],
-				duration: 750,
-				easing: "easeOutExpo",
-				delay: (el, i) => 50 * i
-			}).add({
-				targets: '.ml7',
-				opacity: 0,
-				duration: 1000,
-				easing: "easeOutExpo",
-				delay: 1000
-			});
 	</script>
 </footer>
 
