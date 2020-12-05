@@ -139,8 +139,11 @@ section .title::after {
 /* services section styling */
 .services,
 .teams {
-  color: #fff;
-  background: #111;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 16%, rgba(255, 255, 255, 0.8) 30%), asset-url("geometric.jpg"); 
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 16%, rgba(255, 255, 255, 0.8) 30%), asset-url("geometric.jpg"); 
+
 }
 .services .title::before,
 .teams .title::before {
@@ -153,7 +156,8 @@ section .title::after {
 }
 .services .serv-content .card {
   width: calc(33% - 20px);
-  background: #222;
+  background: linear-gradient(180deg,rgba(238, 25, 25, 0.781) 32%, rgba(13, 17, 17, 0.726) 65%), asset-url("geometric.jpg"); 
+  
   text-align: center;
   border-radius: 6px;
   padding: 20px 25px;
@@ -175,7 +179,7 @@ section .title::after {
   transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .services .serv-content .card .text {
   font-size: 25px;

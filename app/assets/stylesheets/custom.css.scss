@@ -1,15 +1,15 @@
 @import 'bootstrap/dist/css/bootstrap';
 
-@import "abstracts/letters_header.css";
 @import "abstracts/background_animated.css";
 @import "abstracts/cloudy_background.css";
+@import "abstracts/pricing_table.css";
+
+@import "components/buttons.css";
+@import "components/letters_header.css";
 
 @import "layouts/header.css";
 @import "layouts/promo_social.css";
 @import "layouts/experience.css";
-
-@import "components/buttons.css";
-@import "components/parrots_buttons.css";
 
 @import "modals/modal_form.css";
 

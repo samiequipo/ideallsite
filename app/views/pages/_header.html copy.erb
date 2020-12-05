@@ -1,19 +1,8 @@
-<!-- Header -->
-<%# <header class="masthead">
-    <div class="container">
-        <div class="intro-text">
-            <div class="intro-lead-in">Welcome To Our Studio!</div>
-            <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
-        </div>a
-    </div>
-</header>
-%>
-
 <section class="section_masthead">
+  
   <%# Couples %>
   <div class="section_masthead__circle"></div>
-  
+
   <%# circle into couples %>
   <div class="section_masthead__redondo">
     <%= image_tag '800mbps.png', class:"img-redondo" %>
@@ -38,36 +27,13 @@
     </div>
   </div>
 
-  <%# black promotion under nav %>
-  <div class="promo_social">
-    <a href="#">
-      <img src="images/logo.png" class="logo" alt="">
-    </a>
-
-    <div class="toggle" onclick="ToggleMenu()"></div>
-
-    <ul class="navigation">
-      <li><a>Home</a></li>
-      <li><a>Menu</a></li>
-      <li><a>What's new</a></li>
-      <li><a>Contact</a></li>
-    </ul>
-  </div>
-
   <%# Content title subtitle and button %>
-    <div class="textBox">
-      <h3 class="textBox--h2">You deserve ultra</h3>
-      <h3 class="textBox--h2">Taste the Feeling</h3>
-      
-      <h3 class="second-h">tasted the feeling</h3>
-          
-      <p class="textBox--p">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
-        mattis, pulvinar dapibus leo.
-      </p>
-
-      <%= link_to "Learn more", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>  
-    </div>
+  <div class="home-content">
+    <div class="textBox--h2">You deserve ultra</div>
+    <div class="textBox--h2">fast internet for</div>
+    <div class="textBox--h3 my-3"><span class="typing"></span></div>
+    <%= link_to "Learn more", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
+  </div>
 </section>
 
 <%# Waves %>
@@ -78,6 +44,12 @@
     </svg>
   </div>
 </div>
+
+<%# <div class="parrot">
+  <div class="big"></div>
+  <div class="middle"></div>
+  <div class="small"></div>					
+</div> %>
 
 <%# Distint services under waves and form modals press button %>
 <%= render "pages/experience" %>
