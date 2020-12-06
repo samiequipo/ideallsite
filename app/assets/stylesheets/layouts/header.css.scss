@@ -1,4 +1,6 @@
 
+/* ================Variables================ */
+
 :root {
   /* theme color */
   --dark-green: #008060;
@@ -17,8 +19,6 @@ main .site-header {
   height: 110vh;
   background: linear-gradient(180deg, rgba(28, 31, 29, 0.8) 16%, rgba(5, 61, 87, 0.8) 30%), asset-url("family.jpg"); 
   text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 main .site-header .logo {
@@ -68,7 +68,7 @@ main .site-header .free-trial-form button {
   font-weight: 500;
   white-space: nowrap;
   color: var(--white);
-  background-color: linear-gradient(180deg, rgba(3, 250, 209, 0.87) 16%, rgba(13, 255, 162, 0.3) 30%), asset-url("couples.jpg"); 
+  background-color: var(--dark-gray);
 }
 
 main .site-header .note {
@@ -81,7 +81,7 @@ main .site-header .note {
 
 main .site-header img {
   position: relative;
-  width: 30%;
+  width: 50%;
   z-index: 1000;
 }
 
