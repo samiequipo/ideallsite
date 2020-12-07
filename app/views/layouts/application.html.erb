@@ -10,10 +10,9 @@
 
 	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 	<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-	<%# Swiper style %>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
+ 
+	<%# Swiper css %>
+  
 	<!-- Custom fonts for this template -->
 	<link href="startbootstrap-agency-gh-pages/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -37,30 +36,10 @@
   <%= render 'layouts/navbar'%>
   <%= yield %>
 	<div id="results"></div>
-</body>
+	<footer></footer>
 
-<footer>
   <%# Swiper js %>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-  </script>
-
+	
 	<!-- Bootstrap core JavaScript -->
 	<script src="startbootstrap-agency-gh-pages/vendor/jquery/jquery.min.js"></script>
 	<script src="startbootstrap-agency-gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -88,7 +67,6 @@
 	<!-- Plano gliderJs scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-
 	<script>
 		window.addEventListener('load', function () {
 			const glider = new Glider(document.querySelector('.carousel__lista_main'), {
@@ -152,6 +130,7 @@
 			sliderAuto(glider, 45000)
 		});
 	</script>
-</footer>
+
+</body>
 
 </html>

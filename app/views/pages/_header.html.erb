@@ -1,16 +1,18 @@
 <main>
   <section class="site-header">
-    <img src="./assets/shopify_logo.png" alt="Logo" class="logo">
+    <%= image_tag 'logo.png', class: "logo", alt: "logo" %>
 
     <div class="title">
-        <h1>Sell online with Shopify</h1>
-        <p>Trusted by over 1,000,000 businesses worldwide</p>
-    </div>
+      <h1>Adira à Fibra e mude para a melhor rede do Pa&iacute;s</h1>
+      <p>Oferta de 40€ acumulável com as ofertas por internet</p>
+      <div class="textBox--h3 my-3"><span class="typing"></span></div>
 
-    <div class="free-trial-form"></div>
-    <p class="note"></p>
-
-    <%= image_tag 'img-1.png' %> 
+      <div class="image-header">
+        <%= link_to new_contact_path, { remote: true, class: "" }  do %>
+      <span><%= image_tag 'img-1.png' %></span>
+  <% end %>
+      </div>
+    
 
     <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#fff" fill-opacity="1"
@@ -18,6 +20,8 @@
       </path>
     </svg>
   </section>
+
+ 
 </main>
 
 <%# Distint services under waves and form modals press button %>
