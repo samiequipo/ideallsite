@@ -59,6 +59,19 @@ section {
   align-items: center;
   justify-content: space-between;
 }
+
+.serv-content-title{
+  color: #111;
+  padding: 20px 25px;
+}
+.serv-content-title span{
+  color: rgb(77, 229, 160);
+}
+
+.serv-content-title .line-height{
+  letter-spacing: 4px;
+}
+
 section .title {
   position: relative;
   text-align: center;
