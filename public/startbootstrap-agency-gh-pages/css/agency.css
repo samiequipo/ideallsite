@@ -725,7 +725,7 @@ ul.social-buttons li a:hover {
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   background-color: #fff;
 }
 
