@@ -1,5 +1,5 @@
 <section class="services pb-md-0 mt-md-5">
-  <div class="max-width">
+   <div class="max-width">
  	  <div class="serv-content">
       <div class="serv-content-title d-none d-lg-block">
         <h3>Nosso serviço</h3>
@@ -13,11 +13,12 @@
      
 			<div class="card mb-md-4">
         <div class="box">
-          <i class="fas fa-tv"></i>
-          <div class="text">Experiencia Tv</div>
-          <p>
+          <img src="unsplash/vodafone1.png" style= "width: 50px;" >
+
+          <div class="text">Meo</div>
+          <%# <p>
             Tenha na sua casa a melhor experiência de TV
-          </p>
+          </p> %>
           <%= link_to "Learn more", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
         </div>
       </div>
@@ -25,21 +26,31 @@
 			<div class="card mb-md-4">
         <div class="box">
           <i class="fas fa-wifi"></i>
-          <div class="text">Internet</div>
-          <p>
+          <div class="text">Nos</div>
+          <%# <p>
             M&aacute;cxima velocidade de download e upload
-          </p>
+          </p> %>
           <%= link_to "Learn more", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
         </div>
       </div>
       
+		<div class="serv-content-title d-none d-lg-block invisible">
+        <h3>Nosso serviço</h3>
+        <%= image_tag 'blue-curve.png' %>
+        <div class="line-height">
+          <h4>o melhor serviço</h4>
+          <h4>de <span>fibra &oacute;tica</span></h4>
+          <h4>¡A su disposición!</h4>
+        </div>
+      </div>
+
 			<div class="card mb-md-4">
         <div class="box">
-          <i class="fas fa-mobile-alt"></i>
-          <div class="text">Telefone</div>
-          <p>
-            Os melhores planos para os nossos clientes
-          </p>
+          <i class="fas fa-box"></i>
+          <div class="text">Tv Box</div>
+          <%# <p>
+            Pacotes com Meobox
+          </p> %>
           <%= link_to "Learn more", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
         </div>
       </div>
@@ -48,9 +59,9 @@
         <div class="box">
           <i class="fas fa-box"></i>
           <div class="text">Tv Box</div>
-          <p>
+          <%# <p>
             Pacotes com Meobox
-          </p>
+          </p> %>
           <%= link_to "Learn more", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
         </div>
       </div>

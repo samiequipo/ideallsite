@@ -21,6 +21,11 @@ main .site-header {
   text-align: center;
   background-repeat: no-repeat;
   background-position: top;
+  background-position-y: 20%
+}
+
+.textBox--h3 .typed-cursor{
+  color: #131416;
 }
 
 main .site-header .logo {
