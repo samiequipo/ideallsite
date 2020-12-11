@@ -1,6 +1,13 @@
 .bg-planos {
-  background: rgb(1, 51, 53);
-  // height: 100vh;
+  position: relative;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 78, 129, 1) 8%,
+      rgba(6, 8, 8, 0.8) 15%
+    ),
+    asset-url("bg-planos-1.png");
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .pricing-table-container {
@@ -18,7 +25,7 @@
 
 .pricing-card {
   flex: 1;
-  max-width: 22.5rem;
+  max-width: 22rem;
   background-color: #fff;
   margin: 1.25rem 0.625rem;
   text-align: center;
@@ -31,7 +38,7 @@
 }
 
 .pricing-card-nos {
-  box-shadow: 0 5px 12px #fbd454;
+  box-shadow: 0 5px 12px #e996c0;
 }
 
 .pricing-card-nowo {
@@ -54,7 +61,7 @@
 }
 
 .pricing-card-header-nos {
-  background-color: #fbd454;
+  background-color: #e996c0;
 }
 
 .pricing-card-header-nowo {
@@ -66,16 +73,16 @@
 }
 
 .pricing-card:hover .pricing-card-header {
-  box-shadow: 0 0 0 23.5em #0fbcf9;
+  box-shadow: 0 0 0 22em #0fbcf9;
 }
 .pricing-card:hover .pricing-card-header-nos {
-  box-shadow: 0 0 0 23.5em #fbd454;
+  box-shadow: 0 0 0 22em #e996c0;
 }
 .pricing-card:hover .pricing-card-header-nowo {
-  box-shadow: 0 0 0 23.5em #fb4d29;
+  box-shadow: 0 0 0 22em #fb4d29;
 }
 .pricing-card:hover .pricing-card-header-vodafone {
-  box-shadow: 0 0 0 23.5em #e73321;
+  box-shadow: 0 0 0 22em #e73321;
 }
 
 .price {
@@ -90,7 +97,7 @@
 }
 
 .price-nos {
-  color: #fbd454;
+  color: #e996c0;
 }
 
 .price-vodafone {
@@ -106,6 +113,34 @@
 .pricing-card:hover,
 .pricing-card:hover .price {
   color: #fff;
+}
+
+.planos-title {
+  display: flex;
+  justify-content: center;
+}
+
+.heading-secondary {
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    90deg,
+    rgb(179, 0, 21) 20%,
+    rgb(255, 255, 255) 50%,
+    rgb(0, 0, 0) 80%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(#000, 0.2);
+  }
 }
 
 .pricing-card ul {
@@ -138,8 +173,8 @@
 }
 
 .order-btn-nos {
-  border: 0.125rem solid #fbd454;
-  color: #fbd454;
+  border: 0.125rem solid #e996c0;
+  color: #e996c0;
 }
 .order-btn-nowo {
   border: 0.125rem solid #fb4d29;
@@ -155,7 +190,7 @@
   color: #fff;
 }
 .order-btn-nos:hover {
-  background-color: #fbd454;
+  background-color: #e996c0;
   color: #fff;
 }
 .order-btn-nowo:hover {
