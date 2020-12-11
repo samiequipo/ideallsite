@@ -7,6 +7,11 @@
   // height: 100vh;
 }
 
+.pricing-table-container{
+  display: flex;
+  align-items: center;
+}
+
 .pricing-table{
   display: flex;
   flex-wrap: wrap;
