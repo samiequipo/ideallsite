@@ -7,115 +7,167 @@
   // height: 100vh;
 }
 
-.pricingTable{
-  color: #454747;
-  font-family: 'Montserrat', sans-serif;
+.pricing-table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1600px;
+  margin: auto;
+}
+
+.pricing-card{
+  flex: 1;
+  max-width: 22.5rem;
+  background-color: #fff;
+  margin: 1.25rem 0.625rem;
   text-align: center;
-  margin: 0 20px;
+  cursor: pointer;
+  overflow: hidden;
+  color: #2d2d2d;
+  border-radius: 1.25rem;
+  transition: .3s linear;
+  box-shadow: 0 5px 12px#0fbcf9;
 }
-.pricingTable .pricingTable-header{
-  color: #fff;
-  text-transform: uppercase;
+
+.pricing-card-nos{
+  box-shadow: 0 5px 12px #fbd454;
 }
-.pricingTable .title{
-  background: linear-gradient(to right, #e2b824,#c16807);
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: 15px 10px;
-  margin: 0 -15px;
-  border-radius: 50px;
-  box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 1;
+
+.pricing-card-nowo{
+  box-shadow: 0 5px 12px #fb4d29;
 }
-.pricingTable .price-value{
-  background: linear-gradient(to right,#e2b824,#c16807);
-  width: 200px;
-  height: 200px;
-  padding: 45px 20px 0;
-  border-radius: 50%;
-  margin: 0 auto -65px;
+.pricing-card-vodafone{
+  box-shadow: 0 5px 12px #e73321;
 }
-.pricingTable .price-value .amount{
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 45px;
-}
-.pricingTable .price-value .duration{
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  display: block;
-}
-.pricingTable .pricing-content{
-  background: #fff;
-  padding: 25px 15px;
-  margin: -15px 0 0;
-  border-radius: 0 0 30px 30px;
-  box-shadow: 0 10px 10px rgba(0,0,0,0.2);
-}
-.pricingTable .pricing-content ul{
-  text-align: left;
+
+.pricing-card ul{
   padding: 0;
-  margin: 0;
+}
+
+.pricing-card li{
   list-style: none;
+}
+
+.pricing-card a{
+  text-decoration: none;
+}
+
+.pricing-card-header{
+  background-color: #0fbcf9;
   display: inline-block;
-}
-.pricingTable .pricing-content ul li{
-  font-size: 15px;
-  line-height: 45px;
-  text-transform: uppercase;
-  padding: 0 0 0 30px;
-  border-bottom: 2px solid #e7e7e7;
-  position: relative;
-}
-.pricingTable .pricing-content ul li:last-child{ border-bottom: none; }
-.pricingTable .pricing-content ul li:before{
-  content: "\f00c";
-  color: #c16807;
-  font-family: "Font Awesome 5 Free";
-  font-size: 20px;
-  font-weight: 900;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.pricingTable .pricing-content li.disable:before{
-  color: #333;
-  content: "\f00d";
-}
-.pricingTable .pricingTable-signup{
-  background: linear-gradient(to right,#e2b824,#c16807);
-  padding: 15px 0;
-  margin: 0 20px;
-  border-radius: 0 0 30px 30px;
-}
-.pricingTable .pricingTable-signup a{
   color: #fff;
+  padding: 0.75rem 1.875rem;
+  border-radius: 0 0 1.25rem 1.25rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear;
+}
+
+.pricing-card-header-nos{
+  background-color: #fbd454;
+}
+
+.pricing-card-header-nowo{
+  background-color: #fb4d29;
+}
+
+.pricing-card-header-vodafone{
+  background-color: #e73321;
+}
+
+.pricing-card:hover .pricing-card-header{
+  box-shadow: 0 0 0 23.5em #0fbcf9;
+}
+.pricing-card:hover .pricing-card-header-nos{
+  box-shadow: 0 0 0 23.5em #fbd454;
+}
+.pricing-card:hover .pricing-card-header-nowo{
+  box-shadow: 0 0 0 23.5em #fb4d29;
+}
+.pricing-card:hover .pricing-card-header-vodafone{
+  box-shadow: 0 0 0 23.5em #e73321;
+}
+
+.price{
+  font-size: 4.375rem;
+  color: #0fbcf9;
+  margin-bottom: 1.5rem;
+  transition: .2s linear;
+}
+
+.price-nowo{
+  color: #fb4d29;
+}
+
+.price-nos{
+  color:#fbd454;
+}
+
+.price-vodafone{
+  color: #e73321;
+}
+
+.price sup, .price span{
   font-size: 22px;
   font-weight: 700;
+}
+
+.pricing-card:hover ,.pricing-card:hover .price{
+  color: #fff;
+}
+
+.pricing-card li{
+  font-size: 16px;
+  padding: 10px 0;
   text-transform: uppercase;
-  transition: all 0.3s;
 }
-.pricingTable .pricingTable-signup a:hover{
-  letter-spacing: 3px;
-  text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+
+.order-btn{
+  display: inline-block;
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+  border: 0.125rem solid #0fbcf9;
+  color: #0fbcf9;
+  padding: 18px 2.5rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
 }
-.pricingTable.pink .pricingTable-header .title,
-.pricingTable.pink .price-value,
-.pricingTable.pink .pricingTable-signup{
-  background: linear-gradient(to right,#ef52d7,#a40a8c);
+
+.order-btn-nos{
+  border: 0.125rem solid #fbd454;
+  color: #fbd454;
 }
-.pricingTable.pink .pricing-content ul li:before{ color: #a40a8c; }
-.pricingTable.pink .pricing-content ul li.disable:before{ color: #333; }
-.pricingTable.blue .pricingTable-header .title,
-.pricingTable.blue .price-value,
-.pricingTable.blue .pricingTable-signup{
-  background: linear-gradient(to right,#00a2f3,#0073b1);
+.order-btn-nowo{
+  border: 0.125rem solid #fb4d29;
+  color: #fb4d29;
 }
-.pricingTable.blue .pricing-content ul li:before{ color: #0073b1; }
-.pricingTable.blue .pricing-content ul li.disable:before{ color: #333; }
-@media only screen and (max-width: 990px){
-  .pricingTable{ margin: 0 15px 40px; }
+.order-btn-vodafone{
+  border: 0.125rem solid #e73321;
+  color: #e73321;
+}
+
+.order-btn:hover{
+  background-color: #0fbcf9;
+  color: #fff;
+}
+.order-btn-nos:hover{
+  background-color: #fbd454;
+  color: #fff;
+}
+.order-btn-nowo:hover{
+  background-color: #fb4d29;
+  color: #fff;
+}
+.order-btn-vodafone:hover{
+  background-color: #e73321;
+  color: #fff;
+}
+
+@media screen and (max-width:1100px){
+  .pricing-card{
+    flex: 50%;
+  }
 }
