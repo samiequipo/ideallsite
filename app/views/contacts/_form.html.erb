@@ -14,16 +14,22 @@
       <%= f.text_field :email, class: "form-control", placeholder: "Email", id:"inputEmail" %>
     </div>
   </div>
-  
+
   <div class="form-row mb-3">
     <div class="col">
       <%= f.number_field :phone, class: "form-control", placeholder: "Number", id:"inputPhone" %>
     </div>
   </div>
-  
+
   <div class="form-row mb-3">
     <div class="col">
       <%= f.collection_select :region_id, Region.all, :id, :name, {:prompt => 'Seleccione una región'}, { class: "form-control" }%>
+    </div>
+  </div>
+
+  <div class="form-row mb-3 invisible">
+    <div class="col">
+      <%= f.text_field :operator, disabled: true, value: @contact.operator, class: "form-control", placeholder: "Email", id:"inputEmail" %>
     </div>
   </div>
 

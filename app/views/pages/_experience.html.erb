@@ -15,7 +15,7 @@
         <div class="box">
           <img src="unsplash/meo.png" style= "width: 50px;" >
           <div class="text">Meo</div>
-          <%= link_to "Learn more", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
+          <%= link_to "Learn more", new_contact_path(operator: "meo"), remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
         </div>
       </div>
 
@@ -23,7 +23,7 @@
         <div class="box">
           <img src="unsplash/nos.png" style= "width: 50px;" >
           <div class="text">Nos</div>
-          <%= link_to "Learn more", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
+          <%= link_to "Learn more", new_contact_path(operator: "nos"), remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
         </div>
       </div>
 
@@ -40,16 +40,16 @@
       <div class="card mb-md-4">
         <div class="box">
           <img src="unsplash/nowo.png" style= "width: 50px;" >
-          <div class="text">Tv Box</div>
-          <%= link_to "Learn more", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
+          <div class="text">Nowo</div>
+          <%= link_to "Learn more", new_contact_path(operator: "nowo"), remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
         </div>
       </div>
 
       <div class="card mb-md-4">
         <div class="box">
           <img src="unsplash/vodafone1.png" style= "width: 50px;" >
-          <div class="text">Tv Box</div>
-          <%= link_to "Learn more", new_contact_path, remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
+          <div class="text">Vodafone</div>
+          <%= link_to "Learn more", new_contact_path(operator: "vodafone"), remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
         </div>
       </div>
     </div>
