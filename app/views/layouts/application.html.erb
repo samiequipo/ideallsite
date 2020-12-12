@@ -1,139 +1,147 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<title>Luis Castro | Ceo Comercial</title>
-	<%= csrf_meta_tags %>
-	<%= csp_meta_tag %>
+  <head>
+    <title>Luis Castro | Ceo Comercial</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-	<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
- 
-	<%# Tab %>
-	<%= favicon_link_tag asset_path('Ideall-logo.png') %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-	<%# Swiper css %>
-  
-	<!-- Custom fonts for this template -->
-	<link href="startbootstrap-agency-gh-pages/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+    <%# Tab %>
+    <%= favicon_link_tag asset_path('Ideall-logo.png') %>
 
-	<!-- Glider Js for carousel plano -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <%# Swiper css %>
 
-	<!-- Typied Js for text -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <!-- Custom fonts for this template -->
+    <link href="startbootstrap-agency-gh-pages/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
 
-	<!-- Custom styles for this template -->
-	<link href="startbootstrap-agency-gh-pages/css/agency.css" rel="stylesheet">
-</head>
+    <!-- Glider Js for carousel plano -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 
-<body id="page-top">
-	<%= render 'layouts/messages' %>	
-  <%= render 'layouts/navbar'%>
-  <%= yield %>
-	<div id="results"></div>
-	<footer></footer>
+    <!-- Typied Js for text -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 
-  <%# Swiper js %>
-	
-	<!-- Bootstrap core JavaScript -->
-	<script src="startbootstrap-agency-gh-pages/vendor/jquery/jquery.min.js"></script>
-	<script src="startbootstrap-agency-gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="startbootstrap-agency-gh-pages/css/agency.css" rel="stylesheet">
 
-	<!-- Plugin JavaScript -->
-	<script src="startbootstrap-agency-gh-pages/vendor/jquery-easing/jquery.easing.min.js"></script>
-	
-	<!-- Custom scripts for this template -->
-	<script src="startbootstrap-agency-gh-pages/js/agency.min.js"></script>
-	<script src="startbootstrap-agency-gh-pages/js/script.js"></script>
-	
-	<!-- Letter header scripts -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-	
-	<!-- Promotion script -->
-	<script>
-		function imgSlider(captureImage, color, letter) {
-			document.querySelector('.starbucks').src = captureImage;
-				document.querySelector('.circle').style.background = color;
-				document.querySelector('.letter').style.color = color;
-				document.querySelector('.btn--portfolio').style.background = color;
-		}
-	</script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  </head>
 
-	<!-- Plano gliderJs scripts -->
-	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<script>
-		window.addEventListener('load', function () {
-			const glider = new Glider(document.querySelector('.carousel__lista_main'), {
-				slidesToShow: 4	,
-				slidesToScroll: 1,
-				dots: '.carousel__indicadores_main',
-				arrows: {
-					prev: '.carousel__anterior_main',
-					next: '.carousel__siguiente_main'
-				},
-				responsive: [{
-					// screens greater than >= 775px
-					breakpoint: 450,
-					settings: {
-						// Set to `auto` and provide item width to adjust to viewport
-						slidesToShow: 2,
-						slidesToScroll: 2
-					}
-				}, 
-				{
-					// screens greater than >= 1024px
-					breakpoint: 800,
-					settings: {
-						slidesToShow: 4,
-						slidesToScroll: 4,
-						draggable: true,
-						scrollLock: true,
-						autoplay: 2,
-						animationDuration: 3000,
-						animationTimingFunc: 'linear',
-						rewind: true,
-					}
-				}]
-			});
+  <body id="page-top">
+    <%= render 'layouts/messages' %>
+    <%= render 'layouts/navbar'%>
+    <%= yield %>
+    <div id="results"></div>
+    <footer></footer>
 
-			function sliderAuto(slider, miliseconds) {
-				const slidesCount = slider.track.childElementCount;
-				let slideTimeout = null;
-				let nextIndex = 1;
+    <%# Swiper js %>
 
-				function slide() {
-					slideTimeout = setTimeout(
-						function () {
-							if (nextIndex >= slidesCount) {
-								nextIndex = 0;
-							}
-							slider.scrollItem(nextIndex++);
-						},
-						miliseconds
-					);
-				}
+    <!-- Bootstrap core JavaScript -->
+    <script src="startbootstrap-agency-gh-pages/vendor/jquery/jquery.min.js"></script>
+    <script src="startbootstrap-agency-gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-				slider.ele.addEventListener('glider-animated', function () {
-					window.clearInterval(slideTimeout);
-					slide();
-				});
+    <!-- Plugin JavaScript -->
+    <script src="startbootstrap-agency-gh-pages/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-				slide();
-			}
-				
-			sliderAuto(glider, 45000)
-		});
-	</script>
+    <!-- Custom scripts for this template -->
+    <script src="startbootstrap-agency-gh-pages/js/agency.min.js"></script>
+    <script src="startbootstrap-agency-gh-pages/js/script.js"></script>
 
-</body>
+    <!-- Letter header scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <!-- Promotion script -->
+    <script>
+      function imgSlider(captureImage, color, letter) {
+      	document.querySelector('.starbucks').src = captureImage;
+      		document.querySelector('.circle').style.background = color;
+      		document.querySelector('.letter').style.color = color;
+      		document.querySelector('.btn--portfolio').style.background = color;
+      }
+    </script>
+
+    <!-- Plano gliderJs scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script>
+      window.addEventListener('load', function () {
+      	const glider = new Glider(document.querySelector('.carousel__lista_main'), {
+      		slidesToShow: 4	,
+      		slidesToScroll: 1,
+      		dots: '.carousel__indicadores_main',
+      		arrows: {
+      			prev: '.carousel__anterior_main',
+      			next: '.carousel__siguiente_main'
+      		},
+      		responsive: [{
+      			// screens greater than >= 775px
+      			breakpoint: 450,
+      			settings: {
+      				// Set to `auto` and provide item width to adjust to viewport
+      				slidesToShow: 2,
+      				slidesToScroll: 2
+      			}
+      		},
+      		{
+      			// screens greater than >= 1024px
+      			breakpoint: 800,
+      			settings: {
+      				slidesToShow: 4,
+      				slidesToScroll: 4,
+      				draggable: true,
+      				scrollLock: true,
+      				autoplay: 2,
+      				animationDuration: 3000,
+      				animationTimingFunc: 'linear',
+      				rewind: true,
+      			}
+      		}]
+      	});
+      
+      	function sliderAuto(slider, miliseconds) {
+      		const slidesCount = slider.track.childElementCount;
+      		let slideTimeout = null;
+      		let nextIndex = 1;
+      
+      		function slide() {
+      			slideTimeout = setTimeout(
+      				function () {
+      					if (nextIndex >= slidesCount) {
+      						nextIndex = 0;
+      					}
+      					slider.scrollItem(nextIndex++);
+      				},
+      				miliseconds
+      			);
+      		}
+      
+      		slider.ele.addEventListener('glider-animated', function () {
+      			window.clearInterval(slideTimeout);
+      			slide();
+      		});
+      
+      		slide();
+      	}
+      
+      	sliderAuto(glider, 45000)
+      });
+    </script>
+
+    <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Custom Script -->
+    <script src="startbootstrap-agency-gh-pages/js/service.js"></script>
+
+  </body>
 
 </html>

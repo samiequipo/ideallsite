@@ -20,5 +20,6 @@ class Contact < ApplicationRecord
     self.email = email.downcase
     self.first_name = first_name.capitalize
     self.last_name = last_name.capitalize
+    self.operator = operator.upcase
   end
 end

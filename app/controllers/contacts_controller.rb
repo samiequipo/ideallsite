@@ -23,11 +23,7 @@ class ContactsController < ApplicationController
   end
 
   private
-   
-  def operator_params
-    params.require(:operator).permit(:operator)
-  end
-  
+
   def contact_params
     params.require(:contact).permit(:first_name, :last_name, :email, :phone, :region_id, :operator)
   end
