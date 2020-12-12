@@ -1,11 +1,6 @@
 .bg-planos {
   position: relative;
-  background: linear-gradient(
-      180deg,
-      rgba(0, 78, 129, 1) 8%,
-      rgba(6, 8, 8, 0.8) 15%
-    ),
-    asset-url("bg-planos-1.png");
+  background-image: linear-gradient(to right bottom, #f8b561, #f7d088, #f9e8b2);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -25,7 +20,7 @@
 
 .pricing-card {
   flex: 1;
-  max-width: 22rem;
+  max-width: 16.875rem;
   background-color: #fff;
   margin: 1.25rem 0.625rem;
   text-align: center;
