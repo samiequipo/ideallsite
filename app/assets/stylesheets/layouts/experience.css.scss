@@ -136,7 +136,11 @@ a.btn:active {
 
 /* Services */
 .theme {
-  background-color: #000;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.781) 12%,
+    rgba(13, 17, 17, 0.726) 25%
+  );
 }
 
 .theme .title {
@@ -155,6 +159,7 @@ a.btn:active {
   padding: 1.25rem;
   text-align: center;
   border-radius: 0.625rem;
+  cursor: pointer;
   transition: all 300ms ease-in-out;
   display: flex;
   flex-direction: column;
@@ -180,9 +185,14 @@ a.btn:active {
 .service:hover {
   //  background-color: #dd9a05;
 }
-
-.service:hover span {
-  color: #fff;
+.s-nos:hover {
+  background-color: #3600fa;
+}
+.s-nowo:hover {
+  background-color: #fb4d29;
+}
+.s-vodafone:hover {
+  background-color: #e73321;
 }
 
 .vanilla {
