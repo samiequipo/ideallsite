@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
 
     <!-- Glider Js for carousel plano -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <%# <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"> %>
 
     <!-- Typied Js for text -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -71,8 +71,8 @@
     </script>
 
     <!-- Plano gliderJs scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-    <script>
+    <%# <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script> %>
+    <%# <script>
       window.addEventListener('load', function () {
       	const glider = new Glider(document.querySelector('.carousel__lista_main'), {
       		slidesToShow: 4	,
@@ -105,43 +105,56 @@
       				rewind: true,
       			}
       		}]
-      	});
-      
-      	function sliderAuto(slider, miliseconds) {
-      		const slidesCount = slider.track.childElementCount;
-      		let slideTimeout = null;
-      		let nextIndex = 1;
-      
-      		function slide() {
-      			slideTimeout = setTimeout(
-      				function () {
-      					if (nextIndex >= slidesCount) {
-      						nextIndex = 0;
-      					}
-      					slider.scrollItem(nextIndex++);
-      				},
-      				miliseconds
-      			);
-      		}
-      
-      		slider.ele.addEventListener('glider-animated', function () {
-      			window.clearInterval(slideTimeout);
-      			slide();
-      		});
-      
-      		slide();
-      	}
-      
-      	sliderAuto(glider, 45000)
-      });
-    </script>
+      	}); %>
 
-    <!-- AOS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    function sliderAuto(slider, miliseconds) {
+    const slidesCount = slider.track.childElementCount;
+    let slideTimeout = null;
+    let nextIndex = 1;
 
-    <!-- Custom Script -->
-    <script src="startbootstrap-agency-gh-pages/js/service.js"></script>
+    function slide() {
+    slideTimeout = setTimeout(
+    function () {
+    if (nextIndex >= slidesCount) {
+    nextIndex = 0;
+    }
+    slider.scrollItem(nextIndex++);
+    },
+    miliseconds
+    );
+    }
 
-  </body>
+    slider.ele.addEventListener('glider-animated', function () {
+    window.clearInterval(slideTimeout);
+    slide();
+    });
+
+    slide();
+    }
+
+    sliderAuto(glider, 45000)
+    });
+  </script>
+
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Custom Script -->
+  <script src="startbootstrap-agency-gh-pages/js/service.js"></script>
+
+  <%# Vanilla JS %>
+  <script type="text/javascript" src="startbootstrap-agency-gh-pages/js/vanilla-tilt.js"></script>
+
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".vanilla"), {
+      max: 25,
+      speed: 100,
+      glare: true,
+      "max-glare": 1,
+    
+    });
+  </script>
+
+</body>
 
 </html>

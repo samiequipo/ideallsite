@@ -1,31 +1,35 @@
-<section class="section theme pb-0" id="services">
+<section class="section theme pb-0">
   <div class="title">
     <h2>O melhor serviço de fibra &oacute;tica ¡A su disposici&oacute;n!</h2>
   </div>
 
   <div class="services-center container">
     <div class="service" data-aos="fade-down" data-aos-duration="2000">
-      <span><i class="fab fa-accusoft"></i></span>
-      <h3>Meo</h3>
-      <%= link_to "Learn more", new_contact_path(operator: "meo"), remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
+      <div class="vanilla">
+        <span><%= image_tag 'meo_logo.png' %></span>
+        <%= link_to "Saber mais", new_contact_path(operator: "meo"), remote: true, class: "btn btn--white btn--animated btn-dark mb-3", role: "button" %>
+      </div>
     </div>
 
     <div class="service" data-aos="fade-up" data-aos-duration="2000">
-      <span><i class="fas fa-chart-line"></i></span>
-      <h3>Nos</h3>
-      <%= link_to "Learn more", new_contact_path(operator: "nos"), remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
+      <div class="vanilla">
+        <span><%= image_tag 'nos_logo.png' %></span>
+        <%= link_to "Saber mais", new_contact_path(operator: "nos"), remote: true, class: "btn btn--white btn--animated btn-dark mb-3", role: "button" %>
+      </div>
     </div>
 
     <div class="service" data-aos="fade-down" data-aos-duration="2000">
-      <span><i class="fas fa-blender-phone"></i></span>
-      <h3>Nowo</h3>
-      <%= link_to "Learn more", new_contact_path(operator: "nowo"), remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
+      <div class="vanilla">
+        <span><%= image_tag 'nowo.png' %></span>
+        <%= link_to "Saber mais", new_contact_path(operator: "nowo"), remote: true, class: "btn btn--white btn--animated btn-dark mb-3", role: "button" %>
+      </div>
     </div>
 
     <div class="service" data-aos="fade-down" data-aos-duration="2000">
-      <span><i class="fas fa-blender-phone"></i></span>
-      <h3>Vodafone</h3>
-      <%= link_to "Learn more", new_contact_path(operator: "vodafone"), remote: true, class: "btn btn--white btn--animated btn-dark", role: "button" %>
+      <div class="vanilla">
+        <span><%= image_tag 'vodafone_logo.png' %></span>
+        <%= link_to "Saber mais", new_contact_path(operator: "vodafone"), remote: true, class: "btn btn--white btn--animated btn-dark mb-3", role: "button" %>
+      </div>
     </div>
   </div>
 
