@@ -81,7 +81,7 @@ li {
 a.btn {
   display: inline-block;
   padding: 0.625rem 1.25rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: transparent;
   color: #fff;
   border-radius: 0.3125rem;
   border: 0.125px solid #dd9a05;
@@ -151,7 +151,7 @@ a.btn:active {
 
 .service {
   color: #fff;
-  background-color: #111;
+  background-color: transparent;
   padding: 1.25rem;
   text-align: center;
   border-radius: 0.625rem;
@@ -178,7 +178,7 @@ a.btn:active {
 }
 
 .service:hover {
-  background-color: #dd9a05;
+  //  background-color: #dd9a05;
 }
 
 .service:hover span {
