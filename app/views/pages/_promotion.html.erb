@@ -1,48 +1,49 @@
-<section class="bg-light page-section section-portfolio" id="portfolio">
-	<div class="container mx-4">
-		<div class="circle"></div>
+<section class="bg-light page-section section-portfolio pt-0 pt-md-5" id="portfolio">
+  <div class="container mx-lg-4">
+    <div class="circle"></div>
 
-		<div class="row content">
-			<div class="col-12 col-lg-7 textBox">
-				<div class="texBox--phrase">
-					<h2 class= "texBox--title" id="textBoxSlogan">O futuro é emocionante. Ready?<span id="letterSlogan" class="letter ml-3">Vodafone</span></h2>
-				</div>
-				
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis libero beatae laborum dolore dicta!
-				Tenetur aperiam numquam illum. Delectus, perferendis cumque illum a eligendi ut earum accusantium recusandae
-				similique reprehenderit.</p>
-				<a href="" class="btn btn--portfolio btn--white btn--animated">Learn More</a>
-			</div>
+    <div class="content">
+      <div class="textBox">
+        <div class="texBox--phrase">
+          <h2 class= "texBox--title" id="textBoxSlogan">O futuro é emocionante. Ready?<span id="letterSlogan" class="letter ml-3">Vodafone</span></h2>
+        </div>
 
-			<div class="d-none d-lg-block col-lg-5 imgBox">
-				<img src="unsplash/vodafone-woman.png" alt="" class="starbucks">
-			</div>
-		</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis libero beatae laborum dolore dicta!
+          Tenetur </p>
+        <a href="" class="btn btn--portfolio btn--white btn--animated">Learn More</a>
+      </div>
 
-		<ul class="thumb"> 
-			<div>
-				<li>
-					<%= image_tag 'vodafone1.png', onclick:"imgSlider('unsplash/vodafone-woman.png', '#e43220')" %>
-				</li>
+      <div class="imgBox">
+        <img src="unsplash/vodafone-woman.png" alt="" class="starbucks">
+      </div>
+    </div>
 
-				<li>
-					<%= image_tag 'nowo.png', onclick:"imgSlider('unsplash/supermanq.png', '#f14626')" %>
-				</li>
-				
-				<li>
-					<%= image_tag 'meo.png', onclick:"imgSlider('unsplash/kunfu.png', '#7e5a25')" %>
-				</li>
-				
-				<li>
-					<%= image_tag 'nos.png', onclick: "imgSlider('unsplash/phone.png', '#969695')" %>
-				</li>
-			</div>
-		</ul>
+    <ul class="thumb">
+      <div class="thumb-container">
+        <li>
+          <%= image_tag 'vodafone1.png', onclick:"imgSlider('unsplash/vodafone-woman.png', '#e43220')" %>
+        </li>
 
-		<div class="sci">
-			<a href="https://www.facebook.com/Lu%C3%ADs-Castro-Comercial-MEO-103347814777629"><i class="fab fa-facebook-f"></i></a>
-			<a href="your link here"><i class="fab fa-instagram"></i></a>
-			<a href="your link here"><i class="fab fa-twitter"></i></a>
-		</div>
-	</div>
+        <li>
+          <%= image_tag 'nowo.png', onclick:"imgSlider('unsplash/supermanq.png', '#f14626')" %>
+        </li>
+
+        <li>
+          <%= image_tag 'meo.png', onclick:"imgSlider('unsplash/kunfu.png', '#7e5a25')" %>
+        </li>
+
+        <li>
+          <%= image_tag 'nos.png', onclick: "imgSlider('unsplash/phone.png', '#969695')" %>
+        </li>
+      </div>
+    </ul>
+
+    <div class="sci-container">
+      <div class="sci">
+        <a href="https://www.facebook.com/Lu%C3%ADs-Castro-Comercial-MEO-103347814777629"><i class="fab fa-facebook-f"></i></a>
+        <a href="your link here"><i class="fab fa-instagram"></i></a>
+        <a href="your link here"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
 </section>
