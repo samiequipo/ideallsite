@@ -151,7 +151,7 @@ a.btn:active {
 
 .service {
   color: #fff;
-  background-color: transparent;
+  background-color: #333;
   padding: 1.25rem;
   text-align: center;
   border-radius: 0.625rem;
@@ -203,6 +203,19 @@ a.btn:active {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
+}
+
+.vanilla-nos:hover {
+  background: rgba(54, 0, 250, 0.3);
+}
+.vanilla-meo:hover {
+  background: rgba(15, 188, 249, 0.3);
+}
+.vanilla-nowo:hover {
+  background: rgba(251, 77, 41, 0.3);
+}
+.vanilla-vodafone:hover {
+  background: rgba(231, 51, 33, 0.3);
 }
 
 .vanilla a {
