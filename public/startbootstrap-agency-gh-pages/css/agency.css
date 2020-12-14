@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Agency v5.2.2 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
- */
-
 * {
   margin: 0;
   padding: 0;
@@ -595,11 +589,6 @@ img::-moz-selection {
   margin-top: 0;
 }
 
-/* .container-navbar {
-  display: flex;
-  align-items: center;
-} */
-
 section#contact {
   background-color: #212529;
   background-image: url("../img/map-image.png");
@@ -944,7 +933,7 @@ ul.social-buttons li a:hover {
 
   .content {
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 30px;
   }
 
   .content .textBox h2 {

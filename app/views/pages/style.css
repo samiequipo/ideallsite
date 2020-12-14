@@ -15,21 +15,6 @@ body {
   padding: 0;
 }
 
-.swiper-container {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 320px;
-  background-color: #fff;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
 .picture {
   width: 320px;
   height: 320px;

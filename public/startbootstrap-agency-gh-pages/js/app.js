@@ -1,19 +1,21 @@
 window.addEventListener('load', function () {
-	const glider = new Glider(document.querySelector('.carousel__lista_main'), {
-		slidesToShow: 3,
+	const glider = new Glider(document.querySelector('.carousel__lista'), {
+		slidesToShow: 1,
 		slidesToScroll: 1,
-		dots: '.carousel__indicadores_main',
+		dots: '.carousel__indicadores',
 		arrows: {
-			prev: '.carousel__anterior_main',
-			next: '.carousel__siguiente_main'
+			prev: '.carousel__anterior',
+			next: '.carousel__siguiente',
+			loop: true
 		},
 		responsive: [{
 			// screens greater than >= 775px
 			breakpoint: 450,
 			settings: {
 				// Set to `auto` and provide item width to adjust to viewport
-				slidesToShow: 1,
-				slidesToScroll: 1
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				loop: true
 			}
 		}, {
 			// screens greater than >= 1024px
@@ -23,15 +25,17 @@ window.addEventListener('load', function () {
 				slidesToScroll: 1,
 				draggable: true,
 				scrollLock: true,
-				autoplay: 2,
-				animationDuration: 3000,
+				autoplay: 1,
+				animationDuration: 310000,
 				animationTimingFunc: 'linear',
 				rewind: true,
+				loop: true
 			}
 		}]
 
 	});
 
+	//
 	function sliderAuto(slider, miliseconds) {
 		const slidesCount = slider.track.childElementCount;
 		let slideTimeout = null;
@@ -57,5 +61,5 @@ window.addEventListener('load', function () {
 		slide();
 	}
 
-	sliderAuto(glider, 3000)
+	sliderAuto(glider, 113000)
 });
