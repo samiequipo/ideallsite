@@ -1,4 +1,8 @@
 /* --- --- CAROUSEL --- --- */
+.carousel {
+  z-index: 2;
+}
+
 .carousel__contenedor {
   position: relative;
 }
