@@ -61,5 +61,5 @@ window.addEventListener('load', function () {
 		slide();
 	}
 
-	sliderAuto(glider, 3000)
+	sliderAuto(glider, 4000)
 });
