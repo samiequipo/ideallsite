@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
 
     <!-- Typied Js for text -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <%# <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script> %>
 
     <!-- Custom styles for this template -->
     <link href="startbootstrap-agency-gh-pages/css/agency.css" rel="stylesheet">
@@ -36,8 +36,9 @@
     <%= render 'layouts/messages' %>
     <%= render 'layouts/navbar'%>
     <%= yield %>
+    <%# Modal Contacts %>
+    <%= render "contacts/modal_contacts" %>
     <div id="results"></div>
-    <footer></footer>
 
     <%# Glider js %>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
@@ -76,7 +77,6 @@
 
     <%# Vanilla JS %>
     <script type="text/javascript" src="startbootstrap-agency-gh-pages/js/vanilla-tilt.js"></script>
-
     <script type="text/javascript">
       VanillaTilt.init(document.querySelectorAll(".vanilla"), {
         breakpoint: 800,
