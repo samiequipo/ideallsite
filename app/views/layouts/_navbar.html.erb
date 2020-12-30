@@ -10,19 +10,19 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav text-uppercase ml-auto">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#services">Planos</a>
+          <%= link_to 'Planos', root_path(anchor: 'services'), class: 'nav-link js-scroll-trigger' %>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#portfolio">Promoções</a>
+          <%= link_to 'Promoções', root_path(anchor: 'portfolio'), class: 'nav-link js-scroll-trigger' %>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">Sobre n&oacute;s</a>
+          <%= link_to 'Sobre nos', root_path(anchor: 'about'), class: 'nav-link js-scroll-trigger' %>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#contact">Contate-me</a>
+          <%= link_to 'Contata-me', root_path(anchor: 'contact'), class: 'nav-link js-scroll-trigger' %>
         </li>
       </ul>
     </div>

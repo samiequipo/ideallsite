@@ -15,4 +15,11 @@ Rails.application.routes.draw do
     get 'services/business'
     get 'services/gamers'
   end
+
+  #Specific part of page
+  get '/service', to: redirect('/#service')
+  get '/portfolio', to: redirect('/#portfolio')
+  get '/about', to: redirect('/#about')
+  get '/contact', to: redirect('/#contact')
+
 end
