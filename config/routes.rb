@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   end
 
   #Specific part of page
-  get '/service', to: redirect('/#service')
+  get '/services', to: redirect('/#services')
   get '/portfolio', to: redirect('/#portfolio')
   get '/about', to: redirect('/#about')
   get '/contact', to: redirect('/#contact')
