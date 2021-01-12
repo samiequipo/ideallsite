@@ -1,8 +1,9 @@
 <section class="section theme pb-0" id="services">
-  <div class="title">
+  <div class="title m-0 mb-3">
     <h2 data-aos="fade-right" data-aos-duration="2000">Que pacote precisas?</h2>
   </div>
 
+  <!-- x4 pacotes -->
   <div class="services-center container">
     <div class="service" data-aos="fade-down" data-aos-duration="2000">
       <div class="vanilla vanilla-meo">
@@ -29,6 +30,30 @@
       <div class="vanilla vanilla-nowo">
         <span><%= image_tag 'nowo.png' %></span>
         <%= link_to "Saber mais", other_services_nowo_path, class: "btn btn--white btn--animated btn-dark mt-3", target: '_blank', role: "button" %>
+      </div>
+    </div>
+  </div>
+
+  <!-- x3 pacotes -->
+  <div class="services-center container mt-4">
+    <div class="service" data-aos="fade-up" data-aos-duration="2000">
+      <div class="vanilla vanilla-meo">
+        <span><%= image_tag 'familia.jpg' %></span>
+        <%= link_to "Saber mais", other_services_meo_path, class: "btn btn--white btn--animated btn-dark mt-3", target: '_blank', role: "button" %>
+      </div>
+    </div>
+
+    <div class="service" data-aos="fade-down" data-aos-duration="2000">
+      <div class="vanilla vanilla-nos">
+        <span><%= image_tag 'bussiness.png' %></span>
+        <%= link_to "Saber mais", other_services_nos_path, class: "btn btn--white btn--animated btn-dark mt-3", target: '_blank', role: "button" %>
+      </div>
+    </div>
+
+    <div class="service" data-aos="fade-up" data-aos-duration="2000">
+      <div class="vanilla vanilla-vodafone">
+        <span><%= image_tag 'gammers.png' %></span>
+        <%= link_to "Saber mais", other_services_vodafone_path, class: "btn btn--white btn--animated btn-dark mt-3", target: '_blank', role: "button" %>
       </div>
     </div>
   </div>
