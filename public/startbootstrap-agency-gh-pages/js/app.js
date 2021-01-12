@@ -21,12 +21,12 @@ window.addEventListener('load', function () {
 			// screens greater than >= 1024px
 			breakpoint: 800,
 			settings: {
-				slidesToShow: 3,
+				slidesToShow: 1,
 				slidesToScroll: 1,
 				draggable: true,
 				scrollLock: true,
 				autoplay: 1,
-				animationDuration: 3000,
+				animationDuration: 300000,
 				animationTimingFunc: 'linear',
 				rewind: true,
 				loop: true
@@ -61,5 +61,5 @@ window.addEventListener('load', function () {
 		slide();
 	}
 
-	sliderAuto(glider, 4000)
+	sliderAuto(glider, 400000)
 });
