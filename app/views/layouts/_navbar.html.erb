@@ -9,21 +9,27 @@
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav text-uppercase ml-auto">
-        <li class="nav-item">
-          <%= link_to 'Planos', root_path(anchor: 'services'), class: 'nav-link js-scroll-trigger'  %>
-        </li>
+        <% if current_page?(root_path) %>
+          <li class="nav-item">
+            <%= link_to 'Planos', root_path(anchor: 'services'), class: 'nav-link js-scroll-trigger'  %>
+          </li>
 
-        <li class="nav-item">
-          <%= link_to 'Promoções', root_path(anchor: 'portfolio'), class: 'nav-link js-scroll-trigger' %>
-        </li>
+          <li class="nav-item">
+            <%= link_to 'Promoções', root_path(anchor: 'portfolio'), class: 'nav-link js-scroll-trigger' %>
+          </li>
 
-        <li class="nav-item">
-          <%= link_to 'Sobre nos', root_path(anchor: 'about'), class: 'nav-link js-scroll-trigger' %>
-        </li>
+          <li class="nav-item">
+            <%= link_to 'Sobre nos', root_path(anchor: 'about'), class: 'nav-link js-scroll-trigger' %>
+          </li>
 
-        <li class="nav-item">
-          <%= link_to 'Contata-me', root_path(anchor: 'contact') , class:"nav-link js-scroll-trigger" %>
-        </li>
+          <li class="nav-item">
+            <%= link_to 'Contata-me', root_path(anchor: 'contact') , class:"nav-link js-scroll-trigger" %>
+          </li>
+        <%else  %>
+          <li class="nav-item">
+            <%= link_to 'Home', root_path , class:"nav-link js-scroll-trigger" %>
+          </li>
+        <%end  %>
       </ul>
     </div>
   </div>

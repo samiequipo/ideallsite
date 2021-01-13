@@ -41,12 +41,6 @@
         </div>
 
         <div class="form-row">
-          <div class="col form-group">
-            <%= f.collection_select :region_id, Region.all, :id, :name, {:prompt => 'Seleccione una región'}, { class: "form-control" }%>
-          </div>
-        </div>
-
-        <div class="form-row">
           <div class="col d-flex justify-content-center">
             <%= f.submit "Enviar Mensagem" ,class: "btn btn--white btn-dark" %>
           </div>

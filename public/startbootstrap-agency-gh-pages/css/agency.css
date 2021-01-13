@@ -169,7 +169,7 @@ img::-moz-selection {
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #0e8dc7;
+  color: #00aeff;
 }
 
 @media (min-width: 992px) {
