@@ -1,10 +1,10 @@
 class ContactsController < ApplicationController
   def new
-    @contact = Contact.new(operator: params[:operator])
+    @contact = Contact.new(operator: params[:operator]) if params[:operator]
   end
   
   def create
-    #byebug
+    # byebug
     @contact = Contact.new(contact_params)
 
     if @contact.save

@@ -17,13 +17,41 @@
     </div>
 
     <div class="contact-form">
-      <h1>Contact us</h1>
-      <form action="">
-        <input type="text" class='contact-form-txt' placeholder="Name">
-        <input type="text" class='contact-form-txt' placeholder="Enauk">
-        <textarea type="text" class='contact-form-textarea' placeholder="Enauk"></textarea>
-        <input type="submit" name="Submit" class="contact-form-btn">
-      </form>
+      <%= form_with(scope: :contact, url: contacts_path) do |f| %>
+        <div class="form-row">
+          <div class="col form-group">
+            <%= f.text_field :first_name, class: "form-control", placeholder: "First name", id:"inputFirstName" %>
+          </div>
+
+          <div class="col form-group">
+            <%= f.text_field :last_name, class: "form-control", placeholder: "Last name", id:"inputLastName" %>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col form-group">
+            <%= f.text_field :email, class: "form-control", placeholder: "Email", id:"inputEmail" %>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col form-group">
+            <%= f.number_field :phone, class: "form-control", placeholder: "Number", id:"inputPhone" %>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col form-group">
+            <%= f.collection_select :region_id, Region.all, :id, :name, {:prompt => 'Seleccione una región'}, { class: "form-control" }%>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col d-flex justify-content-center">
+            <%= f.submit "Enviar Mensagem" ,class: "btn btn--white btn-dark" %>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </section>
