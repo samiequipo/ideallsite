@@ -12,7 +12,7 @@ class Contact < ApplicationRecord
  # validates :phone, presence: true, numericality: { only_integer: true }, length: {minimum:9, maximum: 9},
  #           format: { with: VALID_PHONE_REGEX }
   
-  belongs_to :region          
+  belongs_to :region
 
   private
     
