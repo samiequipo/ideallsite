@@ -3,7 +3,7 @@ lock "~> 3.15.0"
 
 set :application, "todolist"
 set :repo_url, "https://samiequipo@bitbucket.org/samiequipo/luis-castro-ceo-comercial.git"
-set :git_http_username, 'samiequipo@gmail.com'
+set :git_http_username, 'samiequipo'
 set :git_http_password, 'xantoXi1992.'
 
 # Default branch is :master
