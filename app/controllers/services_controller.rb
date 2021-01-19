@@ -1,4 +1,4 @@
-class Other::ServicesController < ApplicationController
+class ServicesController < ApplicationController
   def meo
   end
 

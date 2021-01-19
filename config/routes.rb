@@ -6,14 +6,10 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
   
   #Services templated
-  namespace :other do
-    get 'services/meo'
-    get 'services/nos'
-    get 'services/vodafone'
-    get 'services/nowo'
-    get 'services/family'
-    get 'services/business'
-    get 'services/gamers'
+  scope :servicos do
+    scope :pacotes do
+      get 'services/meo'
+    end
   end
 end
 
@@ -22,10 +18,10 @@ end
 # idealsite.herokuapp.com/#portfolio
 # idealsite.herokuapp.com/#about
 # idealsite.herokuapp.com/#contact
-# idealsite.herokuapp.com/other/services/meo
-# idealsite.herokuapp.com/other/services/nos
-# idealsite.herokuapp.com/other/services/vodafone
-# idealsite.herokuapp.com/other/services/nowo
-# idealsite.herokuapp.com/other/services/family
-# idealsite.herokuapp.com/other/services/business
-# idealsite.herokuapp.com/other/services/gamers
+# idealsite.herokuapp.com/other/meo
+# idealsite.herokuapp.com/other/nos
+# idealsite.herokuapp.com/other/vodafone
+# idealsite.herokuapp.com/other/nowo
+# idealsite.herokuapp.com/other/family
+# idealsite.herokuapp.com/other/business
+# idealsite.herokuapp.com/other/gamers
