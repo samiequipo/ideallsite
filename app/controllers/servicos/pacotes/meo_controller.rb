@@ -1,4 +1,4 @@
-class MeoController < ApplicationController
+class Servicos::Pacotes::MeoController < ApplicationController
   #M4
   def telemovel
     

@@ -1,2 +1,0 @@
-class NosController < ApplicationController
-end
