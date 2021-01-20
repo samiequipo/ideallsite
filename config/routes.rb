@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   #Services templated
   scope :servicos do
     scope :pacotes do
-      get 'services/meo'
+      scope :meo do  
+        get 'telemovel', to: "meo#telemovel"
+      end
     end
   end
 end

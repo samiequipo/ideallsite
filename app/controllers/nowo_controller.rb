@@ -1,0 +1,2 @@
+class NowoController < ApplicationController
+end

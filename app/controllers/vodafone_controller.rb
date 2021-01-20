@@ -1,0 +1,2 @@
+class VodafoneController < ApplicationController
+end
