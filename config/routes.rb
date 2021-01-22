@@ -7,35 +7,6 @@ Rails.application.routes.draw do
   
   get 'cocacola', to: "pages#cocacola"
 
-  #Services templated
-  namespace :servicos do
-    namespace :pacotes do
-      scope :meo, as: 'meo' do  
-        get 'telemovel', to: "meo#telemovel"
-        get 'tv_net_voz', to: "meo#tv_net_voz"
-        get 'gaming', to: "meo#gaming"
-        get 'outros', to: "meo#outros"
-      end
-
-      scope :nos, as: 'nos' do  
-        get 'telemovel', to: "nos#telemovel"
-        get 'tv_net_voz', to: "nos#tv_net_voz"
-        get 'net', to: "nos#tv_net_voz"
-        get 'outros', to: "nos#outros"
-      end
-
-      scope :vodafone do  
-        #Wait...
-      end
-      
-      scope :nowo, as: 'nowo' do  
-        get 'telemovel', to: "nowo#telemovel"
-        get 'tv_net_voz', to: "nowo#tv_net_voz"
-        get 'outros', to: "nowo#outros"
-      end
-    end
-  end
-
   scope :servicos do
     scope :pacotes do
       get 'meo', to: "pages#meo"
