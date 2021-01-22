@@ -5,6 +5,9 @@
 // window.$ = $;
 // window.jQuery = jQuery;
 
+window.jQuery = $;
+window.$ = $;
+
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
