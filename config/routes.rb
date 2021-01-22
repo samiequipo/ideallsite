@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   root 'pages#index'
   resources :contacts, only: [:new, :create]
   
+  get 'cocacola', to: "pages#cocacola"
+
   #Services templated
   namespace :other do
     get 'services/meo'
@@ -14,6 +16,18 @@ Rails.application.routes.draw do
     get 'services/family'
     get 'services/business'
     get 'services/gamers'
+  end
+
+  scope :servicos do
+    scope :pacotes do
+      get 'meo', to: "pages#meo"
+      get 'nos', to: "pages#nos"
+      get 'vodafone', to: "pages#vodafone"
+      get 'nowo', to: "pages#nowo"
+      get 'family', to: "pages#family"
+      get 'business', to: "pages#business"
+      get 'gamers', to: "pages#gamers"
+    end
   end
 end
 
