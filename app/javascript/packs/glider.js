@@ -23,7 +23,7 @@ window.addEventListener('load', function () {
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
-				draggable: true,
+				// draggable: true,
 				scrollLock: true,
 				autoplay: 1,
 				animationDuration: 30000,
