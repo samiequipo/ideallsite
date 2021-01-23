@@ -26,9 +26,8 @@ window.addEventListener('load', function () {
 				draggable: true,
 				scrollLock: true,
 				autoplay: 1,
-				animationDuration: 300000,
+				animationDuration: 30000,
 				animationTimingFunc: 'linear',
-				rewind: true,
 				loop: true
 			}
 		}]
@@ -61,5 +60,5 @@ window.addEventListener('load', function () {
 		slide();
 	}
 
-	sliderAuto(glider, 400000)
+	sliderAuto(glider, 40000)
 });

@@ -56,7 +56,7 @@ main .site-header .free-trial-form {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 1.875rem;
   padding: 0 20px;
 }
 
@@ -72,7 +72,7 @@ main .site-header .free-trial-form input {
 main .site-header .free-trial-form button {
   height: 50px;
   margin-left: 20px;
-  padding: 0 30px;
+  padding: 0 1.875rem;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -84,7 +84,7 @@ main .site-header .free-trial-form button {
 
 main .site-header .note {
   width: 35%;
-  margin: 30px auto;
+  margin: 1.875rem auto;
   color: var(--white);
   font-size: 0.8rem;
   font-weight: 100;
@@ -140,7 +140,7 @@ main .site-feature div p {
 main .site-brand {
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 0;
+  padding: 1.875rem 0;
   margin: 40px auto;
   width: 1000px;
   justify-content: center;
@@ -170,7 +170,7 @@ main .site-quote h1 {
 }
 
 main .site-quote p {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   color: var(--dark-gray1);
   font-weight: 500;
   font-size: 0.8em;
@@ -180,7 +180,7 @@ main .site-quote p {
 main .site-quote button {
   height: 50px;
   margin-top: 50px;
-  padding: 0 30px;
+  padding: 0 1.875rem;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -240,7 +240,7 @@ main .site-quote button {
     width: auto;
     margin-top: 0;
     margin-left: 20px;
-    padding: 0 30px;
+    padding: 0 1.875rem;
   }
 
   /* Feature */
@@ -296,7 +296,7 @@ main .site-quote button {
   main .site-feature {
     grid-template-columns: 1fr;
     width: 100%;
-    padding: 0 30px;
+    padding: 0 1.875rem;
   }
 
   main .site-feature div {
@@ -331,7 +331,7 @@ main .site-quote button {
     align-items: center;
     justify-content: center;
     width: 90%;
-    margin: 30px auto;
+    margin: 1.875rem auto;
   }
 }
 
@@ -431,12 +431,12 @@ main .site-quote button {
 .carousel__siguiente {
   position: absolute;
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   border: none;
   top: calc(50% - 35px);
   cursor: pointer;
-  line-height: 30px;
+  line-height: 1.875rem;
   text-align: center;
   background: none;
   color: #fff;
@@ -449,11 +449,11 @@ main .site-quote button {
 }
 
 .carousel__anterior {
-  left: -30px;
+  left: 0;
 }
 
 .carousel__siguiente {
-  right: -30px;
+  right: 0;
 }
 
 .carousel__lista {
@@ -466,7 +466,7 @@ main .site-quote button {
 
 .carousel__indicadores .glider-dot {
   display: block;
-  width: 30px;
+  width: 1.875rem;
   height: 4px;
   background: #fff;
   opacity: 0.2;
