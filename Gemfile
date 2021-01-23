@@ -22,8 +22,6 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise'
 gem 'activeadmin'
 gem 'ahoy_matey'
-gem "font-awesome-rails"
-
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
