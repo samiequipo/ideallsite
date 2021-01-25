@@ -850,48 +850,6 @@ ul.social-buttons li a:hover {
   max-width: 80px;
 }
 
-.sci {
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  transform: translateY(-50%);
-  color: rgb(255, 254, 254);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 150px;
-  font-size: 24px;
-  transition: 0.5s;
-}
-
-.sci:hover {
-  cursor: pointer;
-}
-
-.sci .fa-facebook-f:hover {
-  color: #1877f2;
-}
-
-.sci .fa-instagram:hover {
-  color: transparent;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(
-    90deg,
-    rgba(165, 70, 152, 1) 0%,
-    rgba(213, 87, 101, 1) 35%,
-    rgba(248, 189, 85, 1) 100%
-  );
-}
-
-.sci .fa-twitter:hover {
-  color: #1da1f2;
-}
-
-.sci a {
-  color: #fff;
-}
-
 .circle {
   position: absolute;
   top: 0;
@@ -948,14 +906,6 @@ ul.social-buttons li a:hover {
 
   .circle {
     clip-path: circle(400px at center bottom);
-  }
-
-  .sci {
-    background: #017143;
-    right: 0;
-    width: 50px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
   }
 
   .thumb-container {
