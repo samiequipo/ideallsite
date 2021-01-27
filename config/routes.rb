@@ -1,22 +1,24 @@
 Rails.application.routes.draw do
-  get 'example/index'
   #Admin devise 2, root and getting user data
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root 'pages#index'
   resources :contacts, only: [:new, :create]
   
+  get 'example', to: "example#index"
+  get 'meo_p', to: "example#meo"
+  get 'nos_p', to: "example#nos"
   get 'cocacola', to: "pages#cocacola"
 
-  scope :servicos do
-    scope :pacotes do
-      get 'meo', to: "pages#meo"
-      get 'nos', to: "pages#nos"
-      get 'vodafone', to: "pages#vodafone"
-      get 'nowo', to: "pages#nowo"
-      get 'family', to: "pages#family"
-      get 'business', to: "pages#business"
-      get 'gamers', to: "pages#gamers"
+  scope :servicos do # /servicos/pacotes/pacotes_meo
+    scope :pacotes, module: 'pacotes' do
+      get 'pacotes_meo', to: "pacotes_meo#index"
+      get 'pacotes_nos', to: "pages#nos"
+      get 'pacotes_vodafone', to: "pages#vodafone"
+      get 'pacotes_nowo', to: "pages#nowo"
+      get 'pacotes_family', to: "pages#family"
+      get 'pacotes_business', to: "pages#business"
+      get 'pacotes_gamers', to: "pages#gamers"
     end
   end
 end
