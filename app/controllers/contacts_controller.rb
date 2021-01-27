@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   def new
-    @contact = Contact.new(operator: params[:operator]) if params[:operator]
+    @contact = Contact.new(operator: params[:operator]) if params[:operator] && ((params[:operator] == "VODAFONE") || (params[:operator] == "NOS")  || (params[:operator] == "MEO")  || (params[:operator] == "NOWO"))
   end
   
   def create
