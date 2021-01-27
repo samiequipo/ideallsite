@@ -10,17 +10,6 @@ Rails.application.routes.draw do
   get 'nos_p', to: "example#nos"
   get 'cocacola', to: "pages#cocacola"
 
-  scope :servicos do # /servicos/pacotes/pacotes_meo
-    scope :pacotes, module: 'pacotes' do
-      get 'pacotes_meo', to: "pacotes_meo#index"
-      get 'pacotes_nos', to: "pages#nos"
-      get 'pacotes_vodafone', to: "pages#vodafone"
-      get 'pacotes_nowo', to: "pages#nowo"
-      get 'pacotes_family', to: "pages#family"
-      get 'pacotes_business', to: "pages#business"
-      get 'pacotes_gamers', to: "pages#gamers"
-    end
-  end
 end
 
 # Give to man => 11
