@@ -32,7 +32,7 @@ Restaurant Menu
   grid-row-start: 4;
   grid-row-end: 4;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 100px;
 }
 
@@ -101,7 +101,7 @@ Restaurant Menu
 /*Desktop Stuff*/
 @media only screen and (min-width: 800px) {
   .container-menu {
-    grid-template-rows: 150px 100px 20px auto 20px;
+    grid-template-rows: 115px 100px 20px auto 20px;
   }
   .navi-menu {
     grid-row-start: 2;
@@ -110,7 +110,8 @@ Restaurant Menu
   .navi-menu-item1,
   .navi-menu-item2,
   .navi-menu-item3,
-  .navi-menu-item4 {
+  .navi-menu-item4,
+  .navi-menu-item5 {
     display: flex;
   }
   .nav-menu-button {
