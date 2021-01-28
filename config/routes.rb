@@ -6,10 +6,34 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
   
   get 'example', to: "example#index"
-  get 'meo_p', to: "example#meo"
+  get 'meo_p', to: "example#meo", hidden: true
   get 'nos_p', to: "example#nos"
   get 'cocacola', to: "pages#cocacola"
+  
+  namespace :pacotes do
+    #Pacotes Meo
+    get 'pacotes_meo', to: "pacotes_meo#index"
+    get 'telemovel', to: "pacotes_meo#telemovel", as: "telemovel_meo"
+    get 'tv_net_voz', to: "pacotes_meo#tv_net_voz", as: "tv_net_voz_meo"
+    get 'gaming', to: "pacotes_meo#gaming", as: "gaming_meo"
+    get 'outros', to: "pacotes_meo#outros", as: "outros_meo"
 
+    #Pacotes Nos
+    get 'pacotes_nos', to: "pacotes_nos#index"
+    get 'telemovel', to: "pacotes_nos#telemovel", as: "telemovel_nos"
+    get 'tv_net_voz', to: "pacotes_nos#tv_net_voz", as: "tv_net_voz_nos"
+    get 'gaming', to: "pacotes_nos#gaming", as: "gaming_nos"
+    get 'outros', to: "pacotes_nos#outros", as: "outros_nos"
+
+    #Pacotes Vodafone
+
+    #Pacotes Nowo
+    get 'pacotes_nowo', to: "pacotes_nowo#index"
+    get 'telemovel', to: "pacotes_nowo#telemovel", as: "telemovel_nowo"
+    get 'tv_net_voz', to: "pacotes_nowo#tv_net_voz", as: "tv_net_voz_nowo"
+    get 'gaming', to: "pacotes_nowo#gaming", as: "gaming_nowo"
+    get 'outros', to: "pacotes_nowo#outros", as: "outros_nowo"
+  end
 end
 
 # Give to man => 11
