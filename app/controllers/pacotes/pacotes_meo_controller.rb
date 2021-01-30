@@ -12,7 +12,6 @@ class Pacotes::PacotesMeoController < ApplicationController
   def telemovel
   end
   
-  
   def gaming
   end
   
