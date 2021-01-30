@@ -220,6 +220,12 @@
   }
 }
 
+@media screen and (min-width: 1101px) {
+  .pricing-card {
+    flex: 80%;
+  }
+}
+
 .bg-curve-plano {
   background: #202020;
 }

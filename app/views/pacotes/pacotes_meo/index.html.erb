@@ -1,47 +1,208 @@
 <main>
-  <section class="wallpaper-meo{
-    }
-    ">
-    <div class="container-menu">
-      <div class="navi-menu">
-        <div class="navi-menu-item1">
-          <button class="nav-menu-button" id="startersbutton">
-            <div class="navi-menu-icon"><i class="fas fa-seedling"></i></div>
-            <%= link_to 'Starters', pacotes_telemovel_meo_path, remote: true, class: "navi-menu-text"%>
-          </button>
-        </div>
+  <section class="menu-pricing p-0">
 
-        <div class="navi-menu-item2">
-          <button class="nav-menu-button" id="mainsbutton">
-            <div class="navi-menu-icon"><i class="fas fa-pizza-slice"></i></div>
-            <%= link_to 'Mains', pacotes_tv_net_voz_meo_path, remote: true, class: "navi-menu-text"%>
-          </button>
-        </div>
+    <nav class="nav--top">
+      <button class="nav--top__toggle button--transparent">
+        <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"><g transform="translate(0, 0)"> <line data-color="color-2" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="1" y1="12" x2="14" y2="12" stroke-linejoin="miter"></line> <line fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="1" y1="5" x2="23" y2="5" stroke-linejoin="miter"></line> <line fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="1" y1="19" x2="23" y2="19" stroke-linejoin="miter"></line> </g></svg>
+      </button>
 
-        <div class="navi-menu-item3">
-          <button class="nav-menu-button" id="dessertsbutton">
-            <div class="navi-menu-icon"><i class="fas fa-ice-cream"></i></div>
-            <div class="navi-menu-text">Desserts</div>
-          </button>
-        </div>
-
-        <div class="navi-menu-item4">
-          <button class="nav-menu-button" id="drinksbutton">
-            <div class="navi-menu-icon"><i class="fas fa-wine-glass-alt"></i></div>
-            <div class="navi-menu-text">Drinks</div>
-          </button>
-        </div>
-
-        <div class="navi-menu-item5">
-          <button class="nav-menu-button" id="drinksbutton">
-            <div class="navi-menu-icon"><i class="fas fa-wine-glass-alt"></i></div>
-            <div class="navi-menu-text">Drinks</div>
-          </button>
+      <div class="nav--top__logo">
+        <div class="logo_meo_preto">
+          <%= image_tag 'logo_meo_preto.png', class: "logo_meo_preto" %>
         </div>
       </div>
+
+      <a class="nav--top__cart button--transparent" href="#">
+        <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"><g transform="translate(0, 0)"> <circle data-color="color-2" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="7" cy="21" r="2" stroke-linejoin="miter"></circle> <circle data-color="color-2" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="19" cy="21" r="2" stroke-linejoin="miter"></circle> <polyline data-cap="butt" fill="none" stroke="#444444" stroke-width="2" stroke-miterlimit="10" points="4.667,6 22,6 20,16 6,16 4,1 1,1 " stroke-linejoin="miter" stroke-linecap="butt"></polyline> </g></svg>
+      </a>
+    </nav>
+
+    <section class="hero--main">
+      <div class="fibra-meo ml-5">
+        <h2 class="heading-primary--main fibra-meo-title">Samsung Galaxy S21</h2>
+        <p class="heading-primary--sub mb-5 fibra-meo-subtitle">com exclusivo de 12 meses de 5G à máxima velocidade</p>
+      </div>
+    </section>
+
+    <nav id="navBar">
+      <ul id="menu" class="">
+        <li>
+          <span><%= link_to 'Home', "#", remote: true, class: ""%></span>
+        </li>
+
+        <li>
+          <span><%= link_to 'M4', pacotes_tv_net_voz_meo_path, remote: true, class: ""%></span>
+        </li>
+
+        <li>
+          <span><%= link_to 'M3', pacotes_telemovel_meo_path, remote: true, class: ""%></span>
+        </li>
+
+        <li>
+          <span><%= link_to 'Gaming', pacotes_gaming_meo_path, remote: true, class: ""%></span>
+        </li>
+
+        <li>
+          <span><%= link_to 'Other', pacotes_outros_meo_path, remote: true, class: ""%></span>
+        </li>
+      </ul>
+
+      <div id="menuToggle" class="handle">Menu</div>
+    </nav>
+
+    <div id="pushBack"></div>
+
+    <div id="result-menu" class="bg-fibra-meo">
+      <%= render  "pacotes/pacotes_meo/tv_net_voz" %>
     </div>
-
-    <div id="result-menu"></div>
-
   </section>
 </main>
+
+<style>
+  #navBar {
+    position: static;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  }
+  
+  #pushBack {
+    margin: 0;
+    padding: 0;
+    height: 0em;
+  }
+  
+  nav ul {
+    overflow: hidden;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline-block;
+    padding: 0 1%;
+  }
+  
+  nav a,
+  nav a:active {
+    display: block;
+    text-decoration: none;
+    width: 9em;
+    padding: 1em 0;
+    color: inherit;
+  }
+  
+  nav a:hover {
+    background-color: #399077;
+  }
+  
+  nav .handle {
+    position: relative;
+    display: none;
+    width: 100%;
+    background-color: #005c48;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 1em 2em;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  section {
+    postion: relative;
+    margin: 0 auto;
+    max-widht: 60em;
+    padding: 2em;
+  }
+  
+  p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  
+  @media only screen and (max-width: 835px) {
+  nav a,
+  nav a:active {
+    display: block;
+    text-decoration: none;
+    width: 6em;
+    padding: 1em 0;
+    color: inherit;
+  }
+  }
+  
+  @media only screen and (max-width: 580px) {
+    nav .handle {
+      display: block;
+    }
+    nav li {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0;
+    }
+    nav a {
+      width: 100%;
+      text-align: left;
+      padding: 1em 2em;
+      box-sizing: border-box;
+    }
+    nav ul {
+      position: relative;
+      max-height: 0em;
+    }
+    nav ul.showing {
+      max-height: 20em;
+    }
+  }
+</style>
+
+<script>
+  window.onload = function() {
+    var menuTog = document.getElementById('menuToggle');
+    var navBar = document.getElementById('navBar');
+  
+    if (menuTog !== null) {
+      menuTog.addEventListener('click', togNav);
+    }
+  
+    if (navBar !== null) {
+      window.addEventListener('scroll', fixNav);
+    }
+  };
+  
+  function fixNav() {
+    var head = document.getElementById('head');
+    var pushBack = document.getElementById('pushBack');
+    var headBot;
+  
+    if (head !== null) {
+      headBot = head.getBoundingClientRect().bottom;
+    }
+  
+    if (pushBack !== null) {
+      if (headBot > 0) {
+        navBar.style.position = 'static';
+        pushBack.style.height = '0em';
+      } else {
+        navBar.style.position = 'fixed';
+        pushBack.style.height = '3em';
+      }
+    }
+  }
+  
+  function togNav() {
+    var navMenu = document.getElementById('menu');
+  
+    if (navMenu !== null) {
+      if (navMenu.className === "showing") {
+        navMenu.className = "";
+      } else {
+        navMenu.className = "showing";
+      }
+    }
+  }
+</script>
