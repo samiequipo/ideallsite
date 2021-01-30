@@ -43,16 +43,17 @@
 
 .pricing-card {
   flex: 1;
-  max-width: 20rem;
+  max-width: 24.6rem;
   background-color: #fff;
   margin: 1.25rem 0.625rem;
   text-align: center;
   cursor: pointer;
   overflow: hidden;
   color: #2d2d2d;
-  border-radius: 1.25rem;
+  border-radius: 0.25rem;
   transition: 0.3s linear;
   box-shadow: 0 5px 12px#0fbcf9;
+  height: 20%;
 }
 
 .pricing-card-nos {
@@ -76,6 +77,10 @@
   text-transform: uppercase;
   font-weight: 600;
   transition: 0.4s linear;
+}
+
+.pricing-card-header-meo-pacotes {
+  font-size: 1.25rem;
 }
 
 .pricing-card-header-nos {
@@ -157,8 +162,8 @@
 
 .pricing-card ul {
   text-align: justify;
-  padding-left: 14%;
-  padding-right: 14%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .pricing-card li {
