@@ -1,20 +1,7 @@
 <main>
   <section class="menu-pricing p-0">
-    <nav class="nav--top">
-      <button class="nav--top__toggle button--transparent">
-        <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"><g transform="translate(0, 0)"> <line data-color="color-2" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="1" y1="12" x2="14" y2="12" stroke-linejoin="miter"></line> <line fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="1" y1="5" x2="23" y2="5" stroke-linejoin="miter"></line> <line fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="1" y1="19" x2="23" y2="19" stroke-linejoin="miter"></line> </g></svg>
-      </button>
 
-      <div class="nav--top__logo">
-        <div class="logo_meo_preto">
-          <%= image_tag 'logo_meo_preto.png', class: "logo_meo_preto" %>
-        </div>
-      </div>
-
-      <a class="nav--top__cart button--transparent" href="#">
-        <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"><g transform="translate(0, 0)"> <circle data-color="color-2" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="7" cy="21" r="2" stroke-linejoin="miter"></circle> <circle data-color="color-2" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="19" cy="21" r="2" stroke-linejoin="miter"></circle> <polyline data-cap="butt" fill="none" stroke="#444444" stroke-width="2" stroke-miterlimit="10" points="4.667,6 22,6 20,16 6,16 4,1 1,1 " stroke-linejoin="miter" stroke-linecap="butt"></polyline> </g></svg>
-      </a>
-    </nav>
+    <%= render 'shared/navpromo' %>
 
     <section class="hero--main">
       <div class="fibra-meo ml-5">
@@ -23,33 +10,9 @@
       </div>
     </section>
 
-    <nav id="navBar">
-      <ul id="menu" class="">
-        <li>
-          <span><%= link_to 'Home', "#", remote: true, class: ""%></span>
-        </li>
-
-        <li>
-          <span><%= link_to 'M4', pacotes_tv_net_voz_meo_path(option: "tv_net_voz"),  remote: true, class: ""%></span>
-        </li>
-
-        <li>
-          <span><%= link_to 'M3', pacotes_telemovel_meo_path(option: "telemovel"), remote: true, class: ""%></span>
-        </li>
-
-        <li>
-          <span><%= link_to 'Gaming', pacotes_gaming_meo_path(option: "gaming"), remote: true, class: ""%></span>
-        </li>
-
-        <li>
-          <span><%= link_to 'Other', pacotes_outros_meo_path(option: "outros"), remote: true, class: ""%></span>
-        </li>
-      </ul>
-
-      <div id="menuToggle" class="handle">Menu</div>
-    </nav>
-
-    <div id="pushBack"></div>
+    <div class="title my-0" style="background-color:#e4eefa; ">
+      <h2 class="heading-primary--main">Os melhores pacotes para sua casa</h2>
+    </div>
 
     <div id="result-menu" class="bg-fibra-meo">
       <%= render  "pacotes/pacotes_meo/tv_net_voz" %>
