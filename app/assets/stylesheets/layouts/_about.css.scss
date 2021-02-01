@@ -1,10 +1,19 @@
 .bg-about {
-  background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.781) 32%,
-      rgba(13, 17, 17, 0.726) 65%
-    ),
-    asset-url("geometric.jpg");
+  background-image: linear-gradient(
+    to top,
+    #ffffff,
+    #d4d4d5,
+    #aaabac,
+    #828384,
+    #5c5e5f,
+    #484c4d,
+    #353a3b,
+    #232929,
+    #1c2423,
+    #141e1e,
+    #0c1919,
+    #001413
+  );
 }
 
 #about {

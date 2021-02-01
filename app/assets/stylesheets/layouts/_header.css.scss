@@ -104,6 +104,19 @@ main .site-header .wave {
   left: 0;
 }
 
+.wave-promo {
+  background: #001413;
+}
+
+.wave-vision {
+  background: #212529;
+}
+
+#page-top > svg.wave-promo > path:nth-child(1),
+#page-top > svg.wave-promo > path:nth-child(2) {
+  fill: #e43220;
+}
+
 /* ===================Site Feature=================== */
 
 main .site-feature {
