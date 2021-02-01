@@ -58,6 +58,15 @@ li {
   z-index: 1;
 }
 
+.title-meo-pacotes h2::after {
+  background-color: #256cae;
+}
+
+.meo-interro {
+  color: #256cae;
+  font-weight: bold;
+}
+
 .left img {
   height: 25rem;
   max-width: 21.875rem;
