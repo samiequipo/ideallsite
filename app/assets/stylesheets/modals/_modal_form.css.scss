@@ -1,11 +1,11 @@
 s.modal-login {
   color: #636363;
-  width: 350px;
-  margin: 80px auto 0;
+  width: 21.875rem;
+  margin: 5rem auto 0;
 }
 .modal-login .modal-content {
-  padding: 10px;
-  border-radius: 5px;
+  padding: 0.625rem;
+  border-radius: 0.313rem;
   border: none;
 }
 .modal-login .modal-header {
@@ -16,20 +16,20 @@ s.modal-login {
 .modal-login h4 {
   text-align: center;
   font-size: 26px;
-  margin: 30px 0 -15px;
+  margin: 1.875rem 0 -0.938rem;
 }
 .modal-login .form-control:focus {
   border-color: #70c5c0;
 }
 .modal-login .form-control,
 .modal-login .btn {
-  min-height: 40px;
-  border-radius: 3px;
+  min-height: 2.5rem;
+  border-radius: 0.188rem;
 }
 .modal-login .close {
   position: absolute;
-  top: -5px;
-  right: -5px;
+  top: -0.313rem;
+  right: -0.313rem;
 }
 .modal-login .modal-footer {
   background: #ecf0f1;
@@ -37,8 +37,8 @@ s.modal-login {
   text-align: center;
   justify-content: center;
   margin: 0 -20px -20px;
-  border-radius: 5px;
-  font-size: 13px;
+  border-radius: 0.313rem;
+  font-size: 0.813rem;
 }
 .modal-login .modal-footer a {
   color: #999;
@@ -54,15 +54,15 @@ s.modal-login {
   border-radius: 50%;
   z-index: 9;
   background: #ffffff;
-  padding: 15px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 0.938rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 .modal-login .avatar img {
   width: 100%;
 }
 .modal-login .btn {
   color: #fff;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   background: #60c7c1;
   text-decoration: none;
   transition: all 0.4s;
@@ -76,5 +76,5 @@ s.modal-login {
 }
 .trigger-btn {
   display: inline-block;
-  margin: 100px auto;
+  margin: 6.25rem auto;
 }

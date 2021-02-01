@@ -100,13 +100,13 @@ a.btn {
 }
 
 a.btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-0.188rem);
   background-color: transparent;
   color: inherit;
 }
 
 a.btn:active {
-  transform: translateY(0px);
+  transform: translateY(0);
 }
 
 @media only screen and (max-width: 996px) {
@@ -203,15 +203,15 @@ a.btn:active {
 
 .vanilla {
   position: relative;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
+  box-shadow: 1.25rem 1.25rem 3.125rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.938rem;
   background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 0.063rem solid rgba(255, 255, 255, 0.5);
+  border-left: 0.063rem solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
 }
 
