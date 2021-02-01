@@ -1,34 +1,29 @@
 <ul class="navbar-nav ml-auto">
-  <div class="hori-selector">
-    <div class="left"></div>
-    <div class="right"></div>
-  </div>
-
-  <li class="nav-item">
+  <li class="nav-item nav-menu">
     <%= link_to pacotes_tv_net_voz_meo_path(option: "tv_net_voz"), {remote: true, class: "nav-link"}  do %>
       <i class="fas fa-home"></i> Tv_net_voz
     <% end %>
   </li>
 
-  <li class="nav-item">
+  <li class="nav-item nav-menu">
     <%= link_to pacotes_telemovel_meo_path(option: "telemovel"), {remote: true, class: "nav-link js-scroll-trigger"}  do %>
       <i class="fas fa-home"></i> Telemovel
     <% end %>
   </li>
 
-  <li class="nav-item">
+  <li class="nav-item nav-menu">
     <%= link_to pacotes_gaming_meo_path(option: "gaming"), {remote: true, class: "nav-link"}  do %>
       <i class="fas fa-home"></i> Gaming
     <% end %>
   </li>
 
-  <li class="nav-item">
+  <li class="nav-item nav-menu">
     <%= link_to pacotes_outros_meo_path(option: "outros"), {remote: true, class: "nav-link"}  do %>
       <i class="fas fa-home"></i> Outros
     <% end %>
   </li>
 
-  <li class="nav-item">
+  <li class="nav-item nav-menu">
     <%= link_to root_path, {class: "nav-link"}  do %>
       <i class="fas fa-home"></i> P&aacute;gina principal
     <% end %>

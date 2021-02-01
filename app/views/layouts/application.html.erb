@@ -31,7 +31,7 @@
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
   </head>
 
-  <body id="page-top">
+  <body id="page-top" class="pb-0">
     <%= render 'layouts/messages' %>
     <%= render 'layouts/navbar'%>
     <%= yield %>
@@ -89,6 +89,17 @@
 
     <%# Whatsapp %>
     <%# <script src="startbootstrap-agency-gh-railspages/js/script_whatsapp.js"></script> %>
+
+    <%# Navbar pacotes %>
+    <script>
+      $(window).scroll(function () {
+      if ($(window).scrollTop() > 0) {
+      $('.navbar').css('background','#1f69a8');
+      } else {
+      $('.navbar').css('background','#000');
+      }
+      });
+    </script>
 
     <%= javascript_pack_tag 'glider' %>
     <%= javascript_pack_tag 'service' %>
