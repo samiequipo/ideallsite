@@ -83,6 +83,10 @@
 .pricing-card-header-nowo-18,
 .pricing-card-header-nowo-15,
 .pricing-card-header-nowo-12,
+.pricing-card-header-vodafone-30,
+.pricing-card-header-vodafone-31,
+.pricing-card-header-vodafone-32,
+.pricing-card-header-vodafone-17,
 .pricing-card-header-meo-99 {
   background-color: #0fbcf9;
   display: inline-block;
@@ -181,6 +185,22 @@
 
 .pricing-card:hover .pricing-card-header-vodafone {
   box-shadow: 0 0 0 22em #e73321;
+}
+
+.pricing-card:hover .pricing-card-header-vodafone-30 {
+  box-shadow: 0 0 0 30em #e73321;
+}
+
+.pricing-card:hover .pricing-card-header-vodafone-31 {
+  box-shadow: 0 0 0 31em #e73321;
+}
+
+.pricing-card:hover .pricing-card-header-vodafone-32 {
+  box-shadow: 0 0 0 32em #e73321;
+}
+
+.pricing-card:hover .pricing-card-header-vodafone-17 {
+  box-shadow: 0 0 0 17em #e73321;
 }
 
 .price {

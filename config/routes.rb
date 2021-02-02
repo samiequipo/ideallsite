@@ -33,8 +33,9 @@ Rails.application.routes.draw do
       #Pacotes VODAFONE
       scope :coberturas, module: 'pacotes' do
         get 'pacotes_vodafone', to: "pacotes_vodafone#index"
+        get 'telemovel', to: "pacotes_vodafone#telemovel", as: "telemovel_vodafone"
         get 'tv_net_voz', to: "pacotes_vodafone#tv_net_voz", as: "tv_net_voz_vodafone"
-        get 'telemovel', to: "pacotes_vodefone#telemovel", as: "telemovel_vodafone"
+        get 'net', to: "pacotes_vodafone#net", as: "net_vodafone"
         get 'outros', to: "pacotes_vodafone#outros", as: "outros_vodafone"
       end
       
