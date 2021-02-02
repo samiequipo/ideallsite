@@ -4,15 +4,12 @@ class Pacotes::PacotesNowoController < ApplicationController
   def index  
   end
   
-  #M4
-  def tv_net_voz
-  end
-
-  #M3
+  #NW4
   def telemovel
   end
-  
-  def gaming
+
+  #NW3
+  def tv_net_voz
   end
   
   def outros

@@ -5,11 +5,11 @@ class Pacotes::PacotesMeoController < ApplicationController
   end
   
   #M4
-  def tv_net_voz
-  end
-
-  #M3
   def telemovel
+  end
+  
+  #M3
+  def tv_net_voz
   end
   
   def gaming

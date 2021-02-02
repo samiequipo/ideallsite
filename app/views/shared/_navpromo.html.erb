@@ -6,11 +6,23 @@
     <i class="fas fa-bars text-white"></i>
   </button>
 
+  <%# PACOTES MEO %>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <%= render "shared/pacotes_meo_ul" if current_page?(pacotes_meo_path) %>
+    <%= render "shared/ul_pacotes/pacotes_meo_ul" if current_page?(pacotes_meo_path) %>
   </div>
 
+  <%# PACOTES NOS %>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <%= render "shared/pacotes_nos_ul" if current_page?(pacotes_pacotes_nos_path) %>
+    <%= render "shared/ul_pacotes/pacotes_nos_ul" if current_page?(pacotes_nos_path) %>
+  </div>
+
+  <%# PACOTES NOWO %>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <%= render "shared/ul_pacotes/pacotes_nos_ul" if current_page?(pacotes_vodafone_path) %>
+  </div>
+
+  <%# PACOTES VODAFONE %>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <%= render "shared/ul_pacotes/pacotes_nos_ul" if current_page?(pacotes_nowo_path) %>
   </div>
 </nav>
