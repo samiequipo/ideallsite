@@ -1,7 +1,7 @@
 class Pacotes::PacotesMeoController < ApplicationController
   before_action :render_pacotes, except: %i[index]
   
-  def index  
+  def index
   end
   
   #M4

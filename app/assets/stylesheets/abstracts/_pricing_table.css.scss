@@ -70,6 +70,11 @@
 
 .pricing-card-header,
 .pricing-card-header-meo-20,
+.pricing-card-header-nos-24,
+.pricing-card-header-nos-20,
+.pricing-card-header-nos-18,
+.pricing-card-header-nos-13,
+.pricing-card-header-nos-15,
 .pricing-card-header-meo-51,
 .pricing-card-header-meo-69,
 .pricing-card-header-meo-18,
@@ -134,6 +139,27 @@
 .pricing-card:hover .pricing-card-header-nos {
   box-shadow: 0 0 0 22em #3600fa;
 }
+
+.pricing-card:hover .pricing-card-header-nos-24 {
+  box-shadow: 0 0 0 24em #3600fa;
+}
+
+.pricing-card:hover .pricing-card-header-nos-20 {
+  box-shadow: 0 0 0 20em #3600fa;
+}
+
+.pricing-card:hover .pricing-card-header-nos-18 {
+  box-shadow: 0 0 0 18em #3600fa;
+}
+
+.pricing-card:hover .pricing-card-header-nos-13 {
+  box-shadow: 0 0 0 13em #3600fa;
+}
+
+.pricing-card:hover .pricing-card-header-nos-15 {
+  box-shadow: 0 0 0 15em #3600fa;
+}
+
 .pricing-card:hover .pricing-card-header-nowo {
   box-shadow: 0 0 0 22em #fb4d29;
 }

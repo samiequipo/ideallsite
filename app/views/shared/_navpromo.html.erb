@@ -1,5 +1,5 @@
 <nav class="navbar navbar-fixed navbar-expand-lg navbar-mainbg navbar-fixed-top">
-  <%# /put </a> %>
+  <%# LOGOOOO /put </a> %>
   <%# <a class="navbar-brand navbar-logo" href="#"><%= image_tag 'logo_meo_preto.png' %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,6 +7,10 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <%= render "shared/pacotes_meo_ul" if current_page?(pacotes_pacotes_meo_path) %>
+    <%= render "shared/pacotes_meo_ul" if current_page?(pacotes_meo_path) %>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <%= render "shared/pacotes_nos_ul" if current_page?(pacotes_pacotes_nos_path) %>
   </div>
 </nav>
