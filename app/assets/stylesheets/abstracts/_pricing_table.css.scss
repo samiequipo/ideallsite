@@ -80,6 +80,9 @@
 .pricing-card-header-meo-18,
 .pricing-card-header-meo-15,
 .pricing-card-header-meo-13,
+.pricing-card-header-nowo-18,
+.pricing-card-header-nowo-15,
+.pricing-card-header-nowo-12,
 .pricing-card-header-meo-99 {
   background-color: #0fbcf9;
   display: inline-block;
@@ -163,6 +166,19 @@
 .pricing-card:hover .pricing-card-header-nowo {
   box-shadow: 0 0 0 22em #fb4d29;
 }
+
+.pricing-card:hover .pricing-card-header-nowo-18 {
+  box-shadow: 0 0 0 18em #fb4d29;
+}
+
+.pricing-card:hover .pricing-card-header-nowo-15 {
+  box-shadow: 0 0 0 15em #fb4d29;
+}
+
+.pricing-card:hover .pricing-card-header-nowo-12 {
+  box-shadow: 0 0.8em 0 12em #fb4d29;
+}
+
 .pricing-card:hover .pricing-card-header-vodafone {
   box-shadow: 0 0 0 22em #e73321;
 }
