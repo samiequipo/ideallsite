@@ -408,27 +408,6 @@ main .site-quote button {
     transform: translateX(0);
   }
 }
-// Glide Header
-
-.glide__slide img {
-  width: 100%;
-}
-
-.glide__slide {
-  filter: blur(0.375rem);
-  opacity: 0.7;
-  transition: 0.3s linear;
-}
-
-.glide__slide--active {
-  opacity: 1;
-  filter: none;
-  transform: scale(1.1);
-}
-
-.glide__slides {
-  overflow: visible;
-}
 
 /* --- --- CAROUSEL --- --- */
 .carousel {
@@ -493,6 +472,10 @@ main .site-quote button {
   opacity: 1;
 }
 
+.rounded-header {
+  border-radius: 5%;
+}
+
 @media screen and (max-width: 50rem) {
   body {
     padding: 1.5rem 0;
@@ -505,8 +488,4 @@ main .site-quote button {
   .contenido-principal > * {
     width: 100%;
   }
-}
-
-.rounded-header {
-  border-radius: 5%;
 }
