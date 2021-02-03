@@ -1,0 +1,36 @@
+.color-nav {
+  color: #fefefe;
+}
+.hero--main {
+  display: flex;
+  align-items: center;
+  min-height: 32.25rem;
+  text-align: center;
+  color: white;
+
+  background-image: asset-url("fibra-meo.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.fibra-meo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.fibra-meo-title {
+  // width: 40%;
+}
+
+.fibra-meo-subtitle {
+  color: #fff;
+  font-weight: 900;
+  // letter-spacing: 1rem;
+}
+
+.bg-fibra-meo {
+  background: linear-gradient(0deg, rgb(31, 34, 37) 88%, rgb(228, 238, 250));
+}
