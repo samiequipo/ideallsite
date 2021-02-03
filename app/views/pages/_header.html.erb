@@ -6,29 +6,29 @@
       <p class="heading-primary--sub mb-5">Oferta de 40€ acumulável com as ofertas por internet</p>
       <%# <div class="textBox--h3 my-3" data-aos="fade-down" data-aos-duration="5000"><span class="typing"></span></div> %>
 
-      <div class="carousel mb-0">
+      <div class="carousel mb-0" data-aos="fade-up" data-aos-duration="2000" >
         <div class="carousel_contenedor">
           <div class="carousel__lista">
             <div class="carousel__elemento">
-              <div class="team-member" data-aos="fade-down" data-aos-duration="2000">
+              <div class="">
                 <%= image_tag 'header-1.jpeg', class: "rounded-header mx-auto" %>
               </div>
             </div>
 
-            <div class="carousel__elemento">
-              <div class="team-member" data-aos="fade-down" data-aos-duration="2000">
+            <div class="carousel__elemento carousel-trans">
+              <div class="">
                 <%= image_tag 'header-2.jpeg', class: "rounded-header mx-auto" %>
               </div>
             </div>
 
-            <div class="carousel__elemento">
-              <div class="team-member" data-aos="fade-down" data-aos-duration="2000">
+            <div class="carousel__elemento carousel-trans">
+              <div class="">
                 <%= image_tag 'header-3.jpeg', class: "rounded-header mx-auto" %>
               </div>
             </div>
 
-            <div class="carousel__elemento">
-              <div class="team-member" data-aos="fade-down" data-aos-duration="2000">
+            <div class="carousel__elemento carousel-trans">
+              <div class="">
                 <%= image_tag 'header-4.jpeg', class: "rounded-header mx-auto" %>
               </div>
             </div>
@@ -52,3 +52,15 @@
     </svg>
   </section>
 </main>
+
+<style>
+  .carousel-trans{
+    -webkit-animation: fadein 5s linear 1 normal forwards;
+  }
+  
+  @-webkit-keyframes fadein{
+    0% { opacity: 0;}
+    99% { opacity: 0;}
+    100% { opacity: 1;}
+  }
+</style>
