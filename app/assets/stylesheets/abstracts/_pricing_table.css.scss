@@ -70,8 +70,10 @@
 
 .pricing-card-header,
 .pricing-card-header-meo-20,
+.pricing-card-header-meo-20-8,
 .pricing-card-header-nos-24,
 .pricing-card-header-nos-20,
+.pricing-card-header-nos-20-8,
 .pricing-card-header-nos-18,
 .pricing-card-header-nos-13,
 .pricing-card-header-nos-15,
@@ -81,9 +83,11 @@
 .pricing-card-header-meo-15,
 .pricing-card-header-meo-13,
 .pricing-card-header-nowo-18,
+.pricing-card-header-nowo-20-8,
 .pricing-card-header-nowo-15,
 .pricing-card-header-nowo-12,
 .pricing-card-header-vodafone-30,
+.pricing-card-header-vodafone-20-8,
 .pricing-card-header-vodafone-31,
 .pricing-card-header-vodafone-32,
 .pricing-card-header-vodafone-17,
@@ -143,6 +147,10 @@
   box-shadow: 0 0 0 13em #0fbaf9;
 }
 
+.pricing-card:hover .pricing-card-header-meo-20-8 {
+  box-shadow: 0 0 0 20.8em #0fbaf9;
+}
+
 .pricing-card:hover .pricing-card-header-nos {
   box-shadow: 0 0 0 22em #3600fa;
 }
@@ -167,6 +175,10 @@
   box-shadow: 0 0 0 15em #3600fa;
 }
 
+.pricing-card:hover .pricing-card-header-nos-20-8 {
+  box-shadow: 0 0 0 20.8em #3600fa;
+}
+
 .pricing-card:hover .pricing-card-header-nowo {
   box-shadow: 0 0 0 22em #fb4d29;
 }
@@ -181,6 +193,10 @@
 
 .pricing-card:hover .pricing-card-header-nowo-12 {
   box-shadow: 0 0.8em 0 12em #fb4d29;
+}
+
+.pricing-card:hover .pricing-card-header-nowo-20-8 {
+  box-shadow: 0 0 0 20.8em #fb4d29;
 }
 
 .pricing-card:hover .pricing-card-header-vodafone {
@@ -201,6 +217,10 @@
 
 .pricing-card:hover .pricing-card-header-vodafone-17 {
   box-shadow: 0 0 0 17em #e73321;
+}
+
+.pricing-card:hover .pricing-card-header-vodafone-20-8 {
+  box-shadow: 0 0 0 20.8em #e73321;
 }
 
 .price {
