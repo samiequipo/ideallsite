@@ -557,13 +557,13 @@ input {
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   -ms-transition: 0.3s ease;
-  padding-top: 10px;
+  padding-top: 0.625rem;
   -webkit-appearance: none;
 }
 input:focus + .form-label,
 input:valid + .form-label {
   top: 0px;
-  font-size: 11px;
+  font-size: 0.6875rem;
   color: #4b352d;
 }
 
@@ -576,18 +576,18 @@ input:valid + .form-label {
   -ms-transition: 0.25s ease;
   color: #bebebe;
   left: 0;
-  top: 23px;
+  top: 1.4375rem;
 }
 
 .form-group {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   position: relative;
 }
 
 .form-input {
-  padding-top: 21px;
+  padding-top: 1.3125rem;
 }
 
 .active input + label {
-  margin-right: 59px;
+  margin-right: 3.6875rem;
 }
