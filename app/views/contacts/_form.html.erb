@@ -1,11 +1,13 @@
 <%= form_with(model: @contact, url: contacts_path) do |f| %>
   <div class="form-group form-input">
-    <%= f.text_field :first_name, required: true %>
+    <%= f.text_field :first_name, required: true,  oninvalid: "this.setCustomValidity('Por favor, insira seu nome')",
+                      oninput: "this.setCustomValidity('')" %>
     <%= f.label :first_name, "Qual é seu nome?", class:"form-label" %>
   </div>
 
   <div class="form-group form-input">
-    <%= f.email_field :email, required: true %>
+    <%= f.email_field :email, required: true, oninvalid: "this.setCustomValidity('Seu endereço de e-mail deve existir e incluir '@' nele.')", 
+                       oninput: "this.setCustomValidity('')" %>
     <%= f.label :email, "Qual é seu email?", class:"form-label" %>
   </div>
 
@@ -13,11 +15,15 @@
     <%= f.text_field :operator, value: @contact.operator, class: "form-control" %>
   </div>
 
-  <div class="form-group form-input">
-    <%= f.number_field :phone, required: true %>
-    <%= f.label :phone, "Qual é seu numero de telefone?", class:"form-label" %>
-    <small id="emailHelp" class="form-text text-muted">
-      <em class="mt-0 ml-1">"Nunca compartilharemos seu informação pessoal com qualquer outra pessoa!."</em>
+  <div class="input-group mb-3 form-input">
+    <div class="input-group-prepend">
+      <span class="input-group-text p-1 code_pt letter_pt" id="basic-addon1">+351</span>
+    </div>
+    <%= f.telephone_field :phone, :pattern => '\d{9}', maxlength: "9", required: true, class: "form-control placeholder_phone", placeholder: "Qual é seu numero de telefone?",
+                           oninvalid: "this.setCustomValidity('Por favor, insira seu número correto')", oninput: "this.setCustomValidity('')"%>
+
+    <small id="emailHelp" class="form-text text-muted text-center">
+      <em class="mt-0 ml-1 text-align-center">"Nunca compartilharemos seu informação pessoal com qualquer outra pessoa!."</em>
     </small>
   </div>
 

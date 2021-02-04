@@ -191,31 +191,6 @@
   opacity: 1;
 }
 
-.show .event-type {
-  border-color: #e0e6ed;
-  background-color: #e0e6ed;
-}
-
-.show .event-type.success {
-  border-color: #00cc99;
-  background-color: #00cc99;
-}
-
-.show .event-type.error {
-  border-color: #f2545b;
-  background-color: #f2545b;
-}
-
-.show .event-type.warning {
-  border-color: #f7bc06;
-  background-color: #f7bc06;
-}
-
-.show .event-type.info {
-  border-color: #19b5fe;
-  background-color: #19b5fe;
-}
-
 /*==================================*/
 /* Additional Utilities */
 /*==================================*/
@@ -270,7 +245,7 @@
 }
 
 .m-h-30 {
-  min-height: 30vh;
+  min-height: 33vh;
 }
 
 .m-h-40 {
@@ -590,4 +565,38 @@ input:valid + .form-label {
 
 .active input + label {
   margin-right: 3.6875rem;
+}
+
+.tele_icon_for {
+  content: "+351";
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  background-color: red;
+}
+
+#contact_phone {
+  background: #f8f9fa;
+  border-top: 0;
+  border-right: 0;
+}
+
+.placeholder_phone::placeholder {
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 0.9em;
+}
+
+.code_pt {
+  background: linear-gradient(
+    90deg,
+    rgba(34, 100, 33, 0.65) 21%,
+    rgba(159, 72, 34, 0.65) 35%,
+    rgba(243, 54, 35, 0.65) 46%
+  );
+}
+
+.letter_pt {
+  color: #fff;
+  font-weight: bold;
 }
