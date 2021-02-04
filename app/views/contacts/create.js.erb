@@ -1,3 +1,9 @@
-$('#demoModal').modal('toggle');
+<% if @contact.operator != "MIWO" %>
+  $('#demoModal').modal('toggle');
+<% else %>
+  $("#firstName").val(""),
+  $("#email").val(""),
+  $("#phoneNumber").val("")
+<% end %>
 
 document.querySelector("#results").innerHTML = '<%= j render "contacts/contact_result.html" %>'

@@ -8,7 +8,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     
     if (@contact.operator == "VODAFONE" || @contact.operator == "MEO" || 
-        @contact.operator == "NOS" || @contact.operator == "NOWO")
+        @contact.operator == "NOS" || @contact.operator == "NOWO" || @contact.operator == "MIWO")
       if @contact.save
         respond_to do |format|
           flash.now[:alert] = "Yeah"

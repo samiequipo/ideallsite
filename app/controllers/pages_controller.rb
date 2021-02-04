@@ -1,32 +1,5 @@
 class PagesController < ApplicationController
   def index
-  end
-
-  def meo
-  
-  end
-
-  def nos
-  
-  end
-
-  def vodafone
-  
-  end
-
-  def nowo
-  
-  end
-  
-  def family
-  
-  end
-  
-  def business
-  
-  end
-  
-  def gamers
-  
+    @contact = Contact.new(operator: "MIWO")
   end
 end
