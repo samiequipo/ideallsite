@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'privacy/politica_privacidade'
   #Admin devise 2, root and getting user data
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -46,6 +47,10 @@ Rails.application.routes.draw do
         get 'telemovel', to: "pacotes_nowo#telemovel", as: "telemovel_nowo"
         get 'outros', to: "pacotes_nowo#outros", as: "outros_nowo"
       end
+    end
+
+    scope :termos_condicoes_e_politica_privacidade do
+      get '/', to: "privacy#index"
     end
   end
 end

@@ -12,14 +12,13 @@ class Contact < ApplicationRecord
  # validates :phone, presence: true, numericality: { only_integer: true }, length: {minimum:9, maximum: 9},
  #           format: { with: VALID_PHONE_REGEX }
   
-  belongs_to :region
+  # belongs_to :region
 
   private
     
   def letter_downcase 
-    self.email = email.downcase
     self.first_name = first_name.capitalize
-    self.last_name = last_name.capitalize
+    self.email = email.downcase
     if self.operator
       self.operator = operator.upcase
     end 
