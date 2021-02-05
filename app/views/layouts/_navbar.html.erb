@@ -11,15 +11,19 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <%= link_to 'Planos', root_path(anchor: 'services'), class: ' nav-link js-scroll-trigger'  %>
+            <%= link_to 'Pacotes', root_path(anchor: 'services'), class: 'nav-link js-scroll-trigger'  %>
           </li>
 
           <li class="nav-item">
-            <%= link_to 'Promoções', root_path(anchor: 'portfolio'), class: ' nav-link js-scroll-trigger' %>
+            <%= link_to 'Destaques', root_path(anchor: 'planos'), class: 'nav-link js-scroll-trigger'  %>
           </li>
 
           <li class="nav-item">
-            <%= link_to 'Sobre nos', root_path(anchor: 'about'), class: ' nav-link js-scroll-trigger' %>
+            <%= link_to 'Promoções', root_path(anchor: 'portfolio'), class: 'nav-link js-scroll-trigger' %>
+          </li>
+
+          <li class="nav-item">
+            <%= link_to 'Sobre nos', root_path(anchor: 'about'), class: 'nav-link js-scroll-trigger' %>
           </li>
 
           <li class="nav-item">
@@ -40,12 +44,34 @@
         <i class="fas fa-bars ml-1"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item"><a class="nav-transparent nav-link color-nav js-scroll-trigger" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-transparent nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-transparent nav-link js-scroll-trigger" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-transparent nav-link js-scroll-trigger" href="#team">Team</a></li>
-          <li class="nav-item"><a class="nav-transparent nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+        <ul class="navbar-nav text-uppercase ml-auto ">
+          <li class="nav-item">
+            <%= link_to 'Planos', root_path(anchor: 'services'), id:'services',class: 'nav-link js-scroll-trigger hack15-menu-button'  %>
+          </li>
+
+          <li class="nav-item">
+            <%= link_to 'Outros serviços', root_path(anchor: 'services'), class: 'nav-link js-scroll-trigger hack15-menu-button'  %>
+          </li>
+
+          <li class="nav-item">
+            <%= link_to 'Promoções', root_path(anchor: 'portfolio'), class: 'nav-link js-scroll-trigger hack15-menu-button' %>
+          </li>
+
+          <li class="nav-item">
+            <%= link_to 'Contata-me', root_path(anchor: 'contact') , class:" nav-link js-scroll-trigger hack15-menu-button" %>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <%= link_to 'Meo', pacotes_meo_path, class: 'nav-link js-scroll-trigger hack15-menu-button' if !current_page?(pacotes_meo_path) %>
+              <%= link_to 'Nos', pacotes_nos_path, class: 'nav-link js-scroll-trigger hack15-menu-button' if !current_page?(pacotes_nos_path) %>
+              <%= link_to 'Vodafone', pacotes_vodafone_path, class: 'nav-link js-scroll-trigger hack15-menu-button' if !current_page?(pacotes_vodafone_path) %>
+              <%= link_to 'Nowo', pacotes_nowo_path, class: 'nav-link js-scroll-trigger hack15-menu-button' if !current_page?(pacotes_nowo_path) %>
+            </div>
+          </li>
         </ul>
       </div>
     </div>

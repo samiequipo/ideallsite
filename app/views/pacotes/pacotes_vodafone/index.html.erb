@@ -18,6 +18,37 @@
       </h2>
     </div>
 
+    <div class="tile" id="tile-1">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs nav-justified" role="tablist">
+        <div class="slider"></div>
+
+        <li class="nav-item">
+          <%= link_to telemovel_vodafone_path(option: "telemovel"), {remote: true, id:"home-tab", class: "nav-link active", "data-toggle" => "tab" }  do %>
+            <i class="fas fa-home"></i> Telemovel
+          <% end %>
+        </li>
+
+        <li class="nav-item">
+          <%= link_to tv_net_voz_vodafone_path(option: "tv_net_voz"), {remote: true, id:"home-tab", class: "nav-link", "data-toggle" => "tab" }  do %>
+            <i class="fas fa-home"></i> Tv_net_voz
+          <% end %>
+        </li>
+
+        <li class="nav-item">
+          <%= link_to net_vodafone_path(option: "net"), {remote: true, id:"home-tab", class: "nav-link", "data-toggle" => "tab" }  do %>
+            <i class="fas fa-home"></i> Net
+          <% end %>
+        </li>
+
+        <li class="nav-item">
+          <%= link_to outros_vodafone_path(option: "outros"), {remote: true, id:"home-tab", class: "nav-link", "data-toggle" => "tab" }  do %>
+            <i class="fas fa-home"></i> Outros
+          <% end %>
+        </li>
+      </ul>
+    </div>
+
     <div id="result-menu" class="bg-fibra-meo">
       <%= render "pacotes/pacotes_vodafone/telemovel"%>
     </div>

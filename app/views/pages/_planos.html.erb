@@ -1,6 +1,6 @@
-<section class="bg-planos pb-0 pt-0" id="services">
+<section class="bg-planos pb-0 pt-0" id="planos">
   <div class="heading-secondary" data-aos="fade-right" data-aos-duration="2000">
-    <div class="title text-dark">
+    <div class="title text-dark mb-2">
       <h2 data-aos="fade-left" data-aos-duration="2000">O melhor serviço de fibra &oacute;tica ¡A su disposici&oacute;n!</h2>
     </div>
   </div>
@@ -8,27 +8,41 @@
   <div class="pricing-table-container">
     <div class="pricing-table py-5">
       <div class="pricing-card" data-aos="fade-up" data-aos-duration="2000">
-        <h3 class="pricing-card-header-meo-20-8 pricing-card-header">Meo</h3>
-        <div class="price"><sup>$</sup>30<span>/mês</span></div>
+        <h3 class="pricing-card-header-meo-51">M4</h3>
+        <div class="price"><sup>€</sup>51,99<span>/mês</span></div>
 
         <ul>
           <li>
-            <i class="fas fa-laptop"></i>
-            <strong>120 Canais</strong><br>
-            Sem MEObox
+            <i class="fas fa-tv"></i>
+            <strong>TV - 150 Canais</strong><br>
+            MEOBox | Pack Standard 
           </li>
 
           <li>
             <i class="fas fa-wifi"></i>
-            <strong>100/100 Mbps</strong><br>
+            <strong>Internet - 100/100 Mbps</strong><br>
             Download/upload
           </li>
 
           <li>
             <i class="fas fa-mobile-alt"></i>
-            <strong>Chamadas inclu&iacute;das</strong><br>
+            <strong>M&oacute;vel - 500 MB</strong><br>
             <span>
-              Redes Fixas nacionais 24h + 50 destinos<br>
+              Máxima velocidade da rede<br>
+              500 minutos + 500 SMS por cartão
+            </span>
+          </li>
+
+          <li>
+            <i class="fas fa-sim-card"></i>
+            <strong>Cartões - 1 cartão</strong>
+          </li>
+
+          <li>
+            <i class="fas fa-phone-volume"></i>
+            <strong>VOZ - Chamadas inclu&iacute;das</strong><br>
+            <span>
+              Redes fixas nacionais 24h + 50 destinos<br>
               internacionais (noite, 1.000 min)
             </span>
           </li>
@@ -37,94 +51,113 @@
         <%= link_to "adira já!", new_contact_path(operator: "MEO"), remote: true, class: "text-uppercase order-btn order-btn", role: "button" %>
       </div>
 
-      <div class="pricing-card pricing-card-nos" data-aos="fade-down" data-aos-duration="2000">
-        <h3 class="pricing-card-header-nos-20-8 pricing-card-header pricing-card-header-nos">Nos</h3>
-        <div class="price price-nos"><sup>$</sup>15<span>/mês</span></div>
+      <div class="pricing-card pricing-card-nos" data-aos="fade-up" data-aos-duration="2000">
+        <h3 class="pricing-card-header pricing-card-header-nos">NOS 4</h3>
+        <div class="price price-nos"><sup>€</sup>51,99<span>/mês</span></div>
 
         <ul>
           <li>
-            <i class="fas fa-laptop"></i>
-            <strong>120 Canais</strong><br>
-            Sem MEObox
+            <i class="fas fa-tv"></i>
+            <strong>TV - 150 Canais</strong><br>
+            Box UMA TV 4K<br>
           </li>
 
           <li>
             <i class="fas fa-wifi"></i>
-            <strong>100/100 Mbps</strong><br>
-            Download/upload
+            <strong>Internet - 100 Mbps</strong><br>
           </li>
 
           <li>
-            <i class="fas fa-mobile-alt"></i>
-            <strong>Chamadas inclu&iacute;das</strong><br>
-            <span>
-              Redes Fixas nacionais 24h + 50 destinos<br>
-              internacionais (noite, 1.000 min)
-            </span>
+            <i class="fas fa-phone-volume"></i>
+            <strong>VOZ - Chamadas inclu&iacute;das</strong><br>
+          </li>
+
+          <li>
+            <i class="fas fa-sim-card"></i>
+            <strong>Cartões - 1 cartão</strong><br>
+            500MB<br>
+            800 min/sms
           </li>
         </ul>
 
-        <%= link_to "adira já!", new_contact_path(operator: "NOS"), remote: true, class: "text-uppercase order-btn order-btn-nos", role: "button" %>
+        <%= link_to "adira já!", new_contact_path(operator: "NOS"), remote: true, class: "text-uppercase order-btn order-btn order-btn-nos", role: "button" %>
       </div>
 
-      <div class="pricing-card pricing-card-vodafone" data-aos="fade-up" data-aos-duration="2000">
-        <h3 class="pricing-card-header-vodafone-20-8 pricing-card-header pricing-card-header-vodafone">Vodafone</h3>
-        <div class="price price-vodafone"><sup>$</sup>80<span>/mês</span></div>
+      <div class="pricing-card pricing-card-vodafone" data-aos="fade-down" data-aos-duration="2000">
+        <h3 class="pricing-card-header-vodafone-30 pricing-card-header pricing-card-header-vodafone">Vodafone 4-Light</h3>
+        <div class="price price-vodafone"><sup>€</sup>51,99<span>/mês</span></div>
 
         <ul>
           <li>
-            <i class="fas fa-laptop"></i>
-            <strong>120 Canais</strong><br>
-            Sem MEObox
+            <i class="fas fa-tv"></i>
+            <strong>TV - 140 Canais | VBoxPro 4K</strong><br>
+            <strong>Amazon Prime Video</strong> durante 6 meses<br>
+            <strong>HBO Portugal</strong> durante 6 meses<br>
           </li>
 
           <li>
             <i class="fas fa-wifi"></i>
-            <strong>100/100 Mbps</strong><br>
-            Download/upload
+            <strong>Internet - 100/100 Mbps</strong><br>
+            Velocidade Garantida<br>
+            Smart Router<br>
           </li>
 
           <li>
-            <i class="fas fa-mobile-alt"></i>
-            <strong>Chamadas inclu&iacute;das</strong><br>
-            <span>
-              Redes Fixas nacionais 24h + 50 destinos<br>
-              internacionais (noite, 1.000 min)
-            </span>
+            <i class="fas fa-phone-volume"></i>
+            <strong>VOZ Fixa - Chamadas inclu&iacute;das</strong><br>
+            Para a rede fixa e 31 destinos internacionais<br>
+          </li>
+
+          <li>
+            <i class="fas fa-portrait"></i>
+            <strong>1 n&uacute;mero - 500MB inclu&iacute;dos</strong><br>
+            800 min/SMS/MMS<br>
+          </li>
+
+          <li>
+            <i class="fas fa-sim-card"></i>
+            <strong>Cartão para PC/Tablet/Hotspot</strong><br>
+            Sem Net M&oacute;vel
           </li>
         </ul>
 
-        <%= link_to "adira já!", new_contact_path(operator: "VODAFONE"), remote: true, class: "text-uppercase order-btn order-btn-vodafone", role: "button" %>
+        <%= link_to "adira já!", new_contact_path(operator: "VODAFONE"), remote: true, class: "text-uppercase order-btn order-btn order-btn-vodafone", role: "button" %>
       </div>
 
-      <div class="pricing-card pricing-card-nowo" data-aos="fade-up" data-aos-duration="2000">
-        <h3 class="pricing-card-header-nowo-20-8 pricing-card-header pricing-card-header-nowo">Nowo</h3>
-        <div class="price price-nowo"><sup>$</sup>50<span>/mês</span></div>
+      <div class="pricing-card pricing-card-nowo" data-aos="fade-down" data-aos-duration="2000">
+        <h3 class="pricing-card-header pricing-card-header-nowo">
+          <i class="mr-2 fas fa-wifi"></i>
+          <i class="mr-2 fas fa-tv"></i>
+          <i class="mr-2 fas fa-phone-volume"></i>
+          <i class="fas fa-sim-card"></i>
+        </h3>
+        <div class="price price-nowo"><sup>€</sup>32,50<span>/mês</span></div>
 
         <ul>
           <li>
-            <i class="fas fa-laptop"></i>
-            <strong>120 Canais</strong><br>
-            Sem MEObox
+            <i class="fas fa-tv"></i>
+            <strong>TV - 90 Canais</strong><br>
+            BOX NOWO TV HD<br>
           </li>
 
           <li>
             <i class="fas fa-wifi"></i>
-            <strong>100/100 Mbps</strong><br>
-            Download/upload
+            <strong>Internet - 120 Megas</strong><br>
           </li>
 
           <li>
-            <i class="fas fa-mobile-alt"></i>
-            <strong>Chamadas inclu&iacute;das</strong><br>
-            <span>
-              Redes Fixas nacionais 24h + 50 destinos<br>
-              internacionais (noite, 1.000 min)
-            </span>
+            <i class="fas fa-phone-volume"></i>
+            <strong>VOZ - Chamadas inclu&iacute;das</strong><br>
+          </li>
+
+          <li>
+            <i class="fas fa-sim-card"></i>
+            <strong>M&oacute;vel - 1GB</strong><br>
+            1000 min/sms
           </li>
         </ul>
 
-        <%= link_to "adira já!", new_contact_path(operator: "NOWO"), remote: true, class: "text-uppercase order-btn order-btn-nowo", role: "button" %>
+        <%= link_to "adira já!", new_contact_path(operator: "NOWO"), remote: true, class: "text-uppercase order-btn order-btn order-btn-nowo", role: "button" %>
       </div>
     </div>
   </div>

@@ -173,5 +173,40 @@
     </script>
 
     <%= javascript_pack_tag 'service' %>
+
+    <script>
+      // when the DOM is ready
+      $(document).ready(function() {
+        // get the anchor link buttons
+        const menuBtn = $('.hack15-menu-button');
+        // when each button is clicked
+        menuBtn.click(()=>{
+          // set a short timeout before taking action
+          // so as to allow hash to be set
+          setTimeout(()=>{
+            // call removeHash function after set timeout
+            removeHash();
+          }, 2); // 5 millisecond timeout in this case
+        });
+      
+        // removeHash function
+        // uses HTML5 history API to manipulate the location bar
+        function removeHash(){
+          history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+        }
+      });
+    </script>
+
+    <%# BUTTON PACOTES %>
+    <script>
+      $("#tile-1 .nav-tabs a").click(function() {
+          var position = $(this).parent().position();
+          var width = $(this).parent().width();
+       $("#tile-1 .slider").css({"left":+ position.left,"width":width});
+        });
+        var actWidth = $("#tile-1 .nav-tabs").find(".active").parent("li").width();
+        var actPosition = $("#tile-1 .nav-tabs .active").position();
+        $("#tile-1 .slider").css({"left":+ actPosition.left,"width": actWidth});
+    </script>
   </body>
 </html>
