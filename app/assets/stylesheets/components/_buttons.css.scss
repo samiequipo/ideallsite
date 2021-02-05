@@ -1,6 +1,6 @@
 .btn:link,
 .btn:visited {
-  border-radius: 10rem;
+  border-radius: 1rem;
   display: inline-block;
   padding: 0.5rem 0.5rem;
   border: 0.125rem solid #ffffff;
@@ -51,6 +51,10 @@
 .btn-position {
   top: -10px;
   border: 0.125rem solid #272727;
+}
+
+.btn-position-b2 {
+  background: #282828c7 !important;
 }
 
 .btn-position::after {
