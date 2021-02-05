@@ -159,21 +159,9 @@
     <%# Whatsapp %>
     <%# <script src="startbootstrap-agency-gh-railspages/js/script_whatsapp.js"></script> %>
 
-    <%# Navbar pacotes %>
-    <script>
-      $(window).scroll(function () {
-      if ($(window).scrollTop() > 0) {
-      $('.navbar').css('background','#fff');
-      $('.nav-transparent').css('color','#000');
-      } else {
-      $('.navbar').css('background','transparent');
-      $('.nav-transparent').css('color','#fff');
-      }
-      });
-    </script>
-
     <%= javascript_pack_tag 'service' %>
 
+    <%# Remove ANCHOR %>
     <script>
       // when the DOM is ready
       $(document).ready(function() {

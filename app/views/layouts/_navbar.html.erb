@@ -34,42 +34,41 @@
     </div>
   </nav>
 <% else %>
-
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadowNav" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light  fixed-top shadowNav" id="mainNav">
     <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag 'meo_logo.png', class:"meo_logo_pacotes d-none d-md-lg" %></a>
+
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
-        Menu
+        MEO
         <i class="fas fa-bars ml-1"></i>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto ">
           <li class="nav-item">
-            <%= link_to 'Planos', root_path(anchor: 'services'), id:'services',class: 'nav-link js-scroll-trigger hack15-menu-button'  %>
+            <%= link_to 'Ideall-Home', root_path, id:'hack15-menu-button', class: 'nav-link js-scroll-trigger hack15-menu-button', target: '_blank' %>
           </li>
 
           <li class="nav-item">
-            <%= link_to 'Outros serviços', root_path(anchor: 'services'), class: 'nav-link js-scroll-trigger hack15-menu-button'  %>
+            <%= link_to 'Destaques', root_path(anchor: 'planos'), id:'hack15-menu-button', class: 'nav-link js-scroll-trigger hack15-menu-button', target: '_blank' %>
           </li>
 
           <li class="nav-item">
-            <%= link_to 'Promoções', root_path(anchor: 'portfolio'), class: 'nav-link js-scroll-trigger hack15-menu-button' %>
+            <%= link_to 'Promoções', root_path(anchor: 'portfolio'), id:'hack15-menu-button', class: 'nav-link js-scroll-trigger hack15-menu-button', target: '_blank' %>
           </li>
 
-          <li class="nav-item">
-            <%= link_to 'Contata-me', root_path(anchor: 'contact') , class:" nav-link js-scroll-trigger hack15-menu-button" %>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
+          <li class="nav-item d-flex dropdown align-items-center">
+            <a class="nav-link dropdown-toggle hack15-menu-button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Otros Pacotes
             </a>
+
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <%= link_to 'Meo', pacotes_meo_path, class: 'nav-link js-scroll-trigger hack15-menu-button' if !current_page?(pacotes_meo_path) %>
-              <%= link_to 'Nos', pacotes_nos_path, class: 'nav-link js-scroll-trigger hack15-menu-button' if !current_page?(pacotes_nos_path) %>
-              <%= link_to 'Vodafone', pacotes_vodafone_path, class: 'nav-link js-scroll-trigger hack15-menu-button' if !current_page?(pacotes_vodafone_path) %>
-              <%= link_to 'Nowo', pacotes_nowo_path, class: 'nav-link js-scroll-trigger hack15-menu-button' if !current_page?(pacotes_nowo_path) %>
+              <%= link_to 'Meo', pacotes_meo_path, class: 'dropdown-item', target: '_blank' if !current_page?(pacotes_meo_path) %>
+              <%= link_to 'Nos', pacotes_nos_path, class: 'dropdown-item', target: '_blank' if !current_page?(pacotes_nos_path) %>
+              <%= link_to 'Vodafone', pacotes_vodafone_path, class: 'dropdown-item', target: '_blank' if !current_page?(pacotes_vodafone_path) %>
+              <%= link_to 'Nowo', pacotes_nowo_path, class: 'dropdown-item', target: '_blank' if !current_page?(pacotes_nowo_path) %>
             </div>
           </li>
         </ul>

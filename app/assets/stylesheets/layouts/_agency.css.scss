@@ -192,8 +192,7 @@ img::-moz-selection {
     background-color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
-    /* padding: 0.75rem 0; */
+    font-size: 1em;
   }
 }
 
@@ -912,4 +911,8 @@ ul.social-buttons li a:hover {
     display: flex;
     align-items: center;
   }
+}
+
+.meo_logo_pacotes {
+  max-width: 20%;
 }
