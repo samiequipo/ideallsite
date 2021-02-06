@@ -11,7 +11,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <%= link_to 'Pacotes', root_path(anchor: 'services'), class: 'nav-link js-scroll-trigger'  %>
+            <%= link_to 'Pacotes', root_path(anchor: 'services'), id:"anchor_service", class: "nav-link js-scroll-trigger"   %>
           </li>
 
           <li class="nav-item">
@@ -38,9 +38,9 @@
     <div	iv class="container">
 
       <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag 'meo_logo.png', class:"meo-logo-ideall" if current_page?(pacotes_meo_path)%></a>
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag 'nos_logo.png', class:"nos-logo-ideall" if current_page?(pacotes_nos_path)%></a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag 'nos_logo.png', class:"meo-logo-ideall" if current_page?(pacotes_nos_path)%></a>
       <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag 'meo_logo.png', class:"meo-logo-ideall" if current_page?(pacotes_vodafone_path)%></a>
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag 'nowo.png', class:"nowo-logo-ideall" if current_page?(pacotes_nowo_path)%></a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag 'nowo.png', class:"meo-logo-ideall" if current_page?(pacotes_nowo_path)%></a>
 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -68,9 +68,9 @@
             <ul role="menu" class="dropdown-menu">
               <li class="dropdown-menu">Setting</li>
               <li class="nav-item"><%= link_to 'Meo', pacotes_meo_path, class: 'nav-link pacotes_hover' if !current_page?(pacotes_meo_path) %></li>
-              <li class="nav-item"><%= link_to 'Nos', pacotes_nos_path, class: 'nav-link pacotes_hover_nos' if !current_page?(pacotes_nos_path) %></li>
-              <li class="nav-item"><%= link_to 'Vodafone', pacotes_vodafone_path, class: 'nav-link pacotes_hover_vodafone' if !current_page?(pacotes_vodafone_path) %></li>
-              <li class="nav-item"><%= link_to 'Nowo', pacotes_nowo_path, class: 'nav-link pacotes_hover_nowo' if !current_page?(pacotes_nowo_path) %></li>
+              <li class="nav-item"><%= link_to 'Nos', pacotes_nos_path, class: 'nav-link pacotes_hover' if !current_page?(pacotes_nos_path) %></li>
+              <li class="nav-item"><%= link_to 'Vodafone', pacotes_vodafone_path, class: 'nav-link pacotes_hover' if !current_page?(pacotes_vodafone_path) %></li>
+              <li class="nav-item"><%= link_to 'Nowo', pacotes_nowo_path, class: 'nav-link pacotes_hover' if !current_page?(pacotes_nowo_path) %></li>
             </ul>
           </li>
         </ul>

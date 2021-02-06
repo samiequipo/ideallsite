@@ -384,7 +384,7 @@
   border-radius: 3px;
   background-color: #39bcd3;
   position: absolute;
-  z-index: 1200;
+  z-index: 1;
   bottom: 0;
   transition: all 0.4s linear;
 }
@@ -392,4 +392,34 @@
   background-color: transparent !important;
   border: none !important;
   color: #39bcd3 !important;
+}
+
+#tile-1 .slider_vodafone {
+  background-color: #e73321;
+}
+
+#tile-1 .nav-tabs_vodafone .active {
+  background-color: transparent !important;
+  border: none !important;
+  color: #e73321 !important;
+}
+
+#tile-1 .slider_nos {
+  background-color: #3600fa;
+}
+
+#tile-1 .nav-tabs_nos .active {
+  background-color: transparent !important;
+  border: none !important;
+  color: #3600fa !important;
+}
+
+#tile-1 .slider_nowo {
+  background-color: #fb4d29;
+}
+
+#tile-1 .nav-tabs_nowo .active {
+  background-color: transparent !important;
+  border: none !important;
+  color: #fb4d29 !important;
 }
