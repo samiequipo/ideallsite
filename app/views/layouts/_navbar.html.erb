@@ -36,7 +36,11 @@
 <% else %>
   <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top shadowNav" id="mainNav">
     <div	iv class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag 'meo_logo.png', class:"meo-logo-ideall" %></a>
+
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag 'meo_logo.png', class:"meo-logo-ideall" if current_page?(pacotes_meo_path)%></a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag 'nos_logo.png', class:"nos-logo-ideall" if current_page?(pacotes_nos_path)%></a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag 'meo_logo.png', class:"meo-logo-ideall" if current_page?(pacotes_vodafone_path)%></a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag 'nowo.png', class:"nowo-logo-ideall" if current_page?(pacotes_nowo_path)%></a>
 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -59,29 +63,14 @@
             <%= link_to 'Promoções', root_path(anchor: 'portfolio'), id:'hack15-menu-button', class: 'nav-link js-scroll-trigger hack15-menu-button', target: '_blank' %>
           </li>
 
-          <li class="nav-item d-flex dropdown align-items-center">
-            <a class="nav-link dropdown-toggle hack15-menu-button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Otros Pacotes
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <%= link_to 'Vodafone', pacotes_vodafone_path, class: 'dropdown-item', target: '_blank' if !current_page?(pacotes_vodafone_path) %>
-              <%= link_to 'Nowo', pacotes_nowo_path, class: 'dropdown-item', target: '_blank' if !current_page?(pacotes_nowo_path) %>
-              <%= link_to 'Meo', pacotes_meo_path, class: 'dropdown-item', target: '_blank' if !current_page?(pacotes_meo_path) %>
-            </div>
-          </li>
-
-          <li class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Silverbuxa</a>
-
+          <li class="dropdown d-lg-flex align-items-lg-center">
+            <a data-toggle="dropdown" class="dropdown-toggle activate_pacote" href="#">Otros Pacotes</a>
             <ul role="menu" class="dropdown-menu">
               <li class="dropdown-menu">Setting</li>
-              <%= link_to 'Nos', pacotes_nos_path, class: 'activate', target: '_blank' if !current_page?(pacotes_nos_path) %>
-              <li><a href="#">Action</a></li>
-              <li class="divider"></li>
-              <li class="active"><a href="#">Separated link</a></li>
-              <li class="divider"></li>
-              <li class="disabled"><a href="#">Signout</a></li>
+              <li class="nav-item"><%= link_to 'Meo', pacotes_meo_path, class: 'nav-link pacotes_hover' if !current_page?(pacotes_meo_path) %></li>
+              <li class="nav-item"><%= link_to 'Nos', pacotes_nos_path, class: 'nav-link pacotes_hover_nos' if !current_page?(pacotes_nos_path) %></li>
+              <li class="nav-item"><%= link_to 'Vodafone', pacotes_vodafone_path, class: 'nav-link pacotes_hover_vodafone' if !current_page?(pacotes_vodafone_path) %></li>
+              <li class="nav-item"><%= link_to 'Nowo', pacotes_nowo_path, class: 'nav-link pacotes_hover_nowo' if !current_page?(pacotes_nowo_path) %></li>
             </ul>
           </li>
         </ul>
