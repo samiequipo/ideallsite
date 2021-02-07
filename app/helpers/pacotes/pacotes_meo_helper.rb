@@ -1,0 +1,3 @@
+module Pacotes::PacotesMeoHelper
+
+end

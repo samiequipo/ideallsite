@@ -1,4 +1,6 @@
 class Pacotes::PacotesMeoController < ApplicationController
+  # puts request.original_url
+  # puts request.path.split('/').last 
   before_action :render_pacotes, except: %i[index]
   
   def index

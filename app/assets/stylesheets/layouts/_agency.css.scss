@@ -924,13 +924,18 @@ ul.social-buttons li a:hover {
 }
 
 .nos-logo-ideall {
-  width: 6rem;
-  height: 3.29rem;
+  width: 8rem;
+  height: 4rem;
 }
 
 .nowo-logo-ideall {
   width: 8rem;
   height: 2rem;
+}
+
+.vodafone-logo-ideall {
+  width: 11rem;
+  height: 2.8rem;
 }
 
 .activate_pacote {
@@ -945,8 +950,25 @@ ul.social-buttons li a:hover {
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 .activate_pacote:hover {
   color: #00aeff;
+}
+
+.pacotes_hover_nos:hover {
+  color: #3600fa !important;
+}
+
+.pacotes_hover_vodafone:hover {
+  color: #e43220 !important;
+}
+
+.pacotes_hover_nowo:hover {
+  color: #fb4d29 !important;
+}
+
+.menu_nowo {
+  background-color: #fb4d29;
 }
 
 @media (max-width: 991px) {
@@ -954,12 +976,15 @@ ul.social-buttons li a:hover {
     padding: 1.1rem 0 !important;
   }
 
-  .pacotes_hover {
-    padding-left: 1rem !important;
+  .margin-ideall-pacotes {
+    margin-top: 1.15rem;
   }
 
-  .pacotes_hover:hover {
-    background: #00aeff !important;
-    color: #fff !important;
+  .margin_dropdown {
+    margin-top: 0.5rem;
+  }
+
+  .pacotes_hover_pading {
+    padding-left: 1rem !important;
   }
 }
