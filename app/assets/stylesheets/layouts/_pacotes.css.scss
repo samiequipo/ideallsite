@@ -29,6 +29,43 @@
   background-color: #464646;
 }
 
+.hero--main__nowo {
+  min-height: 29rem;
+  background-image: asset-url("nowo_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fb4d29;
+}
+
+@media only screen and (max-width: 726px) {
+  .hero--main__nowo {
+    min-height: 19rem;
+  }
+}
+
+@media only screen and (max-width: 484px) {
+  .hero--main__nowo {
+    min-height: 16rem;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .hero--main__nowo {
+    min-height: 13rem;
+  }
+
+  .price {
+    font-size: 2.375rem;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .hero--main__nowo {
+    min-height: 10rem;
+  }
+}
+
 .fibra-meo {
   display: flex;
   flex-direction: column;
