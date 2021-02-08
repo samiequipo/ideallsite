@@ -15,6 +15,20 @@
   background-color: #464646;
 }
 
+.hero--main__nos {
+  display: flex;
+  align-items: center;
+  min-height: 32.25rem;
+  text-align: center;
+  color: white;
+
+  background-image: asset-url("tvCine.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+}
+
 .fibra-meo {
   display: flex;
   flex-direction: column;

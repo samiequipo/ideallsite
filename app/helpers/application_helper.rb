@@ -9,37 +9,38 @@ module ApplicationHelper
   
   private
 
-  def logo(type, image)
-    if type == "logo"
-      return image
-    end
-  end
-  
   def pacotes_meo(type)
-    logo(type, "meo_logo.png")
+    return "meo_logo.png" if type == "logo" 
+    "meo-logo-ideall" if type == "logo_size" 
   end
 
   def pacotes_nos(type)
     if type == "logo" 
       "nos_logo.png"
-    else
+    elsif type == "hover" 
       "pacotes_hover_nos"
+    else
+      "nos-logo-ideall"
     end
   end
 
   def pacotes_vodafone(type)
     if type == "logo" 
       "vodafone_logo_pacotes.png"
-    else
+    elsif type == "hover" 
       "pacotes_hover_vodafone"
+    else
+      "vodafone-logo-ideall"
     end
   end
 
   def pacotes_nowo(type)
     if type == "logo" 
       "nowo.png"
-    else
+    elsif type == "hover" 
       "pacotes_hover_nowo"
+    else
+      "nowo-logo-ideall"
     end
   end
 end
