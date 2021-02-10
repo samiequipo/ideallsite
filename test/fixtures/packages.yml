@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tv: MyString
+  internet: MyString
+  movel: MyString
+  cartao: MyString
+  voz: MyString
+
+two:
+  tv: MyString
+  internet: MyString
+  movel: MyString
+  cartao: MyString
+  voz: MyString

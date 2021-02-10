@@ -12,6 +12,7 @@ class Contact < ApplicationRecord
            format: { with: VALID_PHONE_REGEX }
   
   # belongs_to :region
+  belongs_to :package, optional: true
 
   private
     
