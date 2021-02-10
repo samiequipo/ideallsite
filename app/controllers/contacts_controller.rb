@@ -9,7 +9,10 @@ class ContactsController < ApplicationController
     
     if (@contact.operator == "VODAFONE" || @contact.operator == "MEO" || 
         @contact.operator == "NOS" || @contact.operator == "NOWO" || @contact.operator == "MIWO")
+
       if @contact.save
+        ContactMailer.with(contact: @contact).new_contact_email.deliver_later
+
         respond_to do |format|
           flash.now[:alert] = "Yeah"
           format.js 
