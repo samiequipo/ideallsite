@@ -36,16 +36,17 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :smtp
   host = 'localhost:3000'
-  config.action_mailer.default_url_options = { host: 'http://localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'localhost:3000', protocol: 'http' }
 
   # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
     :address              => "smtp.gmail.com",
     :port                 => 587,
-    :user_name            => ENV['GMAIL_USERNAME'],
-    :password             => ENV['GMAIL_PASSWORD'],
+    :user_name            => Rails.application.credentials.iex_client[:gmail_username],
+    :password             => Rails.application.credentials.iex_client[:gmail_password],
     :authentication       => "plain",
     :enable_starttls_auto => true
   }
