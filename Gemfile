@@ -23,6 +23,7 @@ gem 'honeybadger', '~> 4.0'
 gem 'devise'
 gem 'activeadmin'
 gem 'ahoy_matey'
+gem 'twilio-ruby'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
