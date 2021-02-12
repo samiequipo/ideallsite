@@ -11,7 +11,10 @@ class ContactsController < ApplicationController
         @contact.operator == "NOS" || @contact.operator == "NOWO" || @contact.operator == "MIWO")
 
       if @contact.save
+        # ActionMailer Gmail    
         ContactMailer.with(contact: @contact).new_contact_email.deliver_later
+        
+        # Twilio Whatsapp
         message = "The coffee roast '#{@contact.first_name}' was just added."
         TwilioTextMessenger.new(message).call
 
