@@ -12,6 +12,8 @@ class ContactsController < ApplicationController
 
       if @contact.save
         ContactMailer.with(contact: @contact).new_contact_email.deliver_later
+        message = "The coffee roast '#{@contact.first_name}' was just added."
+        TwilioTextMessenger.new(message).call
 
         respond_to do |format|
           flash.now[:alert] = "Yeah"
