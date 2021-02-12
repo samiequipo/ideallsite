@@ -19,7 +19,7 @@
     <div class="input-group-prepend">
       <span class="input-group-text p-1 code_pt letter_pt" id="basic-addon1">+351</span>
     </div>
-    <%= f.telephone_field :phone, :pattern => '\d{9}', maxlength: "9", required: true, class: "form-control placeholder_phone", placeholder: "Seu numero de telefone?",
+    <%= f.phone_field :phone, :pattern => '\d{9}', maxlength: "9", required: true, class: "form-control placeholder_phone", placeholder: "Seu numero de telefone?",
                            oninvalid: "this.setCustomValidity('Por favor, insira seu número correto')", oninput: "this.setCustomValidity('')", id:"phoneNumber" %>
 
     <small id="emailHelp" class="form-text text-muted text-center">
