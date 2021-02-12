@@ -1,12 +1,12 @@
 <%= form_with(model: @contact, url: contacts_path) do |f| %>
   <div class="form-group form-input">
-    <%= f.text_field :first_name, required: true, oninvalid: "this.setCustomValidity('Por favor, insira seu nome')",
+    <%= f.text_field :first_name, :pattern => '\d{42}', maxlength: "42", required: true, oninvalid: "this.setCustomValidity('Por favor, insira seu nome')",
                       oninput: "this.setCustomValidity('')", id:"firstName" %>
     <%= f.label :first_name, "Qual é seu nome?", class:"form-label" %>
   </div>
 
   <div class="form-group form-input">
-    <%= f.email_field :email, required: true, oninvalid: "this.setCustomValidity('Seu endereço de e-mail deve existir e incluir '@' nele.')", 
+    <%= f.email_field :email, :pattern => '\d{42}', maxlength: "42", required: true, oninvalid: "this.setCustomValidity('Seu endereço de e-mail deve existir e incluir '@' nele.')", 
                        oninput: "this.setCustomValidity('')", id:"email"  %>
     <%= f.label :email, "Qual é seu email?", class:"form-label" %>
   </div>
