@@ -1,5 +1,5 @@
 class Package < ApplicationRecord
 
-  has_many :contacts
+  # has_many :contacts
 
 end

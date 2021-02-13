@@ -88,22 +88,7 @@ ActiveRecord::Schema.define(version: 2021_02_10_163548) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "region_id"
     t.string "operator"
-    t.integer "package_id"
-    t.index ["package_id"], name: "index_contacts_on_package_id"
     t.index ["region_id"], name: "index_contacts_on_region_id"
-  end
-
-  create_table "packages", force: :cascade do |t|
-    t.string "tv"
-    t.string "internet"
-    t.string "movel"
-    t.string "cartao"
-    t.string "voz"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "operator"
-    t.string "pricing"
-    t.string "promo"
   end
 
   create_table "regions", force: :cascade do |t|
@@ -112,6 +97,5 @@ ActiveRecord::Schema.define(version: 2021_02_10_163548) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "contacts", "packages"
   add_foreign_key "contacts", "regions"
 end
