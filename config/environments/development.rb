@@ -52,14 +52,14 @@ Rails.application.configure do
  # }
 
  ActionMailer::Base.smtp_settings = {
- address: 'smtp.sendgrid.net',
- port: 587,
- user_name: "app201357646@heroku.com",
- password: "6rjzuaek6948",
- authentication: :login,
- enable_starttls_auto: true
+  :user_name => 'apikey',
+  :password => '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',
+  :domain => 'localhost:3000',
+  :address => 'smtp.sendgrid.net',
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
 }
-
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
