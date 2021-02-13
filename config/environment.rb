@@ -4,12 +4,11 @@ require_relative 'application'
 # Initialize the Rails application.
 Rails.application.initialize!
 
-# ActionMailer::Base.smtp_settings = {
-#   :user_name => 'apikey',
-#   :password => Rails.application.credentials.sendgrid[:api_key],
-#   :domain => 'heroku.com',
-#   :address => 'smtp.sendgrid.net',
-#   :port => 587,
-#   :authentication => :plain,
-#   :enable_starttls_auto => true
-# }
+ActionMailer::Base.smtp_settings= {
+  :address              => "smtp.gmail.com",
+  :port                 => 587,
+  :user_name            => Rails.application.credentials.iex_client[:gmail_username],
+  :password             => Rails.application.credentials.iex_client[:gmail_password],
+  :authentication       => "plain",
+  :enable_starttls_auto => true
+}

@@ -41,24 +41,6 @@ Rails.application.configure do
   host = 'localhost:3000'
   config.action_mailer.default_url_options = { :host => 'localhost:3000', protocol: 'http' }
 
-  # SMTP settings for gmail
- # config.action_mailer.smtp_settings = {
- #   :address              => "smtp.gmail.com",
- #   :port                 => 587,
- #   :user_name            => Rails.application.credentials.iex_client[:gmail_username],
- #   :password             => Rails.application.credentials.iex_client[:gmail_password],
- #   :authentication       => "plain",
- #   :enable_starttls_auto => true
- # }
-
- config.action_mailer.smtp_settings =  {
-  :user_name => 'apikey',
-  :password => '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',
-  :address => 'smtp.sendgrid.net',
-  :port => 587,
-  :authentication => :plain,
-  :enable_starttls_auto => true
-}
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
