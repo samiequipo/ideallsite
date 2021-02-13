@@ -85,6 +85,17 @@ Rails.application.configure do
 #   :enable_starttls_auto => true
 # }
 
+ActionMailer::Base.smtp_settings = {
+  address: 'smtp.sendgrid.net',
+  port: 587,
+  domain: "heroku.com"
+  user_name: "app201357646@heroku.com",
+  password: "6rjzuaek6948",
+  authentication: :login,
+  enable_starttls_auto: true
+ }
+
+
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
