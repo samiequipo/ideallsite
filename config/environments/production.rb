@@ -75,15 +75,15 @@ Rails.application.configure do
   host = 'https://ideallsite.herokuapp.com/' #replace with your own url
   config.action_mailer.default_url_options = { host: host }
 
-  # SMTP settings for gmail
-  # config.action_mailer.smtp_settings = {
-  #   :address              => "smtp.gmail.com",
-  #   :port                 => 587,
-  #   :user_name            => Rails.application.credentials.iex_client[:gmail_username],
-  #   :password             => Rails.application.credentials.iex_client[:gmail_password],
-  #   :authentication       => "plain",
-  #   :enable_starttls_auto => true
-  # }
+ # SMTP settings for gmail
+ # config.action_mailer.smtp_settings = {
+ #   :address              => "smtp.gmail.com",
+ #   :port                 => 587,
+ #   :user_name            => Rails.application.credentials.iex_client[:gmail_username],
+ #   :password             => Rails.application.credentials.iex_client[:gmail_password],
+ #   :authentication       => "plain",
+ #   :enable_starttls_auto => true
+ # }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
