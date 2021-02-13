@@ -51,7 +51,7 @@ Rails.application.configure do
  #   :enable_starttls_auto => true
  # }
 
- ActionMailer::Base.smtp_settings = {
+ config.action_mailer.smtp_settings =  {
   :user_name => 'apikey',
   :password => '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',
   :address => 'smtp.sendgrid.net',
