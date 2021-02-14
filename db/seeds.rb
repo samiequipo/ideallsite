@@ -11,7 +11,6 @@
 # 'Coimbra', 'Évora', 'Faro', 'Guarda','Leiria', 'Lisboa', 'Madeira', 
 # 'Portalegre', 'Porto', 'Santarém', 'Setúbal', 'Viana do Castelo','Vila Real', 'Viseu'].each do |district|
 #   
-#   Region.create!(name: district)
 # end
 
 # AdminUser.create!(email: 'sjdacosta@ideall.com', password: 'ferrari1992', password_confirmation: 'ferrari1992') 
