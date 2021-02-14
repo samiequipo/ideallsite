@@ -5,7 +5,7 @@ class Contact < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   # VALID_PHONE_REGEX = /\A\d+\z/
   
-  validates :first_name, presence: true
+  validates :total_name, presence: true
   validates :email, presence: true,  
   length: {maximum: 50}, format: { with: VALID_EMAIL_REGEX }
   validates :phone, phone: true
@@ -13,13 +13,11 @@ class Contact < ApplicationRecord
   #validates :phone, presence: true, numericality: { only_integer: true }, length: {minimum:9, maximum: 9},
   #         format: { with: VALID_PHONE_REGEX }
   
-  # belongs_to :region
-  # belongs_to :package, optional: true
 
   private
     
   def letter_downcase 
-    self.first_name = first_name.capitalize
+    self.total_name = total_name.capitalize
     self.email = email.downcase
     if self.operator
       self.operator = operator.upcase

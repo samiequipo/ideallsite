@@ -1,8 +1,7 @@
 ActiveAdmin.register Contact do
   index do
     selectable_column
-    column :first_name
-    column :last_name
+    column :total_name
     column :phone
     column :email
     column :created_at
@@ -11,9 +10,9 @@ ActiveAdmin.register Contact do
 
   filter :email
   filter :phone
-  filter :first_name
+  filter :total_name
   
-  permit_params :first_name, :last_name, :phone, :email
+  permit_params :total_name, :phone, :email
 
   
 end

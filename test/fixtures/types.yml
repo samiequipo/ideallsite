@@ -1,6 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  total_name: "Joe Smith"
-  email: "joe@gmail.com"
-  phone: 123456789
+  plano: MyString
+  company: one
+
+two:
+  plano: MyString
+  company: two

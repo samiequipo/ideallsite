@@ -17,8 +17,8 @@ class ContactMailerTest < ActionMailer::TestCase
     assert_equal [Rails.application.credentials.iex_client[:gmail_username]], email.from
     assert_equal [Rails.application.credentials.iex_client[:gmail_username]], email.to
     assert_equal "You got a new contact!", email.subject
-    assert_match contact.first_name, email.html_part.body.encoded
-    assert_match contact.first_name, email.text_part.body.encoded
+    assert_match contact.total_name, email.html_part.body.encoded
+    assert_match contact.total_name, email.text_part.body.encoded
     assert_match contact.email, email.html_part.body.encoded
     assert_match contact.email, email.text_part.body.encoded
     assert_match contact.phone, email.html_part.body.encoded

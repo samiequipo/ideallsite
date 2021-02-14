@@ -15,7 +15,7 @@ class ContactsController < ApplicationController
         ContactMailer.with(contact: @contact).new_contact_email.deliver_later
         
         # Twilio Whatsapp
-        message = "The coffee roast '#{@contact.first_name}' was just added."
+        message = "The coffee roast '#{@contact.total_name}' was just added."
         TwilioTextMessenger.new(message).call
 
         respond_to do |format|
@@ -42,6 +42,6 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:first_name, :last_name, :email, :phone, :region_id, :operator)
+    params.require(:contact).permit(:total_name, :email, :phone, :operator)
   end
 end

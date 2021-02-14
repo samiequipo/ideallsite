@@ -1,8 +1,8 @@
 <%= form_with(model: @contact, url: contacts_path) do |f| %>
   <div class="form-group form-input">
-    <%= f.text_field :first_name, required: true, maxlength: "42", oninvalid: "this.setCustomValidity('Por favor, insira seu nome')",
+    <%= f.text_field :total_name, required: true, maxlength: "42", oninvalid: "this.setCustomValidity('Por favor, insira seu nome')",
                       oninput: "this.setCustomValidity('')", id:"firstName" %>
-    <%= f.label :first_name, "Qual é seu nome?", class:"form-label" %>
+    <%= f.label :total_name, "Qual é seu nome?", class:"form-label" %>
   </div>
 
   <div class="form-group form-input">

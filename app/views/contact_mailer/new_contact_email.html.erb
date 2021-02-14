@@ -3,18 +3,17 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <p>You got a new contact from <%= @contact.first_name %>!</p>
+    <p>You got a new contact from <%= @contact.total_name %>!</p>
     <p>
       contact details<br>
       --------------------------
     </p>
-    <p>Name: <%= @contact.first_name %></p>
+    <p>Name: <%= @contact.total_name %></p>
     <p>Email: <%= @contact.email %></p>
     <p>Phone: <%= @contact.phone %></p>
     <p>
       Message:<br>
       ----------
     </p>
-    <p><%= @contact.last_name %></p>
   </body>
 </html>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_14_005325) do
+ActiveRecord::Schema.define(version: 2021_02_14_141343) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -86,17 +86,12 @@ ActiveRecord::Schema.define(version: 2021_02_14_005325) do
   end
 
   create_table "contacts", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
+    t.string "total_name"
     t.integer "phone"
     t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "region_id"
     t.string "operator"
-    t.integer "company_id"
-    t.index ["company_id"], name: "index_contacts_on_company_id"
-    t.index ["region_id"], name: "index_contacts_on_region_id"
   end
 
   create_table "packages", force: :cascade do |t|
@@ -108,8 +103,8 @@ ActiveRecord::Schema.define(version: 2021_02_14_005325) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "price"
-    t.integer "company_id"
-    t.index ["company_id"], name: "index_packages_on_company_id"
+    t.integer "type_id", null: false
+    t.index ["type_id"], name: "index_packages_on_type_id"
   end
 
   create_table "regions", force: :cascade do |t|
@@ -118,7 +113,15 @@ ActiveRecord::Schema.define(version: 2021_02_14_005325) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "contacts", "companies"
-  add_foreign_key "contacts", "regions"
-  add_foreign_key "packages", "companies"
+  create_table "types", force: :cascade do |t|
+    t.string "plano"
+    t.integer "company_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "description"
+    t.index ["company_id"], name: "index_types_on_company_id"
+  end
+
+  add_foreign_key "packages", "types"
+  add_foreign_key "types", "companies"
 end
