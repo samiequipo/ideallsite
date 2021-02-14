@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_10_163548) do
+ActiveRecord::Schema.define(version: 2021_02_14_005325) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -79,6 +79,12 @@ ActiveRecord::Schema.define(version: 2021_02_10_163548) do
     t.index ["visit_token"], name: "index_ahoy_visits_on_visit_token", unique: true
   end
 
+  create_table "companies", force: :cascade do |t|
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "contacts", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -88,7 +94,22 @@ ActiveRecord::Schema.define(version: 2021_02_10_163548) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "region_id"
     t.string "operator"
+    t.integer "company_id"
+    t.index ["company_id"], name: "index_contacts_on_company_id"
     t.index ["region_id"], name: "index_contacts_on_region_id"
+  end
+
+  create_table "packages", force: :cascade do |t|
+    t.string "tv"
+    t.string "internet"
+    t.string "movel"
+    t.string "cartao"
+    t.string "voz"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "price"
+    t.integer "company_id"
+    t.index ["company_id"], name: "index_packages_on_company_id"
   end
 
   create_table "regions", force: :cascade do |t|
@@ -97,5 +118,7 @@ ActiveRecord::Schema.define(version: 2021_02_10_163548) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "contacts", "companies"
   add_foreign_key "contacts", "regions"
+  add_foreign_key "packages", "companies"
 end
