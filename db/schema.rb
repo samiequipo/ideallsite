@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_14_233043) do
+ActiveRecord::Schema.define(version: 2021_02_14_233153) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -106,6 +106,7 @@ ActiveRecord::Schema.define(version: 2021_02_14_233043) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "price"
     t.integer "type_id"
+    t.string "description"
     t.index ["type_id"], name: "index_packages_on_type_id"
   end
 
