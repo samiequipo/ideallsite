@@ -117,6 +117,7 @@ meo_outros_list = [
   ],
 ]
 
+#Filling Packages
 meo_telemovel_list.each do |description, price, tv, internet, movel, cartao, voz, type|
   Package.create!(description: description, price: price, tv: tv, internet: internet, movel: movel, cartao: cartao, voz: voz, type: type)
 end
@@ -132,3 +133,5 @@ end
 meo_outros_list.each do |description, price, tv, internet, movel, cartao, voz, type|
   Package.create!(description: description, price: price, tv: tv, internet: internet, movel: movel, cartao: cartao, voz: voz, type: type)
 end
+
+puts "Filled MEO package"
