@@ -1,10 +1,10 @@
 class Pacotes::PacotesMeoController < ApplicationController
   # puts request.original_url
   # puts request.path.split('/').last 
+  before_action :getting_packages
   before_action :render_pacotes, except: %i[index]
   
   def index
-    @meo_telemovel_packages = Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%meo%")).packages
   end
   
   #M4
@@ -27,5 +27,9 @@ class Pacotes::PacotesMeoController < ApplicationController
     respond_to do |format|
       format.js { render partial: "pacotes/pacotes_meo/#{params[:option]}" }
     end 
+  end
+
+  def getting_packages
+    @meo_packages = Company.first.types
   end
 end
