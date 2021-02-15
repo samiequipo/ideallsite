@@ -55,7 +55,7 @@ vodafone_telemovel_list = [
 ]
 
 # FIBRA 3 - TELEMOVEL
-# description, price, tv, voz, type
+# description, price, tv, internet, voz, type
 vodafone_tv_net_voz_list = [
   [ "Fibra 3 Play", "40,9", 
     "TV - 140 Canais VBox 4K incluída | Amazon Prime Video y HBO Portugal 24 meses - FOX+ durante 24 meses", 
@@ -90,6 +90,24 @@ vodafone_tv_net_voz_list = [
   ],
 ]
 
+# FIBRA 2 - NET
+# description, price, internet, voz type
+vodafone_net_list = [
+  [ "Fibra 2 Plus", "25,9", 
+    "Internet - 30/3 Mbps - Smart Router", 
+    "VOZ - Chamadas incluídas Para a rede fixa e 31 destinos internacionais",
+    Type.find_by(plano: "Net", company: Company.find_by("description like ?", "%vodafone%"))
+
+  ],
+
+  [ "Fibra 2 Gold", "27,9", 
+    "Internet - 100/100 Mbps - Smart Router", 
+    "VOZ - Chamadas incluídas Para a rede fixa e 31 destinos internacionais",
+    Type.find_by(plano: "Net", company: Company.find_by("description like ?", "%vodafone%"))
+
+  ],
+]
+
 
 #Filling Packages
 vodafone_telemovel_list.each do |description, price, tv, internet, movel, cartao, voz, type|
@@ -98,6 +116,10 @@ end
 
 vodafone_tv_net_voz_list.each do |description, price, tv, internet, voz, type|
   Package.create!(description: description, price: price, tv: tv, internet: internet, voz: voz, type: type)
+end
+
+vodafone_net_list.each do |description, price, internet, voz, type|
+  Package.create!(description: description, price: price, internet: internet, voz: voz, type: type)
 end
 
 
