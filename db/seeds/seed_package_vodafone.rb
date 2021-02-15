@@ -108,6 +108,30 @@ vodafone_net_list = [
   ],
 ]
 
+vodafone_outros_list = [
+  [ "Fibra 4 Infinity", "69,9", 
+    "TV - 170 Canais VBox 4K incluída | Amazon Prime Video y HBO Portugal 6 meses - FOX+ durante 24 meses", 
+    "Internet - 200/100 Mbps - Smart Router 2.0", 
+    "Móvel - 1 números - Velocidade até 10 Mbps",
+    "Cartões - Cartão para PC/Tablet/Hotspot - Sem Net Móvel", 
+    "VOZ - Chamadas incluídas Para a rede fixa e 31 destinos internacionais",
+    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%vodafone%"))
+
+
+  ],
+
+  [ "Fibra 4 Infinity Gold", "79,9", 
+    "TV - 170 Canais VBox 4K incluída | Amazon Prime Video y HBO Portugal 24 meses - FOX+ durante 24 meses", 
+    "Internet - 500/100 Mbps - Smart Router 2.0", 
+    "Móvel - 1 números - Velocidade até 1 Gbps",
+    "Cartões - Cartão para PC/Tablet/Hotspot - Sem Net Móvel", 
+    "VOZ - Chamadas incluídas Para a rede fixa e 31 destinos internacionais",
+    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%vodafone%"))
+
+
+  ],
+]
+
 
 #Filling Packages
 vodafone_telemovel_list.each do |description, price, tv, internet, movel, cartao, voz, type|
@@ -120,6 +144,10 @@ end
 
 vodafone_net_list.each do |description, price, internet, voz, type|
   Package.create!(description: description, price: price, internet: internet, voz: voz, type: type)
+end
+
+vodafone_outros_list.each do |description, price, tv, internet, movel, cartao, voz, type|
+  Package.create!(description: description, price: price, tv: tv, internet: internet, movel: movel, cartao: cartao, voz: voz, type: type)
 end
 
 
