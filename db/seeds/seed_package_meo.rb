@@ -110,8 +110,8 @@ meo_outros_list = [
     Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%meo%"))
   ],
 
-  [ "M1 - NET", "24,99", 
-    "TV - 120 Canais Sem MEOBox",
+  [ "M1 TV", "24,99", 
+    "TV - 120 Canais Sem MEOBox | Pack Standard",
     nil, nil, nil, nil, 
     Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%meo%"))
   ],
