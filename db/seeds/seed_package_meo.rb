@@ -89,6 +89,34 @@ meo_gaming_list = [
   ],
 ]
 
+# M2 M1 Outros
+meo_outros_list = [
+  [ "M2 - TV e Voz", "32,99", 
+    "TV - 150 Canais MEOBox | Pack Standard", 
+    nil, nil, nil, 
+    "VOZ - Chamadas ilimitadas Redes fixas nacionais 24h + 50 destinos internacionais (noite, 1.000 min)",
+    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%meo%"))
+  ],
+
+  [ "M2 - NET e Voz", "27,99", 
+    nil, 
+    "Internet - 100/100 Mbps Download/upload", nil, nil, 
+    "VOZ - Chamadas ilimitadas Redes fixas nacionais 24h + 50 destinos internacionais (noite, 1.000 min)",
+    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%meo%"))
+  ],
+
+  [ "M1 - NET", "24,99", nil,
+    "Internet - 30/3 Mbps Download/upload", nil, nil, nil, 
+    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%meo%"))
+  ],
+
+  [ "M1 - NET", "24,99", 
+    "TV - 120 Canais Sem MEOBox",
+    nil, nil, nil, nil, 
+    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%meo%"))
+  ],
+]
+
 meo_telemovel_list.each do |description, price, tv, internet, movel, cartao, voz, type|
   Package.create!(description: description, price: price, tv: tv, internet: internet, movel: movel, cartao: cartao, voz: voz, type: type)
 end
@@ -98,5 +126,9 @@ meo_tv_net_voz_list.each do |description, price, tv, internet, voz, type|
 end
 
 meo_gaming_list.each do |description, price, tv, internet, movel, cartao, voz, type|
+  Package.create!(description: description, price: price, tv: tv, internet: internet, movel: movel, cartao: cartao, voz: voz, type: type)
+end
+
+meo_outros_list.each do |description, price, tv, internet, movel, cartao, voz, type|
   Package.create!(description: description, price: price, tv: tv, internet: internet, movel: movel, cartao: cartao, voz: voz, type: type)
 end
