@@ -15,6 +15,10 @@
     <%= f.text_field :operator, value: @contact.operator, class: "form-control" %>
   </div>
 
+  <div class="form-group d-none">
+    <%= f.number_field :package_id, value: @contact.package_id, class: "form-control" %>
+  </div>
+
   <div class="input-group mb-3 form-input">
     <div class="input-group-prepend">
       <span class="input-group-text p-1 code_pt letter_pt" id="basic-addon1">+351</span>

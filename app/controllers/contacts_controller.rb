@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   def new
-    @contact = Contact.new(operator: params[:operator]) 
+    @contact = Contact.new(operator: params[:operator], package_id: params[:package_id])
   end
   
   def create
@@ -42,6 +42,6 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:total_name, :email, :phone, :operator)
+    params.require(:contact).permit(:total_name, :email, :phone, :operator, :package_id)
   end
 end
