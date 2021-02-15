@@ -40,10 +40,51 @@ nowo_telemovel_list = [
   ],
 ]
 
+# NOWO 3 - TV-NET-VOZ
+# description, price, tv, internet, voz, type
+
+nowo_tv_net_voz_list = [
+  [ "Nowo Tv Net Voz", "27,50", 
+    "TV - 90 Canais + BOX NOWO TV HD", 
+    "Internet - 120 Megas", 
+    "VOZ - Chamadas incluídas",
+    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%nowo%"))
+
+  ],
+
+  [ "Nowo Tv Net Voz", "30,00", 
+    "TV - 140 Canais + BOX NOWO TV HD", 
+    "Internet - 120 Megas", 
+    "VOZ - Chamadas incluídas",
+    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%nowo%"))
+
+  ],
+
+  [ "Nowo Tv Net Voz", "30,00", 
+    "TV - 90 Canais + BOX NOWO TV HD", 
+    "Internet - 250 Megas", 
+    "VOZ - Chamadas incluídas",
+    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%nowo%"))
+
+  ],
+
+  [ "Nowo Tv Net Voz", "32,50", 
+    "TV - 140 Canais + BOX NOWO TV HD", 
+    "Internet - 250 Megas", 
+    "VOZ - Chamadas incluídas",
+    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%nowo%"))
+
+  ],
+]
+
 
 #Filling Packages
 nowo_telemovel_list.each do |description, price, tv, internet, movel, voz, type|
   Package.create!(description: description, price: price, tv: tv, internet: internet, movel: movel, voz: voz, type: type)
+end
+
+nowo_tv_net_voz_list.each do |description, price, tv, internet, voz, type|
+  Package.create!(description: description, price: price, tv: tv, internet: internet, voz: voz, type: type)
 end
 
 puts "Filled NOWO package"
