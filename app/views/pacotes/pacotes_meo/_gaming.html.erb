@@ -41,7 +41,7 @@
         </li>
       </ul>
 
-      <%= link_to "adira já!", new_contact_path(operator: "MEO"), remote: true, class: "text-uppercase order-btn order-btn", role: "button" %>
+      <%= link_to "adira já!", new_contact_path(package_id: @meo_packages.third.packages.first.id), remote: true, class: "text-uppercase order-btn order-btn", role: "button" %>
     </div>
 
     <div class="pricing-card" data-aos="fade-down" data-aos-duration="2000">
@@ -71,7 +71,7 @@
         </li>
       </ul>
 
-      <%= link_to "adira já!", new_contact_path(operator: "MEO"), remote: true, class: "text-uppercase order-btn order-btn", role: "button" %>
+      <%= link_to "adira já!", new_contact_path(package_id: @meo_packages.third.packages.second.id), remote: true, class: "text-uppercase order-btn order-btn", role: "button" %>
     </div>
 
     <div class="pricing-card" data-aos="fade-up" data-aos-duration="2000">
@@ -87,7 +87,7 @@
       </ul>
 
       <div class="adira">
-        <%= link_to "adira já!", new_contact_path(operator: "MEO"), remote: true, class: "text-uppercase order-btn order-btn", role: "button" %>
+        <%= link_to "adira já!", new_contact_path(package_id: @meo_packages.third.packages.third.id), remote: true, class: "text-uppercase order-btn order-btn", role: "button" %>
       </div>
     </div>
   </div>
