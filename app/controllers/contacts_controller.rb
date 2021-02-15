@@ -1,36 +1,26 @@
 class ContactsController < ApplicationController
   def new
-    @contact = Contact.new(operator: params[:operator], package_id: params[:package_id])
+    @contact = Contact.new(package_id: params[:package_id])
   end
   
   def create
     # byebug
     @contact = Contact.new(contact_params)
-    
-    if (@contact.operator == "VODAFONE" || @contact.operator == "MEO" || 
-        @contact.operator == "NOS" || @contact.operator == "NOWO" || @contact.operator == "MIWO")
 
-      if @contact.save
-        # ActionMailer Gmail    
-        ContactMailer.with(contact: @contact).new_contact_email.deliver_later
-        
-        # Twilio Whatsapp
-        message = "The coffee roast '#{@contact.total_name}' was just added."
-        TwilioTextMessenger.new(message).call
+    if @contact.save
+      # ActionMailer Gmail    
+      ContactMailer.with(contact: @contact).new_contact_email.deliver_later
+      
+      # Twilio Whatsapp
+      message = "The coffee roast '#{@contact.total_name}' was just added."
+      TwilioTextMessenger.new(message).call
 
-        respond_to do |format|
-          flash.now[:alert] = "Yeah"
-          format.js 
-          format.json { head :ok }
-        end
-      else  
-        respond_to do |format|
-          flash.now[:alert] = "Could not find user"
-          format.js { render partial: 'contacts/contact_result' }
-          format.json { head :ok }
-        end
+      respond_to do |format|
+        flash.now[:alert] = "Yeah"
+        format.js 
+        format.json { head :ok }
       end
-    else
+    else  
       respond_to do |format|
         flash.now[:alert] = "Could not find user"
         format.js { render partial: 'contacts/contact_result' }

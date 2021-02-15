@@ -4,7 +4,7 @@ class Pacotes::PacotesMeoController < ApplicationController
   before_action :render_pacotes, except: %i[index]
   
   def index
-    @meo_packages = Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%meo%")).packages
+    @meo_telemovel_packages = Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%meo%")).packages
   end
   
   #M4
