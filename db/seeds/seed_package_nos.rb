@@ -96,6 +96,23 @@ nos_tv_net_voz_list = [
   ],
 ]
 
+nos_net_list = [
+  [ "NOS - NET", "24,99", 
+    "Internet - 30 Mbps | Inclui Router Wi-Fi", 
+    Type.find_by(plano: "Net", company: Company.find_by("description like ?", "%nos%"))
+  ],
+
+  [ "NOS - NET", "26,99", 
+    "Internet - 100 Mbps | Inclui Router Wi-Fi", 
+    Type.find_by(plano: "Net", company: Company.find_by("description like ?", "%nos%"))
+  ],
+  
+  [ "NOS - NET", "38,99", 
+    "Internet - 1Gbps | Inclui Giga Router", 
+    Type.find_by(plano: "Net", company: Company.find_by("description like ?", "%nos%"))
+  ],
+]
+
 #Filling Packages
 nos_telemovel_list.each do |description, price, tv, internet, cartao, voz, type|
   Package.create!(description: description, price: price, tv: tv, internet: internet, cartao: cartao, voz: voz, type: type)
@@ -103,6 +120,10 @@ end
 
 nos_tv_net_voz_list.each do |description, price, tv, internet, voz, type|
   Package.create!(description: description, price: price, tv: tv, internet: internet, voz: voz, type: type)
+end
+
+nos_net_list.each do |description, price, internet, type|
+  Package.create!(description: description, price: price, internet: internet, type: type)
 end
 
 puts "Filled NOS package"
