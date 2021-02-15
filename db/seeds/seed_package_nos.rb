@@ -63,35 +63,35 @@ nos_tv_net_voz_list = [
   [ "NOS 3", "34,99", 
     "TV - 150 Canais | Box UMA TV 4K", 
     "Internet - 100 Mbps", 
-    "Chamadas incluídas",
+    "VOZ - Chamadas incluídas",
     Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%nos%"))
   ],
 
   [ "NOS 3", "36,99", 
     "TV - 180 Canais | Box UMA TV 4K - Inclui NOS Studios", 
     "Internet - 200 Mbps", 
-    "Chamadas incluídas",
+    "VOZ - Chamadas incluídas",
     Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%nos%"))
   ],
 
   [ "NOS 3", "58,99", 
     "TV - 180 Canais | Box UMA TV 4K - Canais Premium de Cinema - TVCine, NOS Play e Acorn TV", 
     "Internet - 1 Gbps", 
-    "Chamadas incluídas",
+    "VOZ - Chamadas incluídas",
     Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%nos%"))
   ],
 
   [ "NOS 3", "62,99", 
     "TV - 180 Canais | Box UMA TV 4K - Canais Premium de Entretenimento - TV Cine, NOS Play e ELEVEN", 
     "Internet - 1 Gbps", 
-    "Chamadas incluídas",
+    "VOZ - Chamadas incluídas",
     Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%nos%"))
   ],
 
   [ "NOS 3", "74,99", 
     "TV - 180 Canais | Box UMA TV 4K - Canais Premium de Desporto", 
     "Internet - 1 Gbps", 
-    "Chamadas incluídas",
+    "VOZ - Chamadas incluídas",
     Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%nos%"))
   ],
 ]
@@ -131,7 +131,7 @@ nos_outros_list = [
   [ "NOS 2", "13,49", 
     "TV - 6 Canais | Sem box", 
     nil, 
-    "Chamadas incluídas",
+    "VOZ - Chamadas incluídas",
     Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%nos%"))
   ],
 
