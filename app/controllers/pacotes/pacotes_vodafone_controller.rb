@@ -1,4 +1,5 @@
 class Pacotes::PacotesVodafoneController < ApplicationController
+  before_action :getting_packages
   before_action :render_pacotes, except: %i[index]
   
   def index
@@ -24,5 +25,9 @@ class Pacotes::PacotesVodafoneController < ApplicationController
     respond_to do |format|
       format.js { render partial: "pacotes/pacotes_vodafone/#{params[:option]}" }
     end 
+  end
+
+  def getting_packages
+    @vodafone_packages = Company.third.types
   end
 end
