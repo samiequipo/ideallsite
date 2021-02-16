@@ -34,7 +34,7 @@ type_vodafone.each do |plano|
   Type.create!(plano: plano, company: Company.find_by("description like ?", "%vodafone%"))
 end
 
-type_vodafone.each do |plano|
+type_nowo.each do |plano|
   Type.create!(plano: plano, company: Company.find_by("description like ?", "%nowo%"))
 end
 
