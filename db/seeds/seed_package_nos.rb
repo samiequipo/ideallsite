@@ -19,7 +19,7 @@ nos_telemovel_list = [
     Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%nos%"))
   ],
   
-  [ "NOS 4", "55,99", 
+  [ "NOS 4", "59,99", 
     "TV - 180 Canais | Box UMA TV 4K Inclui NOS Studios ", 
     "Internet - 200 Mbps", 
     "Cartões - 2 cartão | 1 y 2 cartão da 2GB 6000 min/sms", 
