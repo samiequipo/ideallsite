@@ -19,7 +19,7 @@
         </li>
       </ul>
 
-      <%= link_to "adira já!", new_contact_path(operator: "VODAFONE"), remote: true, class: "text-uppercase order-btn order-btn order-btn-vodafone", role: "button" %>
+      <%= link_to "adira já!", new_contact_path(package_id: @vodafone_packages.third.packages.first.id), remote: true, class: "text-uppercase order-btn order-btn order-btn-vodafone", role: "button" %>
     </div>
 
     <div class="pricing-card pricing-card-vodafone" data-aos="fade-up" data-aos-duration="2000">
@@ -41,7 +41,7 @@
         </li>
       </ul>
 
-      <%= link_to "adira já!", new_contact_path(operator: "VODAFONE"), remote: true, class: "text-uppercase order-btn order-btn order-btn-vodafone", role: "button" %>
+      <%= link_to "adira já!", new_contact_path(package_id: @vodafone_packages.third.packages.second.id), remote: true, class: "text-uppercase order-btn order-btn order-btn-vodafone", role: "button" %>
     </div>
   </div>
 </div>
