@@ -1,6 +1,5 @@
 class Contact < ApplicationRecord
   before_save :letter_downcase
-  #:operators?              
   
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   # VALID_PHONE_REGEX = /\A\d+\z/
@@ -20,8 +19,5 @@ class Contact < ApplicationRecord
   def letter_downcase 
     self.total_name = total_name.capitalize
     self.email = email.downcase
-    if self.operator
-      self.operator = operator.upcase
-    end 
   end
 end
