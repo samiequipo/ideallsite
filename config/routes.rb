@@ -1,15 +1,11 @@
 Rails.application.routes.draw do
-  get 'privacy/politica_privacidade'
   #Admin devise 2, root and getting user data
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
+  #Root and contact_modal path
   root 'pages#index'
   resources :contacts, only: [:new, :create]
-  
-  get 'example', to: "example#index"
-  get 'meo_p', to: "example#meo", hidden: true
-  get 'nos_p', to: "example#nos"
-  get 'cocacola', to: "pages#cocacola"
   
   #Pacotes MEO
   scope :servicos do
@@ -54,16 +50,3 @@ Rails.application.routes.draw do
     end
   end
 end
-
-# Give to man => 11
-# idealsite.herokuapp.com/#services
-# idealsite.herokuapp.com/#portfolio
-# idealsite.herokuapp.com/#about
-# idealsite.herokuapp.com/#contact
-# idealsite.herokuapp.com/other/meo
-# idealsite.herokuapp.com/other/nos
-# idealsite.herokuapp.com/other/vodafone
-# idealsite.herokuapp.com/other/nowo
-# idealsite.herokuapp.com/other/family
-# idealsite.herokuapp.com/other/business
-# idealsite.herokuapp.com/other/gamers
