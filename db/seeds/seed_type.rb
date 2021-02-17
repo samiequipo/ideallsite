@@ -23,19 +23,19 @@ type_nowo = [
 ]
 
 type_meo.each do |plano|
-  Type.create!(plano: plano, company: Company.find_by("description like ?", "%meo%"))
+  Type.create!(plano: plano, company: Company.find_by("description like ?", "%MEO%"))
 end
 
 type_nos.each do |plano|
-  Type.create!(plano: plano, company: Company.find_by("description like ?", "%nos%"))
+  Type.create!(plano: plano, company: Company.find_by("description like ?", "%NOS%"))
 end
 
 type_vodafone.each do |plano|
-  Type.create!(plano: plano, company: Company.find_by("description like ?", "%vodafone%"))
+  Type.create!(plano: plano, company: Company.find_by("description like ?", "%VODAFONE%"))
 end
 
 type_nowo.each do |plano|
-  Type.create!(plano: plano, company: Company.find_by("description like ?", "%nowo%"))
+  Type.create!(plano: plano, company: Company.find_by("description like ?", "%NOWO%"))
 end
 
 puts "Type Filled!"

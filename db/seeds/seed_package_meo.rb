@@ -9,7 +9,7 @@ meo_telemovel_list = [
     "Móvel - 500 MB Máxima velocidade da rede 500 minutos + 500 SMS por cartão",
     "Cartões - 1 cartão", 
     "VOZ - Chamadas incluídas Redes fixas nacionais 24h + 50 destinos internacionais (noite, 1.000 min)",
-    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%meo%"))
+    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%MEO%"))
   ],
   
   [ "Oferta mais Net em casa", "55,99", 
@@ -18,7 +18,7 @@ meo_telemovel_list = [
     "Móvel - 1 GB Máxima velocidade da rede 3.500 minutos + 3.500 SMS por cartão",
     "Cartões - 1 cartão", 
     "VOZ - Chamadas incluídas Redes fixas nacionais 24h + 50 destinos internacionais (noite, 1.000 min)",
-    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%meo%"))
+    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%MEO%"))
   ],
   
   [ "M4 - MEO com tudo", "99,99", 
@@ -27,7 +27,7 @@ meo_telemovel_list = [
     "Móvel - Dados, minutos e SMS ilimitados Máxima velocidade da rede",
     "Cartões - 1 cartão | ilimitado", 
     "VOZ - Chamadas ilimitadas Redes fixas nacionais 24h + 50 destinos internacionais (noite, 1.000 min)",
-    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%meo%"))
+    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%MEO%"))
   ],
  
   [ "M4", "59,99", 
@@ -36,7 +36,7 @@ meo_telemovel_list = [
     "Móvel - 2 GB Máxima velocidade da rede 3.500 minutos + 3.500 SMS por cartão",
     "Cartões - 2 cartão incluídos", 
     "VOZ - Chamadas incluídas Redes fixas nacionais 24h + 50 destinos internacionais (noite, 1.000 min)",
-    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%meo%"))
+    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%MEO%"))
   ],
 ]
 
@@ -47,21 +47,21 @@ meo_tv_net_voz_list = [
     "TV - 150 Canais MEOBox | Pack Standard", 
     "Internet - 500/100 Mbps Download/upload", 
     "VOZ - Chamadas incluídas Redes fixas nacionais 24h + 50 destinos internacionais (noite, 1.000 min)",
-    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%meo%"))
+    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%MEO%"))
   ],
 
   [ "MEO com tudo", "74,99", 
     "TV - 200 Canais MEOBox | Pack Standard + Extra | 200 canais + €50/mês em canais e serviços premium e MEO Go Multi.", 
     "Internet - 1000/400 Mbps Download/upload", 
     "VOZ - Chamadas ilimitadas Redes fixas nacionais 24h + 50 destinos internacionais (noite, 1.000 min)",
-    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%meo%"))
+    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%MEO%"))
   ],
 
   [ "M3", "30,99", 
     "TV - 100 Canais | Pack Standard Sem MEOBox", 
     "Internet - 30/10 Mbps Download/upload 500GB de tráfego incluído", 
     "VOZ - Chamadas incluídas Redes fixas nacionais 24h + 50 destinos internacionais (noite, 1.000 min)",
-    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%meo%"))
+    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%MEO%"))
   ],
 ]
 
@@ -73,19 +73,19 @@ meo_gaming_list = [
     "Móvel - 1 GB Máxima velocidade da rede 3.500 minutos + 3.500 SMS",
     "Cartões - 1 cartão | ilimitado", 
     "VOZ - Chamadas ilimitadas Redes fixas nacionais 24h + 50 destinos internacionais (noite, 1.000 min)",
-    Type.find_by(plano: "Gaming edition", company: Company.find_by("description like ?", "%meo%"))
+    Type.find_by(plano: "Gaming edition", company: Company.find_by("description like ?", "%MEO%"))
   ],
 
   [ "M3 - Gaming com TV, Net e Voz", "50,99", 
     "TV - 150 Canais MEOBox | Pack Standard", 
     "Internet - 1000/400 Mbps Download/upload", nil, nil, 
     "VOZ - Chamadas ilimitadas Redes fixas nacionais 24h + 50 destinos internacionais (noite, 1.000 min)",
-    Type.find_by(plano: "Gaming edition", company: Company.find_by("description like ?", "%meo%"))
+    Type.find_by(plano: "Gaming edition", company: Company.find_by("description like ?", "%MEO%"))
   ],
 
   [ "M1 - Gaming com NET", "39,99", nil,
     "Internet - 1000/400 Mbps Download/upload", nil, nil, nil, 
-    Type.find_by(plano: "Gaming edition", company: Company.find_by("description like ?", "%meo%"))
+    Type.find_by(plano: "Gaming edition", company: Company.find_by("description like ?", "%MEO%"))
   ],
 ]
 
@@ -95,25 +95,25 @@ meo_outros_list = [
     "TV - 150 Canais MEOBox | Pack Standard", 
     nil, nil, nil, 
     "VOZ - Chamadas ilimitadas Redes fixas nacionais 24h + 50 destinos internacionais (noite, 1.000 min)",
-    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%meo%"))
+    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%MEO%"))
   ],
 
   [ "M2 - NET e Voz", "27,99", 
     nil, 
     "Internet - 100/100 Mbps Download/upload", nil, nil, 
     "VOZ - Chamadas ilimitadas Redes fixas nacionais 24h + 50 destinos internacionais (noite, 1.000 min)",
-    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%meo%"))
+    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%MEO%"))
   ],
 
   [ "M1 - NET", "24,99", nil,
     "Internet - 30/3 Mbps Download/upload", nil, nil, nil, 
-    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%meo%"))
+    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%MEO%"))
   ],
 
   [ "M1 TV", "24,99", 
     "TV - 120 Canais Sem MEOBox | Pack Standard",
     nil, nil, nil, nil, 
-    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%meo%"))
+    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%MEO%"))
   ],
 ]
 

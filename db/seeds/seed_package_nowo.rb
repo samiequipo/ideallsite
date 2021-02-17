@@ -3,39 +3,39 @@
 # NOWO 4 - TELEMOVEL
 # description, price, tv, internet, movel,voz, type
 nowo_telemovel_list = [
-  [ "Nowo Telemóvel", "32,50", 
+  [ "nowo Telemóvel", "32,50", 
     "TV - 90 Canais + BOX NOWO TV HD", 
     "Internet - 120 Megas", 
     "Móvel - 1GB + 1.000 Min/SMS",
     "VOZ - Chamadas incluídas",
-    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%nowo%"))
+    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%NOWO%"))
 
   ],
 
-  [ "Nowo Telemóvel", "37,50", 
+  [ "nowo Telemóvel", "37,50", 
     "TV - 140 Canais + BOX NOWO TV HD", 
     "Internet - 120 Megas", 
     "Móvel - 2GB + 2.000 Min/SMS",
     "VOZ - Chamadas incluídas",
-    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%nowo%"))
+    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%NOWO%"))
 
   ],
 
-  [ "Nowo Telemóvel", "40,00", 
+  [ "nowo Telemóvel", "40,00", 
     "TV - 90 Canais + BOX NOWO TV HD", 
     "Internet - 250 Megas", 
     "Móvel - 4GB + 4.000 Min/SMS",
     "VOZ - Chamadas incluídas",
-    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%nowo%"))
+    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%NOWO%"))
 
   ],
 
-  [ "Nowo Telemóvel", "42,50", 
+  [ "nowo Telemóvel", "42,50", 
     "TV - 140 Canais + BOX NOWO TV HD", 
     "Internet - 250 Megas", 
     "Móvel - 4GB + 4.000 Min/SMS",
     "VOZ - Chamadas incluídas",
-    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%nowo%"))
+    Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%NOWO%"))
 
   ],
 ]
@@ -44,69 +44,69 @@ nowo_telemovel_list = [
 # description, price, tv, internet, voz, type
 
 nowo_tv_net_voz_list = [
-  [ "Nowo Tv Net Voz", "27,50", 
+  [ "nowo Tv Net Voz", "27,50", 
     "TV - 90 Canais + BOX NOWO TV HD", 
     "Internet - 120 Megas", 
     "VOZ - Chamadas incluídas",
-    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%nowo%"))
+    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%NOWO%"))
 
   ],
 
-  [ "Nowo Tv Net Voz", "30,00", 
+  [ "nowo Tv Net Voz", "30,00", 
     "TV - 140 Canais + BOX NOWO TV HD", 
     "Internet - 120 Megas", 
     "VOZ - Chamadas incluídas",
-    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%nowo%"))
+    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%NOWO%"))
 
   ],
 
-  [ "Nowo Tv Net Voz", "30,00", 
+  [ "nowo Tv Net Voz", "30,00", 
     "TV - 90 Canais + BOX NOWO TV HD", 
     "Internet - 250 Megas", 
     "VOZ - Chamadas incluídas",
-    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%nowo%"))
+    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%NOWO%"))
 
   ],
 
-  [ "Nowo Tv Net Voz", "32,50", 
+  [ "nowo Tv Net Voz", "32,50", 
     "TV - 140 Canais + BOX NOWO TV HD", 
     "Internet - 250 Megas", 
     "VOZ - Chamadas incluídas",
-    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%nowo%"))
+    Type.find_by(plano: "TV Net Voz", company: Company.find_by("description like ?", "%NOWO%"))
 
   ],
 ]
 
 nowo_outros_list = [
-  [ "Nowo Outros", "22,50", 
+  [ "nowo Outros", "22,50", 
     nil, 
     "Internet - 250 Megas", 
     nil,
-    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%nowo%"))
+    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%NOWO%"))
 
   ],
 
-  [ "Nowo Outros", "27,50", 
+  [ "nowo Outros", "27,50", 
     nil, 
     "Internet - 120 Megas", 
     "Móvel - 2GB + 2.000 Min/SMS",
-    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%nowo%"))
+    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%NOWO%"))
 
   ],
 
-  [ "Nowo Outros", "30,00", 
+  [ "nowo Outros", "30,00", 
     nil, 
     "Internet - 120 Megas", 
     "Móvel - 4GB + 4.000 Min/SMS",
-    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%nowo%"))
+    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%NOWO%"))
 
   ],
 
-  [ "Nowo Telemóvel", "35,00", 
+  [ "nowo Telemóvel", "35,00", 
     "TV - 90 Canais + BOX NOWO TV HD", 
     "Internet - 250 Megas", 
     "Móvel - 2GB + 2.000 Min/SMS",
-    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%nowo%"))
+    Type.find_by(plano: "Outros", company: Company.find_by("description like ?", "%NOWO%"))
 
   ],
 ]
