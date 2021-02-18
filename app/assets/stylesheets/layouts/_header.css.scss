@@ -50,49 +50,11 @@ main .site-header .title p {
   color: var(--white);
 }
 
-main .site-header .free-trial-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1.875rem;
-  padding: 0 1.25rem;
-}
-
-main .site-header .free-trial-form input {
-  width: 25%;
-  height: 3.125rem;
-  padding: 0 1.25rem;
-  font-size: 1rem;
-  border: 0.063rem solid var(--light-gray);
-  border-radius: 0.313rem;
-}
-
-main .site-header .free-trial-form button {
-  height: 3.125rem;
-  margin-left: 1.25rem;
-  padding: 0 1.875rem;
-  border: none;
-  border-radius: 0.313rem;
-  font-size: 1rem;
-  font-weight: 500;
-  white-space: nowrap;
-  color: var(--white);
-  background-color: var(--dark-gray);
-}
-
-main .site-header .note {
-  width: 35%;
-  margin: 1.875rem auto;
-  color: var(--white);
-  font-size: 0.8rem;
-  font-weight: 100;
-}
-
 main .site-header img {
   position: relative;
   width: 40%;
   height: 50%;
-  z-index: 1000;
+  z-index: 15;
   background-size: cover;
 }
 
