@@ -13,11 +13,12 @@ class Contact < ApplicationRecord
   #         format: { with: VALID_PHONE_REGEX }
 
   belongs_to :package, optional: true
+  visitable
 
   private
     
-  def letter_downcase 
-    self.total_name = total_name.capitalize
-    self.email = email.downcase
-  end
+    def letter_downcase 
+      self.total_name = total_name.capitalize
+      self.email = email.downcase
+    end
 end
