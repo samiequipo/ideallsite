@@ -1,0 +1,69 @@
+<% if current_page?(root_path) %>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top shadowNav" id="mainNav">
+    <div	iv class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag 'Ideall-logo.png', class:"logo-ideall" %></a>
+
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <%= link_to 'Pacotes', root_path(anchor: 'services'), id:"anchor_service", class: "nav-link js-scroll-trigger"   %>
+          </li>
+
+          <li class="nav-item">
+            <%= link_to 'Promoções', root_path(anchor: 'portfolio'), class: 'nav-link js-scroll-trigger' %>
+          </li>
+
+          <li class="nav-item">
+            <%= link_to 'Sobre nos', root_path(anchor: 'about'), class: 'nav-link js-scroll-trigger' %>
+          </li>
+
+          <li class="nav-item">
+            <%= link_to 'Contata-me', root_path(anchor: 'contact') , class:" nav-link js-scroll-trigger" %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<% else %>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top shadowNav" id="mainNav">
+    <div	iv class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag which_pacotes?("logo"), class:"#{ which_pacotes?("logo_size") }"%></a>
+
+      <button class="navbar-toggler navbar-toggler-right " type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars ml-1"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto ">
+          <li class="nav-item">
+            <%= link_to 'Ideall-Home', root_path, id:'hack15-menu-button', class: "nav-link js-scroll-trigger margin-ideall-pacotes #{ which_pacotes?("hover") }" %>
+          </li>
+
+          <li class="nav-item">
+            <%= link_to 'Promoções', root_path(anchor: 'portfolio'), id:'hack15-menu-button', class: "nav-link js-scroll-trigger #{ which_pacotes?("hover") }" %>
+          </li>
+
+          <li class="dropdown d-lg-flex align-items-lg-center margin_dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle activate_pacote <%=  which_pacotes?("hover")  %> " href="#">Otros Pacotes</a>
+            <ul role="menu" class="dropdown-menu">
+              <li class="dropdown-menu">Setting</li>
+              <li class="nav-item"><%= link_to 'Meo', pacotes_meo_path, class: "nav-link pacotes_hover_pading #{ which_pacotes?("hover") }" if !current_page?(pacotes_meo_path) %></li>
+              <li class="nav-item"><%= link_to 'Nos', pacotes_nos_path, class: "nav-link pacotes_hover_pading #{ which_pacotes?("hover") }" if !current_page?(pacotes_nos_path) %></li>
+              <li class="nav-item"><%= link_to 'Vodafone', pacotes_vodafone_path, class: "nav-link pacotes_hover_pading #{ which_pacotes?("hover") }" if !current_page?(pacotes_vodafone_path) %></li>
+              <li class="nav-item"><%= link_to 'Nowo', pacotes_nowo_path, class: "nav-link pacotes_hover_pading #{ which_pacotes?("hover") }" if !current_page?(pacotes_nowo_path) %></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<% end %>
