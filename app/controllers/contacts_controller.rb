@@ -6,6 +6,7 @@ class ContactsController < ApplicationController
   def create
     # byebug
     @contact = Contact.new(contact_params)
+    @contact.visit = Ahoy::Visit.last
 
     if @contact.save
       # ActionMailer Gmail    
