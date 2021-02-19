@@ -34,70 +34,88 @@
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script>
       window.addEventListener('load', function () {
-      	const glider = new Glider(document.querySelector('.carousel__lista'), {
-      		slidesToShow: 1,
-      		slidesToScroll: 1,
-      		dots: '.carousel__indicadores',
-      		arrows: {
-      			prev: '.carousel__anterior',
-      			next: '.carousel__siguiente',
-      			loop: true,
-      			dragVelocity: 5000
-      		},
-      		responsive: [{
-      			// screens greater than >= 775px
-      			breakpoint: 450,
-      			settings: {
-      				// Set to `auto` and provide item width to adjust to viewport
-      				slidesToShow: 1,
-      				slidesToScroll: 1,
-      				loop: true
-      			}
-      		}, {
-      			// screens greater than >= 1024px
-      			breakpoint: 800,
-      			settings: {
-      				slidesToShow: 1,
-      				slidesToScroll: 1,
-      				// draggable: true,
-      				scrollLock: true,
-      				autoplay: 1,
-      				animationDuration: 3000000,
-      				animationTimingFunc: 'linear',
-      				loop: true
-      			}
-      		}]
+        const glider = new Glider(document.querySelector('.carousel__lista'), {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: '.carousel__indicadores',
+          arrows: {
+            prev: '.carousel__anterior',
+            next: '.carousel__siguiente',
+            loop: true,
+            dragVelocity: 5000
+          },
+          responsive: [{
+            // screens greater than >= 775px
+            breakpoint: 450,
+            settings: {
+              // Set to `auto` and provide item width to adjust to viewport
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              loop: true
+            }
+          }, {
+            // screens greater than >= 1024px
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              // draggable: true,
+              scrollLock: true,
+              autoplay: 1,
+              animationDuration: 3000000,
+              animationTimingFunc: 'linear',
+              loop: true
+            }
+          }]
       
-      	});
+        });
       
-      	//
-      	function sliderAuto(slider, miliseconds) {
-      		const slidesCount = slider.track.childElementCount;
-      		let slideTimeout = null;
-      		let nextIndex = 1;
+        //
+        function sliderAuto(slider, miliseconds) {
+          const slidesCount = slider.track.childElementCount;
+          let slideTimeout = null;
+          let nextIndex = 1;
       
-      		function slide() {
-      			slideTimeout = setTimeout(
-      				function () {
-      					if (nextIndex >= slidesCount) {
-      						nextIndex = 0;
-      					}
-      					slider.scrollItem(nextIndex++);
-      				},
-      				miliseconds
-      			);
-      		}
+          function slide() {
+            slideTimeout = setTimeout(
+              function () {
+                if (nextIndex >= slidesCount) {
+                  nextIndex = 0;
+                }
+                slider.scrollItem(nextIndex++);
+              },
+              miliseconds
+            );
+          }
       
-      		slider.ele.addEventListener('glider-animated', function () {
-      			window.clearInterval(slideTimeout);
-      			slide();
-      		});
+          slider.ele.addEventListener('glider-animated', function () {
+            window.clearInterval(slideTimeout);
+            slide();
+          });
       
-      		slide();
-      	}
+          slide();
+        }
       
-      	sliderAuto(glider, 400000)
+        sliderAuto(glider, 400000)
       });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D993N1VCEK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      
+      document.addEventListener("turbolinks:load", function (event) {
+        gtag('config', 'G-PXZ85TKGT6');
+          page_location: event.data.url,
+          page_path: event.srcElement.location.pathname,
+          page_title: event.srcElement.title
+      })
     </script>
   </head>
 
@@ -130,12 +148,12 @@
     <!-- Promotion script -->
     <script>
       function imgSlider(captureImage, color, letter) {
-      	document.querySelector('.starbucks').src = captureImage;
-      	document.querySelector('.circle').style.background = color;
-      	document.querySelector('.letter').style.color = color;
-      	document.querySelector('.btn--portfolio').style.background = color;
-      	document.querySelector('#page-top > svg.wave-promo > path:nth-child(1)').style.fill = color;
-      	document.querySelector('#page-top > svg.wave-promo > path:nth-child(2)').style.fill = color;
+        document.querySelector('.starbucks').src = captureImage;
+        document.querySelector('.circle').style.background = color;
+        document.querySelector('.letter').style.color = color;
+        document.querySelector('.btn--portfolio').style.background = color;
+        document.querySelector('#page-top > svg.wave-promo > path:nth-child(1)').style.fill = color;
+        document.querySelector('#page-top > svg.wave-promo > path:nth-child(2)').style.fill = color;
       }
     </script>
 
@@ -147,14 +165,14 @@
     <%# Remove ANCHOR %>
     <script>
       // when the DOM is ready
-      $(document).ready(function() {
+      $(document).ready(function () {
         // get the anchor link buttons
         const menuBtn = $('.hack15-menu-button');
         // when each button is clicked
-        menuBtn.click(()=>{
+        menuBtn.click(() => {
           // set a short timeout before taking action
           // so as to allow hash to be set
-          setTimeout(()=>{
+          setTimeout(() => {
             // call removeHash function after set timeout
             removeHash();
           }, 2); // 5 millisecond timeout in this case
@@ -162,8 +180,9 @@
       
         // removeHash function
         // uses HTML5 history API to manipulate the location bar
-        function removeHash(){
-          history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+        function removeHash() {
+          history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location
+            .search);
         }
       });
     </script>
@@ -171,15 +190,22 @@
     <%# BUTTON PACOTES %>
     <% if !current_page?(root_path) %>
       <script>
-        $("#tile-1 .nav-tabs a").click(function() {
-            var position = $(this).parent().position();
-            var width = $(this).parent().width();
-         $("#tile-1 .slider").css({"left":+ position.left,"width":width});
+        $("#tile-1 .nav-tabs a").click(function () {
+          var position = $(this).parent().position();
+          var width = $(this).parent().width();
+          $("#tile-1 .slider").css({
+            "left": +position.left,
+            "width": width
           });
-          var actWidth = $("#tile-1 .nav-tabs").find(".active").parent("li").width();
-          var actPosition = $("#tile-1 .nav-tabs .active").position();
-          $("#tile-1 .slider").css({"left":+ actPosition.left,"width": actWidth});
+        });
+        var actWidth = $("#tile-1 .nav-tabs").find(".active").parent("li").width();
+        var actPosition = $("#tile-1 .nav-tabs .active").position();
+        $("#tile-1 .slider").css({
+          "left": +actPosition.left,
+          "width": actWidth
+        });
       </script>
     <% end  %>
   </body>
+
 </html>
