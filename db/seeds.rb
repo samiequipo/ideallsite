@@ -13,6 +13,6 @@
 #   
 # end
 
-# AdminUser.create!(email: 'sjdacosta@ideall.com', password: 'ferrari1992', password_confirmation: 'ferrari1992') 
-# AdminUser.create!(email: 'luiscastro@ideall.com', password: 'lamborghini1993', password_confirmation: 'lamborghini1993') 
-# puts 'AdminUser created!'
+AdminUser.create!(email: 'sjdacosta@ideall.com', password: 'ferrari1992', password_confirmation: 'ferrari1992') 
+AdminUser.create!(email: 'luiscastro@ideall.com', password: 'lamborghini1993', password_confirmation: 'lamborghini1993') 
+puts 'AdminUser created!'
