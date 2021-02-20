@@ -4,11 +4,11 @@
 .hero--main {
   display: flex;
   align-items: center;
-  min-height: 32.25rem;
+  min-height: 28.25rem;
   text-align: center;
   color: white;
 
-  background-image: asset-url("fibra-meo.jpg");
+  background-image: asset-url("meo_bg.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,15 +18,14 @@
 .hero--main__nos {
   display: flex;
   align-items: center;
-  min-height: 32.25rem;
+  background-image: asset-url("NOS-cobertura.jpg");
+  min-height: 20.25rem;
   text-align: center;
   color: white;
 
-  background-image: asset-url("tvCine.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #464646;
 }
 
 .hero--main__nowo {
@@ -36,6 +35,24 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fb4d29;
+}
+
+@media only screen and (max-width: 1115px) {
+  .hero--main {
+    min-height: 26.25rem;
+  }
+}
+
+@media only screen and (max-width: 1081px) {
+  .hero--main {
+    min-height: 19rem;
+  }
+}
+
+@media only screen and (max-width: 752px) {
+  .hero--main {
+    min-height: 17rem;
+  }
 }
 
 @media only screen and (max-width: 726px) {
