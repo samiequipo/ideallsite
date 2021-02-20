@@ -12,11 +12,7 @@
 
 /* =================Site Header================= */
 
-main {
-  margin-top: 5%;
-}
-
-main .site-header {
+.site-header {
   position: relative;
   width: 100%;
   height: 110vh;
@@ -35,18 +31,18 @@ main .site-header {
   color: #131416;
 }
 
-main .site-header .logo {
+.site-header .logo {
   width: 5rem;
 }
 
-main .site-header .title h1 {
+.site-header .title h1 {
   margin-top: 3.438rem;
   font-size: 2.5rem;
   letter-spacing: 0.063rem;
   color: var(--white);
 }
 
-main .site-header .title p {
+.site-header .title p {
   margin-top: 1.25rem;
   font-size: 1.5rem;
   font-weight: 300;
@@ -54,7 +50,7 @@ main .site-header .title p {
   color: var(--white);
 }
 
-main .site-header img {
+.site-header img {
   position: relative;
   width: 40%;
   height: 50%;
@@ -62,7 +58,7 @@ main .site-header img {
   background-size: cover;
 }
 
-main .site-header .wave {
+.site-header .wave {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -83,7 +79,7 @@ main .site-header .wave {
 
 /* ===================Site Feature=================== */
 
-main .site-feature {
+.site-feature {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 62.5rem;
@@ -91,22 +87,22 @@ main .site-feature {
   padding: 3% 0;
 }
 
-main .site-feature div {
+.site-feature div {
   width: 85%;
 }
 
-main .site-feature div img {
+.site-feature div img {
   width: 3.125rem;
   height: 3.125rem;
   object-fit: contain;
 }
 
-main .site-feature div h3 {
+.site-feature div h3 {
   margin-top: 1.25rem;
   color: var(--dark-gray1);
 }
 
-main .site-feature div p {
+.site-feature div p {
   margin-top: 1.25rem;
   color: var(--light-gray);
   font-weight: 300;
@@ -114,7 +110,7 @@ main .site-feature div p {
 
 /* ===============Brand=============== */
 
-main .site-brand {
+.site-brand {
   display: flex;
   flex-wrap: wrap;
   padding: 1.875rem 0;
@@ -126,27 +122,27 @@ main .site-brand {
   border-left: none;
 }
 
-main .site-brand .brand-img {
+.site-brand .brand-img {
   width: 5.625rem;
   margin: 1.25rem 0.625rem;
 }
 
 /* ================Quote================ */
 
-main .site-quote {
+.site-quote {
   margin: 6.25rem auto;
   text-align: center;
   width: 50rem;
 }
 
-main .site-quote h1 {
+.site-quote h1 {
   font-size: 1.5em;
   font-weight: 300;
   line-height: 1.5em;
   letter-spacing: 0.063rem;
 }
 
-main .site-quote p {
+.site-quote p {
   margin-top: 1.875rem;
   color: var(--dark-gray1);
   font-weight: 500;
@@ -154,7 +150,7 @@ main .site-quote p {
   letter-spacing: 0.063rem;
 }
 
-main .site-quote button {
+.site-quote button {
   height: 3.125rem;
   margin-top: 3.125rem;
   padding: 0 1.875rem;
@@ -171,15 +167,15 @@ main .site-quote button {
 @media (max-width: 1242px) {
   /* Header */
 
-  main .site-header .free-trial-form {
+  .site-header .free-trial-form {
     flex-direction: column;
   }
 
-  main .site-header .free-trial-form input {
+  .site-header .free-trial-form input {
     width: 40%;
   }
 
-  main .site-header .free-trial-form button {
+  .site-header .free-trial-form button {
     height: 3.125rem;
     width: 40%;
     margin-top: 0.625rem;
@@ -190,29 +186,29 @@ main .site-quote button {
 @media (max-width: 1080px) {
   /* Header */
 
-  main .site-header .title h1 {
+  .site-header .title h1 {
     font-size: 2rem;
     font-weight: 500;
   }
 
-  main .site-header .title p {
+  .site-header .title p {
     font-size: 1.3rem;
     font-weight: 300;
   }
 
-  main .site-header img {
+  .site-header img {
     width: 65%;
   }
 
-  main .site-header .free-trial-form {
+  .site-header .free-trial-form {
     flex-direction: row;
   }
 
-  main .site-header .free-trial-form input {
+  .site-header .free-trial-form input {
     width: 40%;
   }
 
-  main .site-header .free-trial-form button {
+  .site-header .free-trial-form button {
     height: 3.125rem;
     width: auto;
     margin-top: 0;
@@ -222,23 +218,23 @@ main .site-quote button {
 
   /* Feature */
 
-  main .site-feature {
+  .site-feature {
     width: 43.75rem;
   }
 
   /* Brand */
 
-  main .site-brand {
+  .site-brand {
     width: 43.75rem;
   }
 
   /* Quote */
 
-  main .site-quote {
+  .site-quote {
     width: 37.5rem;
   }
 
-  main .site-quote h1 {
+  .site-quote h1 {
     font-size: 1.3em;
   }
 
@@ -252,52 +248,52 @@ main .site-quote button {
 @media (max-width: 750px) {
   /* Header */
 
-  main .site-header {
+  .site-header {
     height: 90vh;
   }
 
-  main .site-header .free-trial-form input {
+  .site-header .free-trial-form input {
     width: 70%;
   }
 
-  main .site-header .note {
+  .site-header .note {
     width: 80%;
   }
 
-  main .site-header img {
+  .site-header img {
     width: 80%;
   }
 
   /* Feature */
 
-  main .site-feature {
+  .site-feature {
     grid-template-columns: 1fr;
     width: 100%;
     padding: 0 1.875rem;
   }
 
-  main .site-feature div {
+  .site-feature div {
     margin-top: 2.5rem;
     width: 100%;
   }
 
-  main .site-feature div img {
+  .site-feature div img {
     width: 2.5rem;
   }
 
   /* Brand */
 
-  main .site-brand {
+  .site-brand {
     width: 90%;
   }
 
-  main .site-brand .brand-img {
+  .site-brand .brand-img {
     width: 6.875rem;
   }
 
   /* Quote */
 
-  main .site-quote {
+  .site-quote {
     width: 90%;
   }
 
@@ -314,22 +310,22 @@ main .site-quote button {
 @media (max-width: 484px) {
   /* Header */
 
-  main .site-header .free-trial-form {
+  .site-header .free-trial-form {
     flex-direction: column;
   }
 
-  main .site-header .free-trial-form input {
+  .site-header .free-trial-form input {
     width: 90%;
   }
 
-  main .site-header .free-trial-form button {
+  .site-header .free-trial-form button {
     width: 90%;
     margin-top: 0.625rem;
     margin-left: 0;
   }
 }
 
-.heading-primary--main {
+.heading-primary-- {
   animation: moveInLeft 2s ease-out;
 }
 
