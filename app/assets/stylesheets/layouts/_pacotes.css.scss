@@ -28,13 +28,25 @@
   background-size: cover;
 }
 
+.hero--main__vodafone {
+  display: flex;
+  align-items: center;
+  background-image: asset-url("vodafone.jpeg");
+  min-height: 17.25rem;
+  text-align: center;
+  color: white;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .hero--main__nowo {
-  min-height: 29rem;
+  min-height: 26rem;
   background-image: asset-url("nowo_bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #fb4d29;
 }
 
 @media only screen and (max-width: 1260px) {
@@ -103,21 +115,57 @@
   }
 }
 
-@media only screen and (max-width: 726px) {
-  .hero--main__nowo {
-    min-height: 19rem;
+@media only screen and (max-width: 780px) {
+  .hero--main {
+    min-height: 14rem;
   }
 }
 
-@media only screen and (max-width: 484px) {
+@media only screen and (max-width: 560px) {
+  .hero--main {
+    min-height: 11rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .hero--main {
+    min-height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 326px) {
+  .hero--main {
+    min-height: 6rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .hero--main__nowo {
+    min-height: 18rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
   .hero--main__nowo {
     min-height: 16rem;
   }
 }
 
-@media only screen and (max-width: 395px) {
+@media only screen and (max-width: 726px) {
   .hero--main__nowo {
     min-height: 13rem;
+  }
+}
+
+@media only screen and (max-width: 484px) {
+  .hero--main__nowo {
+    min-height: 11rem;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .hero--main__nowo {
+    min-height: 10rem;
   }
 
   .price {
@@ -127,7 +175,7 @@
 
 @media only screen and (max-width: 280px) {
   .hero--main__nowo {
-    min-height: 10rem;
+    min-height: 8rem;
   }
 }
 
