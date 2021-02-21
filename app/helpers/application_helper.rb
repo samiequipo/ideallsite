@@ -36,11 +36,11 @@ module ApplicationHelper
 
   def pacotes_nowo(type)
     if type == "logo" 
-      "nowo.png"
+      "Ideall-logo__nowo.png"
     elsif type == "hover" 
       "pacotes_hover_nowo"
     else
-      "nowo-logo-ideall"
+      "logo-ideall"
     end
   end
 end
