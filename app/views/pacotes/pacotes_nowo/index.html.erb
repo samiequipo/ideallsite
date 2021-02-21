@@ -1,34 +1,36 @@
-<section class="packages-section">
-  <div class="hero--main__nowo"></div>
+<main>
+  <section class="menu-pricing p-0">
+    <div class="hero--main__nowo"></div>
 
-  <div class="tile" id="tile-1">
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs nav-tabs_nowo nav-justified" role="tablist">
-      <div class="slider slider_nowo"></div>
+    <div class="tile" id="tile-1">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs nav-tabs_nowo nav-justified" role="tablist">
+        <div class="slider slider_nowo"></div>
 
-      <li class="nav-item">
-        <%= link_to telemovel_nowo_path(option: "telemovel"), {remote: true, id:"home-tab", class: "nav-link active", "data-toggle" => "tab" }  do %>
-          <span class="d-none d-md-block"><i class="fas fa-home"></i> Telemovel</span>
-        <% end %>
-      </li>
+        <li class="nav-item">
+          <%= link_to telemovel_nowo_path(option: "telemovel"), {remote: true, id:"home-tab", class: "nav-link active", "data-toggle" => "tab" }  do %>
+            <span class="d-none d-md-block"><i class="fas fa-home"></i> Telemovel</span>
+          <% end %>
+        </li>
 
-      <li class="nav-item">
-        <%= link_to tv_net_voz_nowo_path(option: "tv_net_voz"), {remote: true, id:"home-tab", class: "nav-link", "data-toggle" => "tab" }  do %>
-          <i class="fas fa-home"></i> Tv_net_voz
-        <% end %>
-      </li>
+        <li class="nav-item">
+          <%= link_to tv_net_voz_nowo_path(option: "tv_net_voz"), {remote: true, id:"home-tab", class: "nav-link", "data-toggle" => "tab" }  do %>
+            <i class="fas fa-home"></i> Tv_net_voz
+          <% end %>
+        </li>
 
-      <li class="nav-item">
-        <%= link_to outros_nowo_path(option: "outros"), {remote: true, id:"home-tab", class: "nav-link", "data-toggle" => "tab" }  do %>
-          <i class="fas fa-home"></i> Outros
-        <% end %>
-      </li>
-    </ul>
-  </div>
+        <li class="nav-item">
+          <%= link_to outros_nowo_path(option: "outros"), {remote: true, id:"home-tab", class: "nav-link", "data-toggle" => "tab" }  do %>
+            <i class="fas fa-home"></i> Outros
+          <% end %>
+        </li>
+      </ul>
+    </div>
 
-  <div id="result-menu" class="bg-fibra-meo">
-    <%= render "pacotes/pacotes_nowo/telemovel"%>
-  </div>
-</section>
+    <div id="result-menu" class="bg-fibra-meo">
+      <%= render "pacotes/pacotes_nowo/telemovel"%>
+    </div>
+  </section>
+</main>
 
 <%= render 'pages/footer' %>
