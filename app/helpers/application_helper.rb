@@ -16,21 +16,21 @@ module ApplicationHelper
 
   def pacotes_nos(type)
     if type == "logo" 
-      "nos_logo.png"
+      "Ideall-logo__nos.png"
     elsif type == "hover" 
       "pacotes_hover_nos"
     else
-      "nos-logo-ideall"
+      "logo-ideall"
     end
   end
 
   def pacotes_vodafone(type)
     if type == "logo" 
-      "vodafone_logo_pacotes.png"
+      "Ideall-logo__vodafone.png"
     elsif type == "hover" 
       "pacotes_hover_vodafone"
     else
-      "vodafone-logo-ideall"
+      "logo-ideall"
     end
   end
 
