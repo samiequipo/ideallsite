@@ -8,25 +8,25 @@
 
         <li class="nav-item">
           <%= link_to telemovel_meo_path(option: "telemovel"), {remote: true, id:"home-tab", class: "nav-link active", "data-toggle" => "tab" }  do %>
-            <span class="d-none d-md-block"><i class="fas fa-home"></i> Telemovel</span>
+            <span class=""><i class="fas fa-mobile-alt"></i> Telemovel</span>
           <% end %>
         </li>
 
         <li class="nav-item">
           <%= link_to tv_net_voz_meo_path(option: "tv_net_voz"), {remote: true, id:"home-tab", class: "nav-link", "data-toggle" => "tab" }  do %>
-            <i class="fas fa-home"></i> Tv_net_voz
+            <span class=""><i class="fas fa-tv"></i> Tv_net_voz</span>
           <% end %>
         </li>
 
         <li class="nav-item">
           <%= link_to gaming_meo_path(option: "gaming"), {remote: true, id:"home-tab", class: "nav-link", "data-toggle" => "tab" }  do %>
-            <i class="fas fa-home"></i> Gaming
+            <span class=""><i class="fas fa-gamepad"></i> Gaming</span>
           <% end %>
         </li>
 
         <li class="nav-item">
           <%= link_to outros_meo_path(option: "outros"), {remote: true, id:"home-tab", class: "nav-link", "data-toggle" => "tab" }  do %>
-            <i class="fas fa-home"></i> Outros
+            <span class=""><i class="fas fa-box"></i> Outros</span>
           <% end %>
         </li>
       </ul>

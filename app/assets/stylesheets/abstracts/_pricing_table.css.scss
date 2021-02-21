@@ -368,11 +368,36 @@
 #tile-1 .nav-tabs li a {
   position: relative;
   margin-right: 0px !important;
-  padding: 20px 40px !important;
+  padding: 14px 11px !important;
   font-size: 16px;
   border: none !important;
   color: #333;
 }
+
+@media only screen and (width: 411px) and (height: 731px) {
+  #tile-1 .nav-tabs li a {
+    padding: 10px 15px !important;
+  }
+}
+
+@media only screen and (width: 411px) and (height: 823px) {
+  #tile-1 .nav-tabs li a {
+    padding: 10px 17px !important;
+  }
+}
+
+@media only screen and (width: 320px) and (height: 568px) {
+  #tile-1 .nav-tabs li a {
+    padding: 14px 13px !important;
+  }
+}
+
+@media only screen and (width: 414px) and (height: 736px) {
+  #tile-1 .nav-tabs li a {
+    padding: 14px 16px !important;
+  }
+}
+
 #tile-1 .nav-tabs a:hover {
   background-color: #fff !important;
   border: none;
