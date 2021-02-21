@@ -11,7 +11,6 @@ module ApplicationHelper
 
   def pacotes_meo(type)
     return "Ideall-logo.png" if type == "logo" 
-    "logo-ideall" if type == "logo_size" 
   end
 
   def pacotes_nos(type)
@@ -20,7 +19,7 @@ module ApplicationHelper
     elsif type == "hover" 
       "pacotes_hover_nos"
     else
-      "logo-ideall"
+      "menu_nos"
     end
   end
 
@@ -30,7 +29,7 @@ module ApplicationHelper
     elsif type == "hover" 
       "pacotes_hover_vodafone"
     else
-      "logo-ideall"
+      "menu_vodafone"
     end
   end
 
@@ -40,7 +39,7 @@ module ApplicationHelper
     elsif type == "hover" 
       "pacotes_hover_nowo"
     else
-      "logo-ideall"
+      "menu_nowo"
     end
   end
 end
