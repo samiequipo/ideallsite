@@ -8,25 +8,29 @@
 
         <li class="nav-item">
           <%= link_to telemovel_nos_path(option: "telemovel"), {remote: true, id:"home-tab", class: "nav-link active", "data-toggle" => "tab" }  do %>
-            <span class=""><i class="fas fa-mobile-alt"></i> Telemovel</span>
+            <span class=""><i class="fas fa-mobile-alt"></i><br>
+              Telemovel</span>
           <% end %>
         </li>
 
         <li class="nav-item">
           <%= link_to tv_net_voz_nos_path(option: "tv_net_voz"), {remote: true, id:"home-tab", class: "nav-link", "data-toggle" => "tab" }  do %>
-            <span class=""><i class="fas fa-tv"></i> Tv_net_voz</span>
+            <span class=""><i class="fas fa-tv"></i><br>
+              Tv_net_voz</span>
           <% end %>
         </li>
 
         <li class="nav-item">
           <%= link_to net_nos_path(option: "net"), {remote: true, id:"home-tab", class: "nav-link", "data-toggle" => "tab" }  do %>
-            <span class=""><i class="fas fa-wifi"></i> Internet</span>
+            <span class=""><i class="fas fa-wifi"></i><br>
+               Internet</span>
           <% end %>
         </li>
 
         <li class="nav-item">
           <%= link_to outros_nos_path(option: "outros"), {remote: true, id:"home-tab", class: "nav-link", "data-toggle" => "tab" }  do %>
-            <span class=""><i class="fas fa-box"></i> Outros</span>
+            <span class=""><i class="fas fa-box"></i><br>
+               Outros</span>
           <% end %>
         </li>
       </ul>
