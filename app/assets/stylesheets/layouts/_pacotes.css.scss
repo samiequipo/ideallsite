@@ -139,33 +139,45 @@
   }
 }
 
+@media only screen and (min-width: 1024px) and (max-device-width: 1366px) {
+  .hero--main__nowo {
+    min-height: 23rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-device-width: 1024px) {
+  .hero--main__nowo {
+    min-height: 38rem;
+  }
+}
+
 @media only screen and (max-width: 950px) {
   .hero--main__nowo {
-    min-height: 18rem;
+    min-height: 22rem;
   }
 }
 
 @media only screen and (max-width: 850px) {
   .hero--main__nowo {
-    min-height: 16rem;
+    min-height: 19rem;
   }
 }
 
 @media only screen and (max-width: 726px) {
   .hero--main__nowo {
-    min-height: 13rem;
+    min-height: 16rem;
   }
 }
 
 @media only screen and (max-width: 484px) {
   .hero--main__nowo {
-    min-height: 11rem;
+    min-height: 14rem;
   }
 }
 
 @media only screen and (max-width: 395px) {
   .hero--main__nowo {
-    min-height: 10rem;
+    min-height: 13rem;
   }
 
   .price {
