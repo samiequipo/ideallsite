@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   background-image: asset-url("NOS-cobertura.jpg");
-  min-height: 20.25rem;
+  min-height: 17.25rem;
   text-align: center;
   color: white;
 
@@ -35,6 +35,54 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fb4d29;
+}
+
+@media only screen and (max-width: 1260px) {
+  .hero--main__nos {
+    min-height: 13.25rem;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .hero--main__nos {
+    min-height: 10.25rem;
+  }
+}
+
+@media only screen and (max-width: 754px) {
+  .hero--main__nos {
+    min-height: 8.25rem;
+  }
+}
+
+@media only screen and (max-width: 614px) {
+  .hero--main__nos {
+    min-height: 7.25rem;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  .hero--main__nos {
+    min-height: 6.25rem;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .hero--main__nos {
+    min-height: 5.25rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .hero--main__nos {
+    min-height: 4.25rem;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .hero--main__nos {
+    min-height: 3.25rem;
+  }
 }
 
 @media only screen and (max-width: 1115px) {
