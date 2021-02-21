@@ -1,7 +1,10 @@
 <% if current_page?(root_path) %>
   <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top shadowNav" id="mainNav">
     <div	iv class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag 'Ideall-logo.png', class:"logo-ideall" %></a>
+      <%= link_to root_path, {class: "navbar-brand js-scroll-trigger logo-ideall", href: "#page-top"} do %>
+        <%= image_tag 'Ideall-logo.png'  %>
+      <% end %>
+
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -27,7 +30,9 @@
 <% else %>
   <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top shadowNav" id="mainNav">
     <div	iv class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag which_pacotes?("logo"), class:"#{ which_pacotes?("logo_size") }"%></a>
+      <%= link_to root_path, {class: "navbar-brand js-scroll-trigger", target: '_blank'} do %>
+        <%= image_tag which_pacotes?("logo"), class:"#{ which_pacotes?("logo_size") }"  %>
+      <% end %>
 
       <button class="navbar-toggler navbar-toggler-right " type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"

@@ -10,8 +10,8 @@ module ApplicationHelper
   private
 
   def pacotes_meo(type)
-    return "meo_logo.png" if type == "logo" 
-    "meo-logo-ideall" if type == "logo_size" 
+    return "Ideall-logo.png" if type == "logo" 
+    "logo-ideall" if type == "logo_size" 
   end
 
   def pacotes_nos(type)
