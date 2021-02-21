@@ -145,6 +145,16 @@
   }
 }
 
+@media only screen and (max-width: 280px) and (max-height: 700px) {
+  .navbar-brand {
+    display: none;
+  }
+
+  .container {
+    justify-content: flex-end;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-device-width: 1024px) {
   .hero--main__nowo {
     min-height: 38rem;
