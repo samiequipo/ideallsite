@@ -1,19 +1,66 @@
-<html>
-  <head>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-  </head>
-  <body>
-    <p>You got a new contact from <%= @contact.total_name %>!</p>
-    <p>
-      contact details<br>
-      --------------------------
-    </p>
-    <p>Name: <%= @contact.total_name %></p>
-    <p>Email: <%= @contact.email %></p>
-    <p>Phone: <%= @contact.phone %></p>
-    <p>
-      Message:<br>
-      ----------
-    </p>
-  </body>
-</html>
+<div id="card">
+  <br>
+  <h1 style="margin-top: 5px;">
+    Ideall tem um novo cliente:
+  </h1>
+
+  <p> <strong>Seu nome:</strong> <%= @contact.total_name %></p>
+  <p> <strong>Número do visitante:</strong> <%= @contact.visit_id %></p>
+  ----------------------------------------
+  <p> <strong>Telefone:</strong> (+593)<%= @contact.phone %></p>
+  <p> <strong>Email:</strong> <%= @contact.email %></p>
+  ---------------------------------------
+  <p> <strong>País:</strong> <%= @contact.visit.country %></p>
+  <p> <strong>Região:</strong> <%= @contact.visit.region %></p>
+  <p> <strong>Cidade:</strong> <%= @contact.visit.city %></p>
+</div>
+
+<div class="pricing-table-container">
+  <div class="pricing-table py-3">
+    <div class="pricing-card" data-aos="fade-up" data-aos-duration="2000">
+      <h3 class="pricing-card-header-meo-51"><%= @contact.package.description %></h3>
+      <div class="price"><sup>€</sup><%= @contact.package.price %><span>/mês</span></div>
+
+      <ul>
+        <li>
+          <strong>Serviço de comunicação: </strong><%= @contact.package.type.company.description %>
+        </li>
+
+        <li>
+          <strong>Tipo: </strong><%= @contact.package.type.plano %>
+        </li>
+
+        <% if @contact.package.tv %>
+          <li>
+            <%= @contact.package.tv %>
+          </li>
+        <% end %>
+
+        <% if @contact.package.internet %>
+          <li>
+            <%= @contact.package.internet %>
+          </li>
+        <% end %>
+
+        <% if @contact.package.movel %>
+          <li>
+            <%= @contact.package.movel  %>
+          </li>
+        <% end %>
+
+        <% if @contact.package.cartao %>
+          <li>
+            <%= @contact.package.cartao  %>
+          </li>
+        <% end %>
+
+        <% if @contact.package.voz %>
+          <li>
+            <%= @contact.package.voz  %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+<br>
