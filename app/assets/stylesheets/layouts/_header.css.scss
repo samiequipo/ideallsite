@@ -361,30 +361,20 @@
 
 @media only screen and (max-width: 810px) {
   .site-header {
-    height: 80vh;
-  }
-
-  .site-header img {
-    height: 80vh;
-  }
-}
-
-@media only screen and (max-width: 610px) {
-  .site-header {
-    height: 70vh;
-  }
-
-  .site-header img {
-    height: 70vh;
-  }
-}
-
-@media only screen and (max-width: 410px) {
-  .site-header {
     height: 60vh;
   }
 
   .site-header img {
     height: 60vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .site-header {
+    height: 40vh;
+  }
+
+  .site-header img {
+    height: 40vh;
   }
 }
