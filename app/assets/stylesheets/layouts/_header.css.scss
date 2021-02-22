@@ -14,17 +14,7 @@
 
 .site-header {
   position: relative;
-  width: 100%;
-  height: 110vh;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 78, 129, 0.8) 16%,
-    rgba(6, 8, 8, 0.8) 30%
-  );
-  overflow: hidden;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-position: top;
+  height: 100vh;
 }
 
 .textBox--h3 .typed-cursor {
@@ -52,8 +42,8 @@
 
 .site-header img {
   position: relative;
-  width: 40%;
-  height: 50%;
+  width: 100%;
+  height: 100vh;
   z-index: 15;
   background-size: cover;
 }
@@ -172,7 +162,7 @@
   }
 
   .site-header .free-trial-form input {
-    width: 40%;
+    width: 100%;
   }
 
   .site-header .free-trial-form button {
@@ -197,7 +187,7 @@
   }
 
   .site-header img {
-    width: 65%;
+    width: 100%;
   }
 
   .site-header .free-trial-form {
@@ -249,7 +239,7 @@
   /* Header */
 
   .site-header {
-    height: 90vh;
+    height: 100vh;
   }
 
   .site-header .free-trial-form input {
@@ -261,7 +251,7 @@
   }
 
   .site-header img {
-    width: 80%;
+    width: 100%;
   }
 
   /* Feature */
@@ -366,5 +356,35 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .site-header {
+    height: 80vh;
+  }
+
+  .site-header img {
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .site-header {
+    height: 70vh;
+  }
+
+  .site-header img {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .site-header {
+    height: 60vh;
+  }
+
+  .site-header img {
+    height: 60vh;
   }
 }
