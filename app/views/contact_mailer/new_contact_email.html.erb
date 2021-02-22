@@ -12,57 +12,59 @@
   <p> <strong>Email:</strong> <%= @contact.email %></p>
   ---------------------------------------
   <p> <strong>País:</strong> <%= @contact.visit.country %></p>
-  <p> <strong>Região:</strong> <%= @contact.visit.region %></p>
   <p> <strong>Cidade:</strong> <%= @contact.visit.city %></p>
+  <p> <strong>Região:</strong> <%= @contact.visit.region %></p>
   <br>
 </div>
 
-<div class="pricing-table-container">
-  <div class="pricing-table py-3">
-    <div class="pricing-card" data-aos="fade-up" data-aos-duration="2000">
-      <h3 class="pricing-card-header-meo-51"><%= @contact.package.description %></h3>
-      <div class="price"><sup>€</sup><%= @contact.package.price %><span>/mês</span></div>
+<% if @contact.package %>
+  <div class="pricing-table-container">
+    <div class="pricing-table py-3">
+      <div class="pricing-card" data-aos="fade-up" data-aos-duration="2000">
+        <h3 class="pricing-card-header-meo-51"><%= @contact.package.description %></h3>
+        <div class="price"><sup>€</sup><%= @contact.package.price %><span>/mês</span></div>
 
-      <ul>
-        <li>
-          <strong>Serviço de comunicação: </strong><%= @contact.package.type.company.description %>
-        </li>
-
-        <li>
-          <strong>Tipo: </strong><%= @contact.package.type.plano %>
-        </li>
-
-        <% if @contact.package.tv %>
+        <ul>
           <li>
-            <%= @contact.package.tv %>
+            <strong>Serviço de comunicação: </strong><%= @contact.package.type.company.description %>
           </li>
-        <% end %>
 
-        <% if @contact.package.internet %>
           <li>
-            <%= @contact.package.internet %>
+            <strong>Tipo: </strong><%= @contact.package.type.plano %>
           </li>
-        <% end %>
 
-        <% if @contact.package.movel %>
-          <li>
-            <%= @contact.package.movel  %>
-          </li>
-        <% end %>
+          <% if @contact.package.tv %>
+            <li>
+              <%= @contact.package.tv %>
+            </li>
+          <% end %>
 
-        <% if @contact.package.cartao %>
-          <li>
-            <%= @contact.package.cartao  %>
-          </li>
-        <% end %>
+          <% if @contact.package.internet %>
+            <li>
+              <%= @contact.package.internet %>
+            </li>
+          <% end %>
 
-        <% if @contact.package.voz %>
-          <li>
-            <%= @contact.package.voz  %>
-          </li>
-        <% end %>
-      </ul>
+          <% if @contact.package.movel %>
+            <li>
+              <%= @contact.package.movel  %>
+            </li>
+          <% end %>
+
+          <% if @contact.package.cartao %>
+            <li>
+              <%= @contact.package.cartao  %>
+            </li>
+          <% end %>
+
+          <% if @contact.package.voz %>
+            <li>
+              <%= @contact.package.voz  %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
+<% end %>
 <br>
