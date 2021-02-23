@@ -15,8 +15,11 @@ class Contact < ApplicationRecord
   belongs_to :package, optional: true
   visitable
 
+  def is_more?(contact)
+    contact.visit.user.last.destroy if contact.visit.user.count > 2
+  end
+  
   private
-    
     def letter_downcase 
       self.total_name = total_name.capitalize
       self.email = email.downcase
