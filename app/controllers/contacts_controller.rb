@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   def new
-    @contact = Contact.new(package_id: params[:package_id])
+    @contact = Contact.new(package_id: params[:package_id], header_click_type: params[:header_click_type])
   end
  
   def create
@@ -48,6 +48,8 @@ class ContactsController < ApplicationController
         else
           message = "Ideall tem um novo cliente 
 
+          Contato de: #{@contact.header_click_type}
+          -------------------------------------
           Name: #{@contact.total_name}
           Email: #{@contact.email}
           Phone: (+593) #{@contact.phone}
@@ -81,6 +83,6 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:total_name, :email, :phone, :package_id)
+    params.require(:contact).permit(:total_name, :email, :phone, :package_id, :header_click_type)
   end
 end

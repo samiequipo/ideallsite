@@ -5,6 +5,10 @@
     Ideall tem um novo cliente:
   </h1>
 
+  <% if !@contact.package %>
+    <p> <strong>Contato de:</strong> <%= @contact.header_click_type %></p>
+  <% end %>
+  ----------------------------------------
   <p> <strong>Seu nome:</strong> <%= @contact.total_name %></p>
   <p> <strong>Número do visitante:</strong> <%= @contact.visit_id %></p>
   ----------------------------------------

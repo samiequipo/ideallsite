@@ -400,7 +400,19 @@
   }
 }
 
-.button-header {
+.btn-header-1 {
+  color: #40132b !important;
+  background: white !important;
+  border: 0.125rem solid #40132b !important;
+  border-radius: 0.2rem !important;
+}
+
+.button-header-2 {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  display: flex;
+  width: 100%;
   position: absolute;
   z-index: 20;
 }

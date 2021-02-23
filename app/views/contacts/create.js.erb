@@ -1,4 +1,4 @@
-<% if @contact.package %>
+<% if @contact.package || (@contact.header_click_type != "Contata-me") %>
   $('#demoModal').modal('toggle');
 <% else %>
   $("#firstName").val(""),
