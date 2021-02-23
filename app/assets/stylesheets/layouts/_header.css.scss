@@ -361,11 +361,21 @@
 
 @media only screen and (max-width: 1040px) {
   .site-header {
-    height: 60vh;
+    height: 80vh;
   }
 
   .site-header img {
-    height: 60vh;
+    height: 80vh;
+  }
+}
+
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .site-header {
+    height: 55vh;
+  }
+
+  .site-header img {
+    height: 55vh;
   }
 }
 
@@ -376,5 +386,15 @@
 
   .site-header img {
     height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .site-header {
+    height: 35vh;
+  }
+
+  .site-header img {
+    height: 35vh;
   }
 }

@@ -1,0 +1,334 @@
+.gratisb {
+  height: 40px;
+}
+
+.pum-theme-999 .pum-content + .pum-close,
+.pum-theme-blank .pum-content + .pum-close {
+  color: #000;
+}
+
+.pum-theme-999 .pum-content + .pum-close,
+.pum-theme-blank .pum-content + .pum-close {
+  color: #000;
+}
+
+.promo-banner-msg strong {
+  color: #000;
+  font-weight: 800;
+}
+
+.promo-banner-msg span.yellow {
+  font-weight: 800;
+  color: #fff300;
+}
+
+.borderbb {
+  border-bottom: 2px solid #bbfe41;
+}
+
+.alert {
+  margin-bottom: 0px !important;
+  display: flex;
+  align-items: center;
+}
+
+.alert.blue-bkd {
+  padding: 7px;
+  padding-bottom: 7px !important;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+  padding-bottom: 3px;
+}
+
+.alert-promo {
+  color: #000;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.blue-bkd {
+  background-color: #003581;
+  height: 4rem;
+}
+
+.promo-banner-content {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.promo-banner-msg {
+  color: #000;
+  display: inline-block;
+  font-family: "Muli";
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: left;
+  vertical-align: middle;
+  margin-top: 0;
+  position: relative;
+}
+
+span#text-underline-color {
+  font-family: Muli;
+  border-bottom: 3px solid #ff0000 !important;
+}
+
+.blue-bkd .promo-banner-msg {
+  color: #fff;
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+}
+
+.hot-sale-text {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.promo-banner-msg > .orange {
+  font-weight: 900;
+  color: #ff6600;
+}
+
+.promo-banner-msg > .blue {
+  font-weight: 900;
+  color: #0084ff;
+}
+
+.promo-banner-msg > .blue-underline {
+  font-weight: 900;
+  color: #0084ff;
+  border-bottom: 3px solid #ff6600;
+}
+
+.promo-banner-msg > .big-blue {
+  font-weight: 900;
+  font-size: 24px;
+  color: #0084ff;
+  font-style: italic;
+}
+
+.promo-banner-msg > .white {
+  font-weight: 600;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+.promo-banner-link {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.btn-promo {
+  background-color: #ff5f01;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0;
+  padding: 8px 20px;
+  margin: 2px 20px;
+  font-family: "Muli", sans-serif;
+  height: 40px;
+}
+
+.btn-promo:active,
+.btn-promo:focus,
+.btn-promo:hover {
+  background-color: #ff5f00;
+  color: #000;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .promo-banner-msg {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-ctn {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .alert-promo {
+    height: auto;
+  }
+
+  .promo-banner-content {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .promo-banner-msg {
+    display: block;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .promo-banner-link {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .alert.blue-bkd {
+    background-size: cover;
+  }
+
+  .promo-banner-msg {
+    width: auto;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 10px;
+  }
+
+  .promo-banner-link {
+    margin-right: 0;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .blue-bkd {
+    /* background-image: url("/wp-content/uploads/2020/02/oe-latam-66_banner-mobile_v1.jpg"); */
+    background: #18397e;
+  }
+
+  .btn-promo {
+    background-color: initial;
+    border-radius: initial;
+    padding: 0px 40px 5px;
+    margin: 4px 20px;
+    box-shadow: none;
+    /*text-decoration: underline;*/
+    height: auto;
+  }
+
+  .promo-banner-msg a {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #fff300;
+    letter-spacing: 0;
+    padding: 0px;
+    margin: 0px;
+    /*text-decoration: underline;*/
+    border-bottom: 2px solid #fff300;
+    background-color: transparent;
+    margin-top: 0px;
+  }
+
+  .promo-banner-msg a:hover {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #ff5f01;
+    letter-spacing: 0;
+    padding: 0px;
+    margin: 0px;
+    /*text-decoration: underline;*/
+    border-bottom: 2px solid #ff5f01;
+    background-color: transparent;
+    margin-top: 0px;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .alert.blue-bkd {
+    padding-top: 0 !important;
+    padding-bottom: 0px !important;
+    height: auto;
+  }
+
+  .promo-banner-msg {
+    margin-left: 0;
+    color: #fff;
+    font-size: 1rem;
+    margin: 10px 0px;
+    text-align: center;
+  }
+
+  .promo-banner-link {
+    margin: 0px;
+    display: block;
+  }
+
+  .alert.blue-bkd {
+    background-color: #003581 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo-banner-msg {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 440px) {
+  .promo-banner-msg {
+    font-size: 0.9rem;
+    line-height: 21px;
+  }
+
+  .promo-banner-msg > .big-blue {
+    font-size: 17px;
+  }
+
+  .btn-promo {
+    font-size: 0.9rem;
+  }
+
+  .btn-promo:hover {
+    font-size: 0.9rem;
+  }
+
+  .promo-banner-msg a {
+    font-size: 0.9rem;
+  }
+
+  .promo-banner-msg a:hover {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .promo-banner-msg {
+    font-size: 0.8rem;
+    line-height: 19px;
+  }
+
+  .promo-banner-msg > .big-blue {
+    font-size: 16px;
+  }
+
+  btn-promo {
+    font-size: 0.8rem;
+  }
+
+  .btn-promo:hover {
+    font-size: 0.8rem;
+  }
+
+  .promo-banner-msg a {
+    font-size: 0.8rem;
+  }
+
+  .promo-banner-msg a:hover {
+    font-size: 0.8rem;
+  }
+}

@@ -46,7 +46,9 @@ li {
 }
 
 .title h1::after,
-.title h2::after {
+.title h2::after,
+.title h3::after,
+.title h4::after {
   content: "";
   position: absolute;
   left: 50%;
