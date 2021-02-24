@@ -124,10 +124,11 @@ span#text-underline-color {
 }
 
 .btn-promo {
-  background-color: #ff5f01;
+  background-color: #ff5f01 !important;
   border-radius: 30px;
   font-size: 1rem;
   font-weight: 700;
+  border: 0.125rem solid #fb602e !important;
   color: #fff;
   letter-spacing: 0;
   padding: 8px 20px;
@@ -281,7 +282,7 @@ span#text-underline-color {
 
 @media (max-width: 440px) {
   .promo-banner-msg {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     line-height: 21px;
   }
 
@@ -290,19 +291,19 @@ span#text-underline-color {
   }
 
   .btn-promo {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .btn-promo:hover {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .promo-banner-msg a {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .promo-banner-msg a:hover {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -316,7 +317,7 @@ span#text-underline-color {
     font-size: 16px;
   }
 
-  btn-promo {
+  .btn-promo {
     font-size: 0.8rem;
   }
 
