@@ -52,3 +52,68 @@
     </svg>
   </section>
 </main>
+
+<section class="site-header p-0">
+
+  <div class="carousel mb-0"  >
+    <div class="carousel_contenedor">
+      <div class="carousel__lista">
+        <div class="carousel__elemento">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="button-header-2">
+              <%= link_to "Descubra os nossas ofertas", 
+                           new_contact_path(header_click_type: "Nunca foi tão fácil fazer o teu upgrade! -> (primeira foto)"), 
+                           class: "btn btn-header-1 btn--white btn--animated btn-dark mt-3", remote: true, role: "button" %>
+            </div>
+
+            <%= image_tag 'header-1.jpeg', class: "rounded-header mx-auto" %>
+          </div>
+        </div>
+
+        <div class="carousel__elemento carousel-trans">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="button-header-2">
+              <%= link_to "Descubra os nossas ofertas", 
+                           new_contact_path(header_click_type: "Nunca foi tão fácil mudar! -> (segunda foto)"), 
+                           class: "btn btn-header-1 btn--white btn--animated btn-dark mt-3", remote: true, role: "button" %>
+            </div>
+
+            <%= image_tag 'header-2.jpeg', class: "rounded-header mx-auto" %>
+          </div>
+        </div>
+
+        <div class="carousel__elemento carousel-trans">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="button-header-2">
+              <%= link_to "Descubra os nossas ofertas", 
+                           new_contact_path(header_click_type: "Nunca foi tão fácil gerir o seu negócio! -> (terceira foto)"), 
+                           class: "btn btn-header-1 btn--white btn--animated btn-dark mt-3", remote: true, role: "button" %>
+            </div>
+
+            <%= image_tag 'header-3.jpeg', class: "rounded-header mx-auto" %>
+          </div>
+        </div>
+
+        <div class="carousel__elemento carousel-trans">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="button-header-2">
+              <%= link_to "Descubra os nossas ofertas", 
+                           new_contact_path(header_click_type: "Nunca foi tão fácil agradar a família! -> (quarta foto)"), 
+                           class: "btn btn-header-1 btn--white btn--animated btn-dark mt-3", remote: true, role: "button" %>
+            </div>
+
+            <%= image_tag 'header-4.jpeg', class: "rounded-header mx-auto" %>
+          </div>
+        </div>
+      </div>
+
+      <button aria-label="Anterior" class="carousel__anterior">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <button aria-label="Siguiente" class="carousel__siguiente">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
