@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
   def create
     # byebug
     @contact = Contact.new(contact_params)
-    @contact.visit = Ahoy::Visit.last
+    @contact.visit = current_visit
 
     if @contact.save
       if @contact.visit.user.count <= 2
@@ -67,7 +67,7 @@ class ContactsController < ApplicationController
       @contact.is_more?(@contact)
 
       respond_to do |format|
-        flash.now[:alert] = "Yeah"
+        flash.now[:notice] = "Yeah"
         format.js 
         format.json { head :ok }
       end
