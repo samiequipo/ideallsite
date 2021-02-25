@@ -31,29 +31,29 @@
 <%# DINAMIC ICONS %>
 
 <ul class="call">
-  <a href="https://remybeumier.be/#about" target="blank">
+  <%= link_to 'tel:+351912486630' do %>
     <li class="call-items" title="Ligue para nós">
       <i class="fas fa-phone"></i>
     </li>
-  </a>
+  <% end %>
 
-  <a href="https://remybeumier.be/#creations" target="blank">
+  <%= link_to "https://web.whatsapp.com/send?phone=351912486630", target: '_blank' do %>
     <li class="call-items" title="Escreva para nós">
       <i class="fab fa-whatsapp"></i>
     </li>
-  </a>
+  <% end %>
 
-  <a href="https://remybeumier.be/#contact" target="blank">
+  <%= link_to "https://www.facebook.com/Lu%C3%ADs-Castro-Comercial-MEO-103347814777629", target: '_blank' do %>
     <li class="call-items" title="Contacte-nos pelo facebook">
       <i class="fab fa-facebook-square"></i>
     </li>
-  </a>
+  <% end %>
 
-  <a href="https://github.com/beumsk" target="blank">
+  <%= link_to "https://www.facebook.com/Lu%C3%ADs-Castro-Comercial-MEO-103347814777629", target: '_blank' do %>
     <li class="call-items" title="Veja nossas publicações">
       <i class="fab fa-instagram"></i>
     </li>
-  </a>
+  <% end %>
 
   <!-- Call Menu Button -->
   <li class="call-menu" title="Menu">
