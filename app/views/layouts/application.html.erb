@@ -105,9 +105,12 @@
   </head>
 
   <body id="page-top" class="pb-0">
-    <%= render 'layouts/messages' %>
     <%= render 'layouts/navbar'%>
-    <div id="results"></div>
+
+    <div class="sticky-top">
+      <div id="results"></div>
+      <%= render 'layouts/messages' %>
+    </div>
     <%= yield %>
 
     <%# Modal Contacts %>
@@ -191,5 +194,27 @@
         });
       </script>
     <% end  %>
+
+    <%# DINAMIC ICONS %>
+    <script>
+      var $screen = $(".screen"),
+          $call = $(".call"),
+          $callMenu = $(".call-menu"),
+          $callItems = $(".call-items"),
+          $notCall = $("body").not( $(".call") );
+      
+      $notCall.on("click", function () {
+        $callItems.slideUp(300);
+        $callMenu.find("i").removeClass("fa-times").addClass("fa-bars");
+        $screen.hide();
+      });
+      
+      $call.on("click", function (event) {
+        event.stopPropagation();
+        $callItems.slideToggle(300);
+        $callMenu.find("i").toggleClass("fa-bars fa-times");
+        $screen.toggle();
+      });
+    </script>
   </body>
 </html>
