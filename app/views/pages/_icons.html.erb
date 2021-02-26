@@ -37,11 +37,23 @@
     </li>
   <% end %>
 
-  <%= link_to "https://web.whatsapp.com/send?phone=351912486630", target: '_blank' do %>
-    <li class="call-items" title="Escreva para nós">
-      <i class="fab fa-whatsapp"></i>
-    </li>
-  <% end %>
+  <%# whatsapp Not Telemovel %>
+  <div class="d-none d-md-block">
+    <%= link_to "https://web.whatsapp.com/send?phone=351912486630", target: '_blank' do %>
+      <li class="call-items" title="Escreva para nós">
+        <i class="fab fa-whatsapp"></i>
+      </li>
+    <% end %>
+  </div>
+
+  <%# whatsapp Telemovel %>
+  <div class="d-block d-md-none">
+    <%= link_to "https://wa.me/351912486630", target: '_blank' do %>
+      <li class="call-items" title="Escreva para nós">
+        <i class="fab fa-whatsapp"></i>
+      </li>
+    <% end %>
+  </div>
 
   <%= link_to "https://www.facebook.com/Lu%C3%ADs-Castro-Comercial-MEO-103347814777629", target: '_blank' do %>
     <li class="call-items" title="Contacte-nos pelo facebook">
@@ -55,8 +67,18 @@
     </li>
   <% end %>
 
-  <!-- Call Menu Button -->
-  <li class="call-menu" title="Menu">
-    <i class="fas fa-phone"></i>
-  </li>
+  <!-- Call Menu Button Telemovel -->
+  <div class="d-none d-md-block">
+    <li class="call-menu" title="Menu">
+      <i class="fas fa-phone"></i>
+      <span class="ligueExpand font-weight-bold">&nbsp;Ligue para n&oacute;s</span>
+    </li>
+  </div>
+
+  <!-- Call Menu Button Not Telemovel -->
+  <div class="d-block d-md-none">
+    <li class="call-menu" title="Menu">
+      <i class="fas fa-phone"></i>
+    </li>
+  </div>
 </ul>
