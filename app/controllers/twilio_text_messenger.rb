@@ -8,9 +8,9 @@ class TwilioTextMessenger
   def call
     client = Twilio::REST::Client.new
     client.messages.create({
+      body: message,
       from: phone_number_twilio,
-      to: phone_number,
-      body: message
+      to: phone_number
     })
   end
 

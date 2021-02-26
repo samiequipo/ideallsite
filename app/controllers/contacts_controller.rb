@@ -15,9 +15,9 @@ class ContactsController < ApplicationController
         
         # Twilio Whatsapp
         # User post data in meo || nos || vodafone || nowo path 
-        if @contact.package
-          message = "Ideall tem um novo cliente 
-
+        if @contact.package 
+          message = "Your Ideall order of 1 dozen frosted cupcakes has shipped and should be delivered on July 10, 2019. Details: http://www.yummycupcakes.com/
+          ----    
           Name: #{@contact.total_name}
           Email: #{@contact.email}
           Phone: (+593) #{@contact.phone}
@@ -46,8 +46,8 @@ class ContactsController < ApplicationController
           ---
           "
         else
-          message = "Ideall tem um novo cliente 
-
+          message = "Your Ideall order of 1 dozen frosted cupcakes has shipped and should be delivered on July 10, 2019. Details: http://www.yummycupcakes.com/
+          ----    
           Contato de: #{@contact.header_click_type}
           -------------------------------------
           Name: #{@contact.total_name}
@@ -60,7 +60,13 @@ class ContactsController < ApplicationController
           Região: #{@contact.visit.region}
           ----"
         end
-        TwilioTextMessenger.new(message).call
+
+        # If there is any problem with the twilio server
+        begin
+          TwilioTextMessenger.new(message).call
+        rescue #=> exception
+          return nil
+        end
       end
 
       #Removing contact > 2
