@@ -146,6 +146,11 @@ span#text-underline-color {
   text-decoration: none;
 }
 
+.btn-promo-small {
+  background: #ff5f01 !important;
+  border-radius: 26rem;
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .promo-banner-msg {
     font-size: 1.1rem;
