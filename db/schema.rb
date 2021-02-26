@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_23_225730) do
+ActiveRecord::Schema.define(version: 2021_02_26_224246) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -75,6 +75,9 @@ ActiveRecord::Schema.define(version: 2021_02_23_225730) do
     t.string "os_version"
     t.string "platform"
     t.datetime "started_at"
+    t.boolean "whatsapp"
+    t.boolean "pc_phone"
+    t.boolean "mobil_phone"
     t.index ["user_id"], name: "index_ahoy_visits_on_user_id"
     t.index ["visit_token"], name: "index_ahoy_visits_on_visit_token", unique: true
   end
