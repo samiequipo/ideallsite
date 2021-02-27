@@ -382,23 +382,14 @@
 
 @media only screen and (max-width: 810px) {
   .site-header {
-    height: 40vh;
+    height: 45vh;
   }
 
   .site-header img {
-    height: 40vh;
+    height: 45vh;
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .site-header {
-    height: 35vh;
-  }
-
-  .site-header img {
-    height: 35vh;
-  }
-}
 
 .btn-header-1 {
   color: #40132b !important;
