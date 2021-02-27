@@ -31,29 +31,25 @@
 <%# DINAMIC ICONS %>
 
 <ul class="call">
-  <%= link_to current_visit.click_to_phone("true") do %>
-    <li class="call-items" title="Ligue para nós">
+  <%= form_with url: social_contacts_path(type: "pc_phone") do |form| %>
+    <%= button_tag type: 'submit', class:"call-items", title: "Ligue para nós e iremos atendê-lo"  do %>
       <i class="fas fa-phone"></i>
-    </li>
+    <% end %>
   <% end %>
 
   <%# whatsapp Not Telemovel %>
-  <div class="d-none d-md-block">
-    <%= link_to "https://web.whatsapp.com/send?phone=351912486630", target: '_blank' do %>
-      <li class="call-items" title="Escreva para nós">
-        <i class="fab fa-whatsapp"></i>
-      </li>
+  <%= form_with url: social_contacts_path(type: "whatsapp"), class: "d-none d-md-block", :target => "_blank" do |form| %>
+    <%= button_tag type: 'submit', class:"call-items", title: "Escreva para nós", :target => "_blank"  do %>
+      <i class="fab fa-whatsapp"></i>
     <% end %>
-  </div>
+  <% end %>
 
   <%# whatsapp Telemovel %>
-  <div class="d-block d-md-none">
-    <%= link_to "https://wa.me/351912486630", target: '_blank' do %>
-      <li class="call-items" title="Escreva para nós">
-        <i class="fab fa-whatsapp"></i>
-      </li>
+  <%= form_with url: social_contacts_path(type: "mobil_phone"), class: "d-block d-md-none", :target => "_blank" do |form| %>
+    <%= button_tag type: 'submit', class:"call-items", title: "Escreva para nós", :target => "_blank"  do %>
+      <i class="fab fa-whatsapp"></i>
     <% end %>
-  </div>
+  <% end %>
 
   <%= link_to "https://www.facebook.com/Lu%C3%ADs-Castro-Comercial-MEO-103347814777629", target: '_blank' do %>
     <li class="call-items" title="Contacte-nos pelo facebook">

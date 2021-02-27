@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   #Root and contact_modal path
   root 'pages#index'
   resources :contacts, only: [:new, :create]
-  
+  resources :social_contacts, only: %i[create]
+
   #Pacotes MEO
   scope :servicos do
     scope :fibra do
