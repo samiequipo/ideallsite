@@ -5,12 +5,16 @@
     <div class="content">
       <div class="textBox">
         <div class="texBox--phrase">
-          <h2 class= "texBox--title" id="textBoxSlogan" data-aos="fade-right" data-aos-duration="2000">O futuro é emocionante. Ready?<span id="letterSlogan" class="letter ml-md-3">&nbsp;Vodafone</span></h2>
+          <h2 class= "texBox--title mb-2" id="textBoxSlogan" data-aos="fade-right" data-aos-duration="2000">Conheça as melhores ofertas de<span id="letterSlogan" class="letter ml-md-3">Vodafone</span></h2>
         </div>
 
-        <p data-aos="fade-up" data-aos-duration="3000" class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis libero beatae laborum dolore dicta!
-          Tenetur </p>
-        <%= link_to "adira já!", new_contact_path(operator: "VODAFONE"), remote: true, class: "text-uppercase order-btn order-btn order-btn-vodafone", role: "button" %>
+        <p data-aos="fade-up" data-aos-duration="3000" class="text-justify text">
+          Com apenas <strong>49,99 €/mês</strong> aproveite a programação de 140 Canais: <strong>VBox</strong>, <strong>Amazon Prime Video</strong> e <strong>HBO Portugal</strong> inclu&iacute;do<strong>&#10003;</strong>. Mais 500 MB em telemovel<strong>&#10003;</strong> 100/100 Mbps de Internet<strong>&#10003;</strong> e Chamadas para <strong>&#xab;31 destinos internacionais&#xbb;</strong>
+        </p>
+
+        <div class="button_promo">
+          <%= link_to "adira já!", new_contact_path(operator: "VODAFONE"), remote: true, class: "text-decoration-none text-uppercase order-btn order-btn order-btn-vodafone button-promo", role: "button" %>
+        </div>
       </div>
 
       <div class="imgBox" data-aos="fade-down" data-aos-duration="3000">
@@ -21,19 +25,23 @@
     <ul class="thumb">
       <div class="thumb-container">
         <li>
-          <%= image_tag 'meo.png', onclick:"imgSlider('unsplash/kunfu.png', '#7e5a25')" %>
+          <%= image_tag 'meo.png', onclick:'imgSlider("unsplash/kunfu.png", "#00aeff", "MEO",
+           "Com apenas <strong>49,99 €/mês</strong> dê para sua casa um pacote de 200 canais<strong>&#10003;</strong>1Gb em telemovel<strong>&#10003;</strong> 200/100 Mbps de Internet<strong>&#10003;</strong> e um exclusivo de <strong>&#xab;MEO VideoClube&#xbb;</strong>")' %>
         </li>
 
         <li>
-          <%= image_tag 'nos_logo.png', onclick: "imgSlider('unsplash/phone.png', '#969695')" %>
+          <%= image_tag 'nos_logo.png', onclick: "imgSlider('unsplash/phone.png', '#3600fa', 'NOS',
+          'Com apenas <strong>49,99 €/mês</strong> aproveite a programação de 150 Canais incluindo <strong>Box Apple TV 4K&#10003;</strong>. Mais 500 MB em telemovel<strong>&#10003;</strong> 100 Mbps de Internet<strong>&#10003;</strong> e Chamadas para <strong>&#xab;31 destinos internacionais&#xbb;</strong>')" %>
         </li>
 
         <li>
-          <%= image_tag 'vodafone_logo.png', onclick:"imgSlider('unsplash/vodafone-woman.png', '#e43220')" %>
+          <%= image_tag 'vodafone_logo.png', onclick:"imgSlider('unsplash/vodafone-woman.png', '#e43220', 'VODAFONE',
+            'Com apenas <strong>49,99 €/mês</strong> aproveite a programação de 140 Canais: <strong>VBox</strong>, <strong>Amazon Prime Video</strong> e <strong>HBO Portugal</strong> inclu&iacute;do<strong>&#10003;</strong>. Mais 500 MB em telemovel<strong>&#10003;</strong> 100/100 Mbps de Internet<strong>&#10003;</strong><strong>&#xab;Chamadas incluídas&#xbb;</strong>')" %>
         </li>
 
         <li>
-          <%= image_tag 'nowo.png', onclick:"imgSlider('unsplash/supermanq.png', '#f14626')" %>
+          <%= image_tag 'nowo.png', onclick:"imgSlider('unsplash/supermanq.png', '#f14626', 'NOWO',
+          'Com apenas <strong>16,25 €/mês</strong> aproveite a programação de 90 Canais + <strong>FULL TV HD&#10003;</strong>. Mais 1GB em telemovel<strong>&#10003;</strong> 120 Megas de Internet<strong>&#10003;</strong> e <strong>&#xab;Chamadas incluídas&#xbb;</strong>')" %>
         </li>
       </div>
     </ul>
