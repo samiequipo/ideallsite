@@ -22,14 +22,13 @@ class Pacotes::PacotesMeoController < ApplicationController
   end
 
   private
+    def render_pacotes
+      respond_to do |format|
+        format.js { render partial: "pacotes/pacotes_meo/#{params[:option]}" }
+      end 
+    end
 
-  def render_pacotes
-    respond_to do |format|
-      format.js { render partial: "pacotes/pacotes_meo/#{params[:option]}" }
-    end 
-  end
-
-  def getting_packages
-    @meo_packages = Company.first.types
-  end
+    def getting_packages
+      @meo_packages = Company.first.types
+    end
 end
