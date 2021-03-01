@@ -20,14 +20,13 @@ class Pacotes::PacotesVodafoneController < ApplicationController
   end
 
   private
+    def render_pacotes
+      respond_to do |format|
+        format.js { render partial: "pacotes/pacotes_vodafone/#{params[:option]}" }
+      end 
+    end
 
-  def render_pacotes
-    respond_to do |format|
-      format.js { render partial: "pacotes/pacotes_vodafone/#{params[:option]}" }
-    end 
-  end
-
-  def getting_packages
-    @vodafone_packages = Company.third.types
-  end
+    def getting_packages
+      @vodafone_packages = Company.third.types
+    end
 end

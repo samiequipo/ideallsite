@@ -17,14 +17,13 @@ class Pacotes::PacotesNowoController < ApplicationController
   end
 
   private
+    def render_pacotes
+      respond_to do |format|
+        format.js { render partial: "pacotes/pacotes_nowo/#{params[:option]}" }
+      end 
+    end
 
-  def render_pacotes
-    respond_to do |format|
-      format.js { render partial: "pacotes/pacotes_nowo/#{params[:option]}" }
-    end 
-  end
-
-  def getting_packages
-    @nowo_packages = Company.fourth.types
-  end
+    def getting_packages
+      @nowo_packages = Company.fourth.types
+    end
 end

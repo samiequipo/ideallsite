@@ -8,6 +8,11 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
   resources :social_contacts, only: %i[create]
 
+  get "promo_meo", to: "promo#promo_meo"
+  get "promo_nos", to: "promo#promo_nos"
+  get "promo_vodafone", to: "promo#promo_vodafone"
+  get "promo_nowo", to: "promo#promo_nowo"
+
   #Pacotes MEO
   scope :servicos do
     scope :fibra do

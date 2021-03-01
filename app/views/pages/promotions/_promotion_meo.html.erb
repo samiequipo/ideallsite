@@ -1,0 +1,21 @@
+<div class="circle"></div>
+
+<div class="content">
+  <div class="textBox">
+    <div class="texBox--phrase">
+      <h2 class= "texBox--title mb-2" id="textBoxSlogan" data-aos="fade-right" data-aos-duration="2000">Conheça as melhores ofertas de<span id="letterSlogan" class="letter ml-md-3">MEO</span></h2>
+    </div>
+
+    <p data-aos="fade-up" data-aos-duration="3000" class="text-justify text">
+      Com apenas <strong>49,99 €/mês</strong> dê para sua casa um pacote de 200 canais<strong>&#10003;</strong>1Gb em telemovel<strong>&#10003;</strong> 200/100 Mbps de Internet<strong>&#10003;</strong> e um exclusivo de <strong>&#xab;MEO VideoClube&#xbb;</strong>
+    </p>
+
+    <div class="button_promo">
+      <%= link_to "adira já!", new_contact_path(package_id: "@meo_packages.third.packages.first.id"), remote: true, class: "text-uppercase order-btn order-btn", role: "button" %>
+    </div>
+  </div>
+
+  <div class="imgBox" data-aos="fade-down" data-aos-duration="3000">
+    <%= image_tag 'kunfu', alt:"meo_image", class:"starbucks" %>
+  </div>
+</div>
