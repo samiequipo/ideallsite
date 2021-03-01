@@ -1,24 +1,23 @@
 <section class="bg-light section-portfolio pt-0" id="portfolio">
   <div class="container mx-lg-4">
-    <div class="circle"></div>
+    <div id="promoType">
+      <div class="circle"></div>
 
-    <div class="content">
-      <div class="textBox">
-        <div class="texBox--phrase">
-          <h2 class= "texBox--title mb-2" id="textBoxSlogan" data-aos="fade-right" data-aos-duration="2000">Conheça as melhores ofertas de<span id="letterSlogan" class="letter ml-md-3">Vodafone</span></h2>
+      <div class="content">
+        <div class="textBox">
+          <div class="texBox--phrase">
+            <h2 class= "texBox--title mb-2" id="textBoxSlogan" data-aos="fade-right" data-aos-duration="2000">Conheça as melhores ofertas de<span id="letterSlogan" class="letter ml-md-3">Vodafone</span></h2>
+          </div>
+          <p data-aos="fade-up" data-aos-duration="3000" class="text-justify text">
+            Com apenas <strong>49,99 €/mês</strong> aproveite a programação de 140 Canais: <strong>VBox</strong>, <strong>Amazon Prime Video</strong> e <strong>HBO Portugal</strong> inclu&iacute;do<strong>&#10003;</strong>. Mais 500 MB em telemovel<strong>&#10003;</strong> 100/100 Mbps de Internet<strong>&#10003;</strong> e Chamadas para <strong>&#xab;31 destinos internacionais&#xbb;</strong>
+          </p>
+          <div class="button_promo">
+            <%= link_to "adira já!", new_contact_path(operator: "VODAFONE"), remote: true, class: "text-decoration-none text-uppercase order-btn order-btn order-btn-vodafone button-promo", role: "button" %>
+          </div>
         </div>
-
-        <p data-aos="fade-up" data-aos-duration="3000" class="text-justify text">
-          Com apenas <strong>49,99 €/mês</strong> aproveite a programação de 140 Canais: <strong>VBox</strong>, <strong>Amazon Prime Video</strong> e <strong>HBO Portugal</strong> inclu&iacute;do<strong>&#10003;</strong>. Mais 500 MB em telemovel<strong>&#10003;</strong> 100/100 Mbps de Internet<strong>&#10003;</strong> e Chamadas para <strong>&#xab;31 destinos internacionais&#xbb;</strong>
-        </p>
-
-        <div class="button_promo">
-          <%= link_to "adira já!", new_contact_path(operator: "VODAFONE"), remote: true, class: "text-decoration-none text-uppercase order-btn order-btn order-btn-vodafone button-promo", role: "button" %>
+        <div class="imgBox" data-aos="fade-down" data-aos-duration="3000">
+          <img src="unsplash/vodafone-woman.png" alt="" class="starbucks">
         </div>
-      </div>
-
-      <div class="imgBox" data-aos="fade-down" data-aos-duration="3000">
-        <img src="unsplash/vodafone-woman.png" alt="" class="starbucks">
       </div>
     </div>
 
