@@ -28,34 +28,7 @@
     </div>
 
     <%# choose icon options: meo-nos-vodafone-nowo %>
-    <ul class="thumb">
-      <div class="thumb-container">
-        <li>
-          <%= link_to promo_meo_path(option: "promotion_meo"), {remote: true, id:"home-tab", class: "nav-link active", "data-toggle" => "tab" }  do %>
-            <%= image_tag 'meo.png' %>
-          <% end %>
-        </li>
-
-        <li>
-          <%= link_to promo_nos_path(option: "promotion_nos"), {remote: true, id:"home-tab", class: "nav-link active", "data-toggle" => "tab" }  do %>
-            <%= image_tag 'nos_logo.png' %>
-          <% end %>
-        </li>
-
-        <li>
-          <%= link_to promo_vodafone_path(option: "promotion_vodafone"), {remote: true, id:"home-tab", class: "nav-link active", "data-toggle" => "tab" }  do %>
-            <%= image_tag 'vodafone_logo.png' %>
-          <% end %>
-        </li>
-
-        <li>
-          <%= link_to promo_nowo_path(option: "promotion_nowo"), {remote: true, id:"home-tab", class: "nav-link active", "data-toggle" => "tab" }  do %>
-            <%= image_tag 'nowo.png' %>
-          <% end %>
-        </li>
-      </div>
-    </ul>
-
+    <%= render 'pages/promotions/options' %>
   </div>
 </section>
 
