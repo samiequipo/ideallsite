@@ -12,9 +12,9 @@ meo_telemovel_list = [
     Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%MEO%"))
   ],
   
-  [ "Oferta mais Net em casa", "55,99", 
+  [ "Oferta mais Net em casa", "53,99", 
     "TV - 200 Canais MEOBox | Pack Standard + Extra", 
-    "Internet - 500/100 Mbps Download/upload", 
+    "Internet - 200/100 Mbps Download/upload", 
     "Móvel - 1 GB Máxima velocidade da rede 3.500 minutos + 3.500 SMS por cartão",
     "Cartões - 1 cartão", 
     "VOZ - Chamadas incluídas Redes fixas nacionais 24h + 50 destinos internacionais (noite, 1.000 min)",
@@ -30,11 +30,11 @@ meo_telemovel_list = [
     Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%MEO%"))
   ],
  
-  [ "M4", "59,99", 
+  [ "Móvel ilimitado", "69,99", 
     "TV - 200 Canais MEOBox | Pack Standard", 
     "Internet - 200/100 Mbps Download/upload", 
-    "Móvel - 2 GB Máxima velocidade da rede 3.500 minutos + 3.500 SMS por cartão",
-    "Cartões - 2 cartão incluídos", 
+    "Móvel - Velocidade 10 Mbps | Dados Ilimitados e velocidade até; 10 Mpbs - Minutos ilimitados + SMS ilimitados",
+    "Cartões - 1 cartão incluído", 
     "VOZ - Chamadas incluídas Redes fixas nacionais 24h + 50 destinos internacionais (noite, 1.000 min)",
     Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%MEO%"))
   ],
