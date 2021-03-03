@@ -3,7 +3,7 @@
 # NOWO 4 - TELEMOVEL
 # description, price, tv, internet, movel,voz, type
 nowo_telemovel_list = [
-  [ "nowo Telemóvel", "32,50", 
+  [ "nowo Telemóvel", "16,25", 
     "TV - 90 Canais + BOX NOWO TV HD", 
     "Internet - 120 Megas", 
     "Móvel - 1GB + 1.000 Min/SMS",
@@ -12,7 +12,7 @@ nowo_telemovel_list = [
 
   ],
 
-  [ "nowo Telemóvel", "37,50", 
+  [ "nowo Telemóvel", "18,75", 
     "TV - 140 Canais + BOX NOWO TV HD", 
     "Internet - 120 Megas", 
     "Móvel - 2GB + 2.000 Min/SMS",
@@ -21,7 +21,7 @@ nowo_telemovel_list = [
 
   ],
 
-  [ "nowo Telemóvel", "40,00", 
+  [ "nowo Telemóvel", "20,00", 
     "TV - 90 Canais + BOX NOWO TV HD", 
     "Internet - 250 Megas", 
     "Móvel - 4GB + 4.000 Min/SMS",
@@ -30,7 +30,7 @@ nowo_telemovel_list = [
 
   ],
 
-  [ "nowo Telemóvel", "42,50", 
+  [ "nowo Telemóvel", "21,25", 
     "TV - 140 Canais + BOX NOWO TV HD", 
     "Internet - 250 Megas", 
     "Móvel - 4GB + 4.000 Min/SMS",
@@ -44,7 +44,7 @@ nowo_telemovel_list = [
 # description, price, tv, internet, voz, type
 
 nowo_tv_net_voz_list = [
-  [ "nowo Tv Net Voz", "27,50", 
+  [ "nowo Tv Net Voz", "13,75", 
     "TV - 90 Canais + BOX NOWO TV HD", 
     "Internet - 120 Megas", 
     "VOZ - Chamadas incluídas",
@@ -52,7 +52,7 @@ nowo_tv_net_voz_list = [
 
   ],
 
-  [ "nowo Tv Net Voz", "30,00", 
+  [ "nowo Tv Net Voz", "15,00", 
     "TV - 140 Canais + BOX NOWO TV HD", 
     "Internet - 120 Megas", 
     "VOZ - Chamadas incluídas",
@@ -60,7 +60,7 @@ nowo_tv_net_voz_list = [
 
   ],
 
-  [ "nowo Tv Net Voz", "30,00", 
+  [ "nowo Tv Net Voz", "15,00", 
     "TV - 90 Canais + BOX NOWO TV HD", 
     "Internet - 250 Megas", 
     "VOZ - Chamadas incluídas",
@@ -68,7 +68,7 @@ nowo_tv_net_voz_list = [
 
   ],
 
-  [ "nowo Tv Net Voz", "32,50", 
+  [ "nowo Tv Net Voz", "16,25", 
     "TV - 140 Canais + BOX NOWO TV HD", 
     "Internet - 250 Megas", 
     "VOZ - Chamadas incluídas",
