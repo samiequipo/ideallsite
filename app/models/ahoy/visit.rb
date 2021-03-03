@@ -5,4 +5,8 @@ class Ahoy::Visit < ApplicationRecord
   belongs_to :user, optional: true
   has_many :user, class_name: "Contact"
 
+  # By extract Vodafone Package
+  def auxiliar_package
+    Type.where(plano: "Telemóvel").third.packages.fourth.id
+  end
 end

@@ -3,20 +3,20 @@
 # FIBRA 4 - TELEMOVEL
 # description, price, tv, internet, movel, cartao, voz, type
 vodafone_telemovel_list = [
-  [ "Fibra 4 Plus", "67,8", 
+  [ "Fibra 4 Plus", "53,9", 
     "TV - 170 Canais VBox 4K incluída | Amazon Prime Video y HBO Portugal 6 meses - FOX+ durante 24 meses", 
     "Internet - 100/100 Mbps - Smart Router", 
-    "Móvel - 2 números - 2GB 3500 min + 3500 SMS/MMS",
+    "Móvel | 1 número - 1GB | 3500 min + 3500 SMS/MMS",
     "Cartões - Cartão para PC/Tablet/Hotspot - Sem Net Móvel", 
     "VOZ - Chamadas incluídas Para a rede fixa e 31 destinos internacionais",
     Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%VODAFONE%"))
 
   ],
 
-  [ "Fibra 4 Plus", "78,8", 
-    "TV - 170 Canais VBox 4K incluída | Amazon Prime Video y HBO Portugal 6 meses - FOX+ durante 24 meses", 
-    "Internet - 100/100 Mbps - Smart Router", 
-    "Móvel - 2 números - 10GB 3500 min + 3500 SMS/MMS",
+  [ "Fibra 4 Gold", "56,9", 
+    "TV - 170 Canais VBox 4K incluída | Amazon Prime Video 6 meses - FOX+ y HBO Portugal durante 24 meses", 
+    "Internet - 200/100 Mbps - Smart Router", 
+    "Móvel | 1 número - 1GB | 3500 min + 3500 SMS/MMS",
     "Cartões - Cartão para PC/Tablet/Hotspot - Sem Net Móvel", 
     "VOZ - Chamadas incluídas Para a rede fixa e 31 destinos internacionais",
     Type.find_by(plano: "Telemóvel", company: Company.find_by("description like ?", "%VODAFONE%"))
