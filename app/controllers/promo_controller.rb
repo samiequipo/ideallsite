@@ -25,6 +25,5 @@ class PromoController < ApplicationController
   
     def getting_packages
       @type = Type.where(plano: "Telemóvel")
-      @meo_packages = Company.first.types
     end
 end
