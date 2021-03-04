@@ -848,8 +848,38 @@ ul.social-buttons li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #e43220;
   clip-path: circle(45.5rem at right 50rem);
+}
+
+.circle-vodafone {
+  background: linear-gradient(180deg, #b4190b 28%, #e73321 71%, #ffeb3b00 98%);
+}
+
+.circle-meo {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 92, 125, 1) 28%,
+    rgba(15, 188, 249, 1) 71%,
+    #ffeb3b00 98%
+  );
+}
+
+.circle-nos {
+  background: linear-gradient(
+    180deg,
+    rgba(24, 2, 106, 1) 28%,
+    rgba(54, 0, 250, 1) 71%,
+    #ffeb3b00 98%
+  );
+}
+
+.circle-nowo {
+  background: linear-gradient(
+    180deg,
+    rgb(255, 65, 27) 28%,
+    rgba(249, 78, 43, 1) 71%,
+    #ffeb3b00 98%
+  );
 }
 
 @media (max-width: 991px) {
