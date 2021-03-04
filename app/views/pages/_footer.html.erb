@@ -8,19 +8,21 @@
       <div class="col-md-4">
         <ul class="list-inline social-buttons">
           <li class="list-inline-item">
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">
+            <%= link_to "https://www.facebook.com/Lu%C3%ADs-Castro-Comercial-MEO-103347814777629", target: "_blank"  do %>
               <i class="fab fa-facebook-f"></i>
-            </a>
+            <% end %>
           </li>
+
           <li class="list-inline-item">
-            <a href="#">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
+            <%= link_to "https://www.instagram.com/luis_castro_oficial_/", target: "_blank"  do %>
+              <i class="fab fa-instagram"></i>
+            <% end %>
+          </li>
+
+          <li class="list-inline-item">
+            <%= link_to "https://web.whatsapp.com/send?phone=351912486630", target: "_blank"  do %>
+              <i class="fab fa-whatsapp"></i>
+            <% end %>
           </li>
         </ul>
       </div>
@@ -28,10 +30,10 @@
       <div class="col-md-4">
         <ul class="list-inline quicklinks">
           <li class="list-inline-item">
-            <a href="#">Privacy Policy</a>
+            <%= link_to 'política de privacidade', termos_path, target: "_blank" %>
           </li>
           <li class="list-inline-item">
-            <a href="#">Terms of Use</a>
+            <%= link_to 'Termos de uso', termos_path, target: "_blank" %>
           </li>
         </ul>
       </div>
