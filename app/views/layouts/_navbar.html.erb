@@ -32,7 +32,7 @@
 
   <%# NavBar Promo %>
   <%= render 'layouts/navpop/nav_pop_header_1' %>
-<% else %>
+<% elsif !current_page?(termos_path) %>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top shadowNav navbar-shrink" id="mainNav">
     <div iv class="container">

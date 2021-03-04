@@ -52,7 +52,7 @@ Rails.application.routes.draw do
     end
 
     scope :termos_condicoes_e_politica_privacidade do
-      get '/', to: "privacy#index"
+      get '/', to: "privacy#index", as: "termos"
     end
   end
 end
