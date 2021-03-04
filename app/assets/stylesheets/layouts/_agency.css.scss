@@ -882,6 +882,16 @@ ul.social-buttons li a:hover {
   );
 }
 
+@media only screen and (width: 768px) and (height: 1024px) {
+  .circle {
+    clip-path: circle(43.5rem at right 50rem);
+  }
+
+  .content .imgBox img {
+    max-width: 30.25rem;
+  }
+}
+
 @media (max-width: 991px) {
   header {
     padding: 0.625rem;
@@ -905,8 +915,14 @@ ul.social-buttons li a:hover {
   }
 
   .content .textBox h2 {
-    font-size: 2.1em;
+    font-size: 2.6em;
     margin-bottom: 0.938rem;
+  }
+
+  .content .textBox a {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
   }
 
   .content .textBox {

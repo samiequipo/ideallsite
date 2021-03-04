@@ -1,33 +1,3 @@
-.bg-planos {
-  position: relative;
-  background-image: linear-gradient(180deg, #fff 25%, #202020 50%),
-    asset-url("geometric.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
-.bg-planos::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(#2196fe, #e91e63);
-  clip-path: circle(20% at -10% 20%);
-}
-
-.bg-planos::after {
-  position: absoulute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(#2196fe, #e91e63);
-  clip-path: circle(20% at right 70%);
-  z-index: -1;
-}
-
 .pricing-table-container {
   display: flex;
   align-items: center;
