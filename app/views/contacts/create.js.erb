@@ -1,4 +1,4 @@
-<% if @contact.package || (@contact.header_click_type != "Contata-me") %>
+<% if @contact.package || (@contact.header_click_type == "Nunca foi tão fácil gerir o seu negócio! -> (header)") %>
   $('#demoModal').modal('toggle');
 <% else %>
   $("#firstName").val(""),

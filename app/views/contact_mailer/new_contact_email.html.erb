@@ -6,7 +6,11 @@
   </h1>
 
   <% if !@contact.package %>
-    <p> <strong>Contato de:</strong> <%= @contact.header_click_type %></p>
+    <% if @contact.header_click_type?  %>
+      <p> <strong>Contato de:</strong> <%= @contact.header_click_type %></p>
+    <% else %>
+      <p> <strong>Contato de: </strong>Contate-Nos - Ultima página</p>
+    <% end %>
   <% end %>
   ----------------------------------------
   <p> <strong>Seu nome:</strong> <%= @contact.total_name %></p>
