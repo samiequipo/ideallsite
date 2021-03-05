@@ -1,11 +1,13 @@
-<div id="cajacookies" class="cajacookies d-block d-lg-inline-flex ">
-  <p class="">
+<div id="div-cookies" style="display: none;">
+  <p>
     Usamos cookies para lhe proporcionar uma melhor experiência no nosso site. Se você continuar a usar nosso site, presumimos que concorda com isso.
   </p>
 
   <p class="mt-2 mt-md-0">
-    <a href="" class='btn btn-light pull-right mt-2 mt-md-0' onclick='aceptarCookies()'>Aceitar</a>
+    <button type="button" class="btn-cookie pull-right mt-2 mt-md-0 ml-0 ml-lg-3" onclick="acceptCookies()">
+      Aceitar
+    </button>
 
-    <%= link_to 'política de privacidade', termos_path, class:'btn btn-light pull-right ml-lg-1 mt-2 mt-md-0', target: "_blank" %>
+    <%= link_to 'política de privacidade', termos_path, class:'btn-cookie pull-right ml-lg-1 mt-2 mt-md-0', target: "_blank" %>
   </p>
 </div>

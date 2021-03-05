@@ -1,23 +1,50 @@
-#cajacookies {
-  box-shadow: 0 0 0.325rem 0.325rem #808080;
-  background: #212121;
-  padding: 1.4rem;
+#div-cookies {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
+  background: #212121;
+  box-shadow: 0 0 0.325rem 0.325rem #808080;
+  padding: 1.4rem;
+  text-align: center;
   z-index: 1500;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#cajacookies p {
+#div-cookies p {
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
-#cajacookies a {
+#div-cookies a {
   background: #000;
   color: #fff;
   transition: none;
+}
+
+.btn-cookie {
+  display: inline-block;
+  padding: 0.425rem 0.35rem;
+  color: #fff;
+  background: #000;
+  border-radius: 0.3125rem;
+  border: 0.125px solid #fff;
+  box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.btn-cookie:hover {
+  transform: translateY(-0.188rem);
+  color: inherit;
+}
+
+@media only screen and (max-width: 996px) {
+  #div-cookies {
+    display: flow-root;
+  }
+
+  #div-cookies p {
+    display: grid;
+  }
 }
