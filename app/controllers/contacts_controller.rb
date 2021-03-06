@@ -79,16 +79,14 @@ class ContactsController < ApplicationController
       end
     else  
       respond_to do |format|
-        flash.now[:alert] = "Could not find user"
-        format.js { render partial: 'contacts/contact_result' }
-        format.json { head :ok }
+        format.js { render :new }
+        format.json { render json: @product.errors.full_messages, status: :unprocessable_entity }
       end
     end
   end
 
   private
-
-  def contact_params
-    params.require(:contact).permit(:total_name, :email, :phone, :package_id, :header_click_type)
-  end
+    def contact_params
+      params.require(:contact).permit(:total_name, :email, :phone, :package_id, :header_click_type)
+    end
 end

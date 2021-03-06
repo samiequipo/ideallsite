@@ -4,7 +4,7 @@ class Contact < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   # VALID_PHONE_REGEX = /\A\d+\z/
   
-  validates :total_name, presence: true
+  validates :total_name, presence: true, length: {maximum: 50}
   validates :email, presence: true,  
   length: {maximum: 50}, format: { with: VALID_EMAIL_REGEX }
   validates :phone, phone: true

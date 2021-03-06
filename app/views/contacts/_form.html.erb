@@ -3,12 +3,20 @@
     <%= f.text_field :total_name, required: true, maxlength: "42", oninvalid: "this.setCustomValidity('Por favor, insira seu nome')",
                       oninput: "this.setCustomValidity('')", id:"firstName" %>
     <%= f.label :total_name, "Qual é seu nome?", class:"form-label" %>
+
+    <div class="invalid-feedback">
+      <%= @contact.errors[:total_name].to_s[/\w([^"]*)/] %>
+    </div>
   </div>
 
   <div class="form-group form-input">
     <%= f.email_field :email, required: true, maxlength: "42", oninvalid: "this.setCustomValidity('Seu endereço de e-mail deve existir e incluir '@' nele.')", 
                        oninput: "this.setCustomValidity('')", id:"email"  %>
     <%= f.label :email, "Qual é seu email?", class:"form-label" %>
+
+    <div class="invalid-feedback">
+      <%= @contact.errors[:email].to_s[/\w([^"]*)/] %>
+    </div>
   </div>
 
   <div class="form-group d-none">
@@ -26,6 +34,10 @@
     <%= f.phone_field :phone, :pattern => '\d{9}', maxlength: "9", required: true, class: "form-control placeholder_phone", placeholder: "Seu numero de telefone?",
                            oninvalid: "this.setCustomValidity('Por favor, insira seu número correto')", oninput: "this.setCustomValidity('')", 
                            id:"phoneNumber", onkeypress: "return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))"%>
+
+    <div class="invalid-feedback">
+      <%= @contact.errors[:phone].to_s[/\w([^"]*)/] %>
+    </div>
 
     <small id="emailHelp" class="form-text text-muted text-center">
       <em class="mt-0 ml-1 text-align-center">"Nunca compartilharemos seu informação pessoal com qualquer outra pessoa!."</em>
