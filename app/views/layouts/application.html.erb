@@ -114,15 +114,16 @@
     </div>
     <%= yield %>
 
-    <!-- Social Contact -->
-    <%= render "pages/icons" %>
-
     <%# Modal Contacts %>
     <%= render "contacts/modal_contacts" %>
 
-    <!-- Cookies and privacity -->
-    <%= render "pages/cookies" %>
+    <% if !current_page?(termos_path) %>
+      <!-- Social Contact -->
+      <%= render "pages/icons" %>
 
+      <!-- Cookies and privacity -->
+      <%= render "pages/cookies" %>
+    <% end %>
     <%# ------------------------------------------------------- %>
 
     <% if current_page?(root_path) %>
