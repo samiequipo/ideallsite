@@ -108,10 +108,11 @@
   <body id="page-top" class="pb-0">
     <%= render 'layouts/navbar'%>
 
+    <%# Render flash message %>
     <div class="sticky-top">
       <div id="results"></div>
-      <%= render 'layouts/messages' %>
     </div>
+
     <%= yield %>
 
     <%# Modal Contacts %>
