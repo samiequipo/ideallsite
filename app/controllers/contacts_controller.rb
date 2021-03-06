@@ -73,7 +73,7 @@ class ContactsController < ApplicationController
       @contact.is_more?(@contact)
 
       respond_to do |format|
-        flash.now[:success] = "Yeah"
+        flash.now[:success] = "Seus dados foram processados ​​com sucesso!"
         format.js 
         format.json { head :ok }
       end
