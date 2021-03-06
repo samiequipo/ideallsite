@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  mount ForestLiana::Engine => '/forest'
   #Admin devise 2, root and getting user data
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

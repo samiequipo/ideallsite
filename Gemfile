@@ -28,7 +28,6 @@ gem 'phonelib'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 gem "actionmailer_inline_css"
-gem 'forest_liana', '~> 6.0', '>= 6.0.3'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
