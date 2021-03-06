@@ -6,4 +6,7 @@
   $("#phoneNumber").val("")
 <% end %>
 
+$('.modal-body').html('<%= j render("form") %>');
+$('#demoModal').modal("show");
+
 document.querySelector("#results").innerHTML = '<%= j render "contacts/contact_result.html" %>'
