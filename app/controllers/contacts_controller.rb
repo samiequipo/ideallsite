@@ -62,11 +62,11 @@ class ContactsController < ApplicationController
         end
 
         # If there is any problem with the twilio server
-        begin
-          TwilioTextMessenger.new(message).call
-        rescue #=> exception
-          return nil
-        end
+        #begin
+         # TwilioTextMessenger.new(message).call
+        #rescue #=> exception
+         # return nil
+        # end
       end
 
       #Removing contact > 2
