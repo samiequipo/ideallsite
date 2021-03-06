@@ -1,4 +1,6 @@
-<!-- $('.modal-body').html('<%= j render("form") %>'); -->
 $('.modal-body').html('<%= j render("form") %>');
 
-$('#demoModal').modal("show");
+<%# Contact last section %>
+<% if @contact.package || (@contact.header_click_type == "Nunca foi tão fácil gerir o seu negócio! -> (header)") %>
+  $('#demoModal').modal("show");
+<% end %>
