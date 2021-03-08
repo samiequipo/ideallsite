@@ -382,14 +382,17 @@
 
 @media only screen and (max-width: 810px) {
   .site-header {
-    height: 45vh;
+    height: 40vh;
   }
 
   .site-header img {
-    height: 45vh;
+    height: 40vh;
+  }
+
+  .small_h2 {
+    font-size: 1.7rem !important;
   }
 }
-
 
 .btn-header-1 {
   color: #40132b !important;
