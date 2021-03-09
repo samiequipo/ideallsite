@@ -12,6 +12,8 @@ set :git_http_password, 'xantoXi1992.'
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deploy/#{fetch :application}"
 
+set :linked_files, fetch(:linked_files, []).push("config/master.key")
+
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
