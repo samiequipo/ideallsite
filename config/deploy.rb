@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.15.0"
 
-set :application, "ideall"
+set :application, "luis-castro-ceo-comercial"
 set :repo_url, "https://samiequipo@bitbucket.org/samiequipo/luis-castro-ceo-comercial.git"
 set :git_http_username, 'samiequipo'
 set :git_http_password, 'xantoXi1992.'
