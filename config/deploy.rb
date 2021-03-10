@@ -17,7 +17,7 @@ set :deploy_to, "/home/deploy/#{fetch :application}"
 
 # set :linked_files, %w{config/master.key}
 
-set :passenger_restart_with_touch, true
+# set :passenger_restart_with_touch, true
 # You can configure the Airbrussh format using :format_options.
 # These are the defaults.
 # set :format_options, command_output: true, log_file: "log/capistrano.log", color: :auto, truncate: :auto
