@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  #dokku 
+  get '/check.txt', to: proc {[200, {}, ['it_works']]}
+  
   mount ForestLiana::Engine => '/forest'
   #Admin devise 2, root and getting user data
   devise_for :admin_users, ActiveAdmin::Devise.config
