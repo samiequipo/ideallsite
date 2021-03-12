@@ -101,8 +101,10 @@
       </script>
     <% end  %>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D993N1VCEK"></script>
+    <% if Rails.env.production? %>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-JED108J09M"></script>
+    <% end %>
   </head>
 
   <body id="page-top" class="pb-0">
