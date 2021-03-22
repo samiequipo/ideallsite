@@ -16,7 +16,7 @@ class Contact < ApplicationRecord
   visitable
 
   def is_more?(contact)
-    contact.visit.user.last.destroy if contact.visit.user.count > 2
+    contact.visit.user.last.destroy if contact.visit.user.count > 3
   end
   
   private
