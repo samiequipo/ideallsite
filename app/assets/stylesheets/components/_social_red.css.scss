@@ -71,12 +71,12 @@
 
 .call {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1rem;
+  right: 1rem;
   width: 10rem;
-  min-height: 50px;
+  min-height: 3.25rem;
   background: #fff;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   cursor: pointer;
   box-shadow: 3px 3px 3px 1px #333;
   list-style: none;
@@ -89,11 +89,11 @@
 }
 
 .call-menu {
-  line-height: 50px;
+  line-height: 3.25rem;
   text-align: center;
   background: #00a5ba;
   color: #fff;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   cursor: pointer;
 }
 .call-menu:hover {
@@ -102,12 +102,12 @@
 }
 
 .call-items {
-  width: 50px;
-  line-height: 50px;
+  width: 3.25rem;
+  line-height: 3.25rem;
   text-align: center;
   display: none;
   color: #333;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   transition: background 0.5s, color 0.5s;
   background: #ffffff;
   border: transparent;

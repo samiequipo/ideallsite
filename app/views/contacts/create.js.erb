@@ -6,4 +6,9 @@
   $("#phoneNumber").val("")
 <% end %>
 
+<% if @contact.persisted? %>
+  $('.persisted-email').html("");
+  $('.persisted-phone').html("");
+<% end %>
+
 document.querySelector("#results").innerHTML = '<%= j render "contacts/contact_result.html" %>'

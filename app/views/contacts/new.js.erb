@@ -4,3 +4,17 @@ $('.modal-body').html('<%= j render("form") %>');
 <% if @contact.package || (@contact.header_click_type == "Nunca foi tão fácil gerir o seu negócio! -> (header)") %>
   $('#demoModal').modal("show");
 <% end %>
+
+<% unless @contact.persisted? && !@contact.package%>
+  <% if @contact.errors.include?(:email) %>
+    $('.persisted-email').html("Por favor, digite um email v&aacute;lido");
+  <% else %>
+    $('.persisted-email').html("");
+  <% end %>
+
+  <% if @contact.errors.include?(:phone) %>
+    $('.persisted-phone').html("Por favor, insira um n&uacute;mero v&aacute;lido");
+  <% else %>
+    $('.persisted-phone').html("");
+  <% end %>
+<% end %>
