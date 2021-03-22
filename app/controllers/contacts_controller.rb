@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
     @contact.visit = current_visit
 
     if @contact.save
-      if @contact.visit.user.count <= 2
+      if @contact.visit.user.count <= 3
         # ActionMailer Gmail    
         ContactMailer.with(contact: @contact).new_contact_email.deliver_later
         
