@@ -1033,3 +1033,25 @@ ul.social-buttons li a:hover {
     min-height: 70vh !important;
   }
 }
+
+@media screen and (min-width: 992px) {
+  .dropdown-menu {
+    min-width: 25rem !important;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .margin-drop {
+    margin-left: -10rem !important;
+  }
+}
+
+.separator {
+  border-right: 0.2rem double #afafaf;
+}
+
+.hover-none:hover {
+  color: #000 !important;
+}

@@ -11,17 +11,62 @@
         Menu
         <i class="fas fa-bars"></i>
       </button>
+      
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
-            <%= link_to 'Pacotes', root_path(anchor: 'services'), id:"anchor_service", class: "nav-link js-scroll-trigger"   %>
+          <li class="dropdown d-lg-flex align-items-lg-center margin_dropdown nav-item">
+            <a data-toggle="dropdown" class="dropdown-toggle activate_pacote" href="#">Pacotes</a>
+
+            <ul role="menu" class="dropdown-menu">
+              <div class="row">
+                
+                <div class="col-6 separator">
+                  <li class="nav-item">
+                    <%= link_to 'Meo', pacotes_meo_path, class: "nav-link pacotes_hover_pading" %>
+                  </li>
+
+                  <li class="nav-item">
+                    <%= link_to 'Nos', pacotes_nos_path, class: "nav-link pacotes_hover_pading" %>
+                  </li>
+
+                  <li class="nav-item">
+                    <%= link_to 'Vodafone', pacotes_vodafone_path, class: "nav-link pacotes_hover_pading" %>
+                  </li>
+
+                  <li class="nav-item">
+                    <%= link_to 'Nowo', pacotes_nowo_path, class: "nav-link pacotes_hover_pading" %>
+                  </li>
+                </div>
+<%# ................... Em Breve %>
+                <div class="col-6">
+                  <span class="nav-link border-bottom-2 font-weight-bold hover-none">
+                    Em breve
+                  </span>
+
+                  <li class="nav-item">
+                    <%= link_to 'Family', 'javascript:;', :id => :foo, class: "nav-link pacotes_hover_pading" %>
+                  </li>
+
+                  <li class="nav-item">
+                    <%= link_to 'Business', 'javascript:;', :id => :foo, class: "nav-link pacotes_hover_pading" %>
+                  </li>
+
+                  <li class="nav-item">
+                    <%= link_to 'Gamers', 'javascript:;', :id => :foo, class: "nav-link pacotes_hover_pading" %>
+                  </li>
+                </div>
+              </div>
+            </ul>
           </li>
+
           <li class="nav-item">
-            <%= link_to 'Promoções', root_path(anchor: 'portfolio'), class: 'nav-link js-scroll-trigger' %>
+            <%= link_to 'Promoções', root_path(anchor: 'portfolio'), class: 'nav-link js-scroll-trigger pt-3 pt-lg-0' %>
           </li>
+
           <li class="nav-item">
             <%= link_to 'Sobre nos', root_path(anchor: 'about'), class: 'nav-link js-scroll-trigger' %>
           </li>
+
           <li class="nav-item">
             <%= link_to 'Contata-me', root_path(anchor: 'contact') , class:" nav-link js-scroll-trigger" %>
           </li>
@@ -60,20 +105,41 @@
           <li class="dropdown d-lg-flex align-items-lg-center margin_dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle activate_pacote <%=  which_pacotes?("hover")  %> "
             href="#">Otros Pacotes</a>
-            <ul role="menu" class="dropdown-menu">
-              <li class="dropdown-menu">Setting</li>
-              <li class="nav-item">
-                <%= link_to 'Meo', pacotes_meo_path, class: "nav-link pacotes_hover_pading #{ which_pacotes?("hover") }" if !current_page?(pacotes_meo_path) %>
-              </li>
-              <li class="nav-item">
-                <%= link_to 'Nos', pacotes_nos_path, class: "nav-link pacotes_hover_pading #{ which_pacotes?("hover") }" if !current_page?(pacotes_nos_path) %>
-              </li>
-              <li class="nav-item">
-                <%= link_to 'Vodafone', pacotes_vodafone_path, class: "nav-link pacotes_hover_pading #{ which_pacotes?("hover") }" if !current_page?(pacotes_vodafone_path) %>
-              </li>
-              <li class="nav-item">
-                <%= link_to 'Nowo', pacotes_nowo_path, class: "nav-link pacotes_hover_pading #{ which_pacotes?("hover") }" if !current_page?(pacotes_nowo_path) %>
-              </li>
+            <ul role="menu" class="dropdown-menu margin-drop">
+              <div class="row">
+                <div class="col-6 separator">
+                  <li class="nav-item">
+                    <%= link_to 'Meo', pacotes_meo_path, class: "nav-link pacotes_hover_pading #{ which_pacotes?("hover") }" if !current_page?(pacotes_meo_path) %>
+                  </li>
+                  <li class="nav-item">
+                    <%= link_to 'Nos', pacotes_nos_path, class: "nav-link pacotes_hover_pading #{ which_pacotes?("hover") }" if !current_page?(pacotes_nos_path) %>
+                  </li>
+                  <li class="nav-item">
+                    <%= link_to 'Vodafone', pacotes_vodafone_path, class: "nav-link pacotes_hover_pading #{ which_pacotes?("hover") }" if !current_page?(pacotes_vodafone_path) %>
+                  </li>
+                  <li class="nav-item">
+                    <%= link_to 'Nowo', pacotes_nowo_path, class: "nav-link pacotes_hover_pading #{ which_pacotes?("hover") }" if !current_page?(pacotes_nowo_path) %>
+                  </li>
+                </div>
+                <%# ................... Em Breve %>
+                <div class="col-6">
+                  <span class="nav-link border-bottom-2 font-weight-bold hover-none text-dark">
+                    Em breve
+                  </span>
+                
+                  <li class="nav-item">
+                    <%= link_to 'Family', 'javascript:;', :id => :foo, class: "nav-link pacotes_hover_pading" %>
+                  </li>
+                
+                  <li class="nav-item">
+                    <%= link_to 'Business', 'javascript:;', :id => :foo, class: "nav-link pacotes_hover_pading" %>
+                  </li>
+                
+                  <li class="nav-item">
+                    <%= link_to 'Gamers', 'javascript:;', :id => :foo, class: "nav-link pacotes_hover_pading" %>
+                  </li>
+                </div>
+              </div>
             </ul>
           </li>
         </ul>
