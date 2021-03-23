@@ -866,10 +866,9 @@ ul.social-buttons li a:hover {
 
 .circle-nos {
   background: linear-gradient(
-    180deg,
+    -150deg,
     rgba(24, 2, 106, 1) 28%,
     #8666f7 71%,
-    #ffeb3b00 110%
   );
 }
 
@@ -1054,4 +1053,11 @@ ul.social-buttons li a:hover {
 
 .hover-none:hover {
   color: #000 !important;
+}
+
+@media (min-width: 992px) {
+  .imgBox-nos,
+  .imgBox-meo {
+    width: 75rem !important;
+  }
 }
