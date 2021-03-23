@@ -370,6 +370,16 @@
   }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 700px) and (min-height: 300px) and (max-height: 400px) {
+  .site-header {
+    height: 70vh !important;
+  }
+
+  .site-header img {
+    height: 70vh !important;
+  }
+}
+
 @media only screen and (width: 1024px) and (height: 1366px) {
   .site-header {
     height: 55vh;

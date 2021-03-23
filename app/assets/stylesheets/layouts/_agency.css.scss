@@ -865,11 +865,7 @@ ul.social-buttons li a:hover {
 }
 
 .circle-nos {
-  background: linear-gradient(
-    -150deg,
-    rgba(24, 2, 106, 1) 28%,
-    #8666f7 71%,
-  );
+  background: linear-gradient(-150deg, rgba(24, 2, 106, 1) 28%, #8666f7 71%);
 }
 
 .circle-nowo {
@@ -888,6 +884,42 @@ ul.social-buttons li a:hover {
 
   .content .imgBox img {
     max-width: 30.25rem;
+  }
+}
+
+@media only screen and (min-width: 900px) and (min-height: 1200px) {
+  .section-portfolio {
+    min-height: 50vh !important;
+  }
+}
+
+@media only screen and (min-height: 1200px) {
+  .content .imgBox img {
+    max-width: 41.75rem !important;
+  }
+
+  .section-portfolio {
+    min-height: 69vh !important;
+  }
+
+  .circle {
+    clip-path: circle(29rem at center bottom) !important;
+  }
+
+  .thumb li img {
+    max-width: 4.5rem !important;
+  }
+}
+
+@media screen and (min-height: 920px) {
+  .content .imgBox img {
+    max-width: 30.75rem !important;
+  }
+}
+
+@media screen and (min-height: 920px) {
+  .content .imgBox img {
+    max-width: 30.75rem !important;
   }
 }
 
@@ -1020,16 +1052,57 @@ ul.social-buttons li a:hover {
 
 @media only screen and (min-width: 700px) and (min-height: 1000px) {
   .circle {
-    clip-path: circle(40rem at center bottom) !important;
+    clip-path: circle(28rem at center bottom) !important;
   }
 }
 
 @media only screen and (min-width: 1024px) and (min-height: 1350px) {
   .thumb-container {
     display: flex;
+    align-items: center;
   }
   .section-portfolio {
-    min-height: 70vh !important;
+    min-height: 43vh !important;
+  }
+
+  .circle-meo,
+  .circle-nos,
+  .circle-nowo,
+  .circle-vodafone {
+    background: linear-gradient(
+      180deg,
+      #afafaf 28%,
+      #c5c5c5 71%,
+      #ffeb3b00 110%
+    );
+  }
+}
+
+@media only screen and (min-height: 1000px) and (min-width: 1000px) {
+  .circle-meo,
+  .circle-nos,
+  .circle-nowo,
+  .circle-vodafone {
+    background: linear-gradient(
+      180deg,
+      #afafaf 28%,
+      #c5c5c5 71%,
+      #ffeb3b00 110%
+    );
+  }
+
+  .section-portfolio {
+    min-height: 40vh !important;
+  }
+
+  .site-header img {
+    .site-header {
+      height: 60vh !important;
+    }
+
+    .site-header img {
+      height: 60vh !important;
+    }
   }
 }
 
