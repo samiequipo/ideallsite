@@ -72,7 +72,7 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
 
   config.action_mailer.delivery_method = :smtp
-  host = 'https://ideallsite-2.herokuapp.com/' #replace with your own url
+  host = 'https://www.nuncafoitaofacil.pt' #replace with your own url
   config.action_mailer.default_url_options = { host: host }
 
   # Ignore bad email addresses and do not raise email delivery errors.
