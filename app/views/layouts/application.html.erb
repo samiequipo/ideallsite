@@ -11,11 +11,8 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <%# Glider css %>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-
     <%# Tab %>
-    <%= favicon_link_tag asset_path('Ideall-logo.png') %>
+    <%= favicon_link_tag asset_path('lc') %>
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -30,8 +27,10 @@
     <!-- FontAwesome -->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 
-    <%# Glider JS %>
+    <%# Glider css- JS %>
     <% if current_page?(root_path) %>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+      
       <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
       <script>
         window.addEventListener('load', function () {

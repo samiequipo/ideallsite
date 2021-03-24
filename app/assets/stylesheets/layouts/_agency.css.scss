@@ -40,6 +40,15 @@ h6 {
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+@media (max-width: 702px) {
+  .logo--luis {
+    max-width: 9rem !important;
+  }
+}
+
+.logo--luis {
+  max-width: 10.75rem;
+}
 
 .page-section {
   padding: 10rem 0;

@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top shadowNav" id="mainNav">
     <div iv class="container">
       <%= link_to root_path, {class: "navbar-brand js-scroll-trigger logo-ideall", href: "#page-top"} do %>
-        <%= image_tag 'Ideall-logo.png'  %>
+        <%= image_tag 'LC_logo_web.png', class: "logo--luis"  %>
       <% end %>
 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -37,7 +37,7 @@
                     <%= link_to 'Nowo', pacotes_nowo_path, class: "nav-link pacotes_hover_pading" %>
                   </li>
                 </div>
-<%# ................... Em Breve %>
+          
                 <div class="col-6">
                   <span class="nav-link border-bottom-2 font-weight-bold hover-none">
                     Em breve
@@ -82,7 +82,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top shadowNav navbar-shrink" id="mainNav">
     <div iv class="container">
       <%= link_to root_path, {class: "navbar-brand js-scroll-trigger", target: '_blank'} do %>
-        <%= image_tag which_pacotes?("logo"), class: "logo-ideall" %>
+        <%= image_tag 'LC_logo_web.png', class: "logo--luis my-2"  %>
       <% end %>
 
       <button class="navbar-toggler navbar-toggler-right <%=  which_pacotes?("button")%>" type="button"
