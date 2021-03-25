@@ -18,87 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
 
-    <!-- Typied Js for text -->
-    <%# <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script> %>
-
     <!-- AOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-
-    <!-- FontAwesome -->
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-
-    <%# Glider css- JS %>
-    <% if current_page?(root_path) %>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-      
-      <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-      <script>
-        window.addEventListener('load', function () {
-          const glider = new Glider(document.querySelector('.carousel__lista'), {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: '.carousel__indicadores',
-            arrows: {
-              prev: '.carousel__anterior',
-              next: '.carousel__siguiente',
-              loop: true,
-              dragVelocity: 5000
-            },
-            responsive: [{
-              // screens greater than >= 775px
-              breakpoint: 450,
-              settings: {
-                // Set to `auto` and provide item width to adjust to viewport
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                loop: true
-              }
-            }, {
-              // screens greater than >= 1024px
-              breakpoint: 800,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                // draggable: true,
-                scrollLock: true,
-                autoplay: 1,
-                animationTimingFunc: 'linear',
-                loop: true
-              }
-            }]
-        
-          });
-        
-          //
-          function sliderAuto(slider, miliseconds) {
-            const slidesCount = slider.track.childElementCount;
-            let slideTimeout = null;
-            let nextIndex = 1;
-        
-            function slide() {
-              slideTimeout = setTimeout(
-                function () {
-                  if (nextIndex >= slidesCount) {
-                    nextIndex = 0;
-                  }
-                  slider.scrollItem(nextIndex++);
-                },
-                miliseconds
-              );
-            }
-        
-            slider.ele.addEventListener('glider-animated', function () {
-              window.clearInterval(slideTimeout);
-              slide();
-            });
-        
-            slide();
-          }
-        
-          sliderAuto(glider, 5000)
-        });
-      </script>
-    <% end  %>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <% unless Rails.env.development? %>
@@ -107,6 +28,7 @@
   </head>
 
   <body id="page-top" class="pb-0">
+    <%# ------------------------------------------------------- %>
     <%= render 'layouts/navbar'%>
 
     <%# Render flash message %>
@@ -127,7 +49,11 @@
       <%= render "pages/cookies" %>
     <% end %>
     <%# ------------------------------------------------------- %>
+    
+    <!-- FontAwesome -->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 
+    <%# Default Page Bootstrap  %>
     <% if current_page?(root_path) %>
       <!-- Bootstrap core JavaScript -->
       <script src="startbootstrap-agency-gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -137,12 +63,6 @@
       <script src="startbootstrap-agency-gh-pages/js/agency.min.js"></script>
     <% end %>
 
-    <!-- Colors Letters -->
-    <!-- <script src="startbootstrap-agency-gh-pages/js/script.js"></script> -->
-
-    <!-- Letter header scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
     <!-- Target Blank whatsapp -->
     <script>
       $('.popup').click(function(e) {
@@ -151,35 +71,9 @@
         });
     </script>
 
-    <!-- AOS -->
+    <!-- AOS Moving-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
     <%= javascript_pack_tag 'service' %>
-
-    <%# Remove ANCHOR %>
-    <script>
-      // when the DOM is ready
-      $(document).ready(function () {
-        // get the anchor link buttons
-        const menuBtn = $('.hack15-menu-button');
-        // when each button is clicked
-        menuBtn.click(() => {
-          // set a short timeout before taking action
-          // so as to allow hash to be set
-          setTimeout(() => {
-            // call removeHash function after set timeout
-            removeHash();
-          }, 2); // 5 millisecond timeout in this case
-        });
-      
-        // removeHash function
-        // uses HTML5 history API to manipulate the location bar
-        function removeHash() {
-          history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location
-            .search);
-        }
-      });
-    </script>
 
     <%# BUTTON PACOTES MEO NOS VODAFONE NOWO %>
     <% if !current_page?(root_path) %>
