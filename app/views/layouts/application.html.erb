@@ -105,7 +105,7 @@
           $ligueExpand = $(".ligueExpand");
       
       $notCall.on("click", function () {
-        $callItems.slideUp(300);
+        $callItems.slideUp(200);
         $callMenu.find("i").removeClass("fa-times").addClass("fa-bars");
         $screen.hide();
       
@@ -113,9 +113,9 @@
       
       $call.on("click", function (event) {
         event.stopPropagation();
-        $callItems.slideToggle(300);
+        $callItems.slideToggle(200);
         $callMenu.find("i").toggleClass("fa-bars fa-times");
-        $call.css('width', '50px');
+        $call.css('width', '3.4rem');
         $ligueExpand.empty();
       
         $screen.toggle();
