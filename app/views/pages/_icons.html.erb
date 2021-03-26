@@ -8,15 +8,15 @@
   <% end %>
 
   <%# whatsapp Not Telemovel %>
-  <%= form_with url: social_contacts_path(type: "whatsapp"), class: "d-none d-md-block", :target => "_blank" do |form| %>
-    <%= button_tag type: 'submit', class:"call-items popup", title: "Escreva para nós", :target => "_blank"  do %>
+  <%= form_with url: social_contacts_path(type: "whatsapp"), class: "d-none d-md-block", :target => "_blank", rel: "noopener" do |form| %>
+    <%= button_tag type: 'submit', class:"call-items popup", title: "Escreva para nós", :target => "_blank", rel: "noopener"  do %>
       <i class="fab fa-whatsapp"></i>
     <% end %>
   <% end %>
 
   <%# whatsapp Telemovel %>
-  <%= form_with url: social_contacts_path(type: "mobil_phone"), class: "d-block d-md-none", :target => "_blank" do |form| %>
-    <%= button_tag type: 'submit', class:"call-items popup", title: "Escreva para nós", :target => "_blank"  do %>
+  <%= form_with url: social_contacts_path(type: "mobil_phone"), class: "d-block d-md-none", :target => "_blank", rel: "noopener" do |form| %>
+    <%= button_tag type: 'submit', class:"call-items popup", title: "Escreva para nós", :target => "_blank", rel: "noopener"  do %>
       <i class="fab fa-whatsapp"></i>
     <% end %>
   <% end %>
