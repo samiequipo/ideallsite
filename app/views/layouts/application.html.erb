@@ -102,12 +102,6 @@
           $callItems = $(".call-items"),
           $notCall = $("body").not( $(".call") );
           $ligueExpand = $(".ligueExpand");
-      
-      $notCall.on("click", function () {
-        $callItems.slideUp(200);
-        $callMenu.find("i").removeClass("fa-times").addClass("fa-bars");
-        $screen.hide();
-      
       });
       
       $call.on("click", function (event) {
