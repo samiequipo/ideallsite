@@ -1,25 +1,25 @@
 <ul class="thumb">
   <div class="thumb-container">
     <li>
-      <%= link_to promo_meo_path(option: "promotion_meo"), {remote: true, class: "nav-link active", "data-toggle" => "tab" }  do %>
+      <%= link_to promo_meo_path(option: "promotion_meo"), {remote: true, class: "nav-link active", "data-toggle" => "tab", 'aria-label' => "Promo" }  do %>
         <%= image_tag 'meo.png', alt: "meo" %>
       <% end %>
     </li>
 
     <li>
-      <%= link_to promo_nos_path(option: "promotion_nos"), {remote: true, class: "nav-link active", "data-toggle" => "tab" }  do %>
+      <%= link_to promo_nos_path(option: "promotion_nos"), {remote: true, class: "nav-link active", "data-toggle" => "tab", 'aria-label' => "Promo" }  do %>
         <%= image_tag 'nos_logo.png', alt: "nos" %>
       <% end %>
     </li>
 
     <li>
-      <%= link_to promo_vodafone_path(option: "promotion_vodafone"), {remote: true, class: "nav-link active", "data-toggle" => "tab" }  do %>
+      <%= link_to promo_vodafone_path(option: "promotion_vodafone"), {remote: true, class: "nav-link active", "data-toggle" => "tab", 'aria-label' => "Promo" }  do %>
         <%= image_tag 'vodafone_logo.png', alt: "vodafone" %>
       <% end %>
     </li>
 
     <li>
-      <%= link_to promo_nowo_path(option: "promotion_nowo"), {remote: true, class: "nav-link active", "data-toggle" => "tab" }  do %>
+      <%= link_to promo_nowo_path(option: "promotion_nowo"), {remote: true, class: "nav-link active", "data-toggle" => "tab", 'aria-label' => "Promo"}  do %>
         <%= image_tag 'nowo.png', alt: "nowo" %>
       <% end %>
     </li>

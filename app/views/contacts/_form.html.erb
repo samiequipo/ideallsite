@@ -2,7 +2,7 @@
   <div class="form-group form-input">
     <%= f.text_field :total_name, required: true, maxlength: "42", oninvalid: "this.setCustomValidity('Por favor, insira seu nome')",
                       oninput: "this.setCustomValidity('')", id:"firstName" %>
-    <%= f.label :total_name, "Qual é seu nome?", class:"form-label" %>
+    <%= f.label :total_name, "Qual é seu nome?", class:"form-label", for: "firstName" %>
 
     <div class="invalid-feedback">
       <%= @contact.errors[:total_name].to_s[/\w([^"]*)/] %>
@@ -12,7 +12,7 @@
   <div class="form-group form-input">
     <%= f.email_field :email, required: true, maxlength: "42", oninvalid: "this.setCustomValidity('Seu endereço de e-mail deve existir e incluir '@' nele.')", 
                        oninput: "this.setCustomValidity('')", id:"email"  %>
-    <%= f.label :email, "Qual é seu email?", class:"form-label" %>
+    <%= f.label :email, "Qual é seu email?", class:"form-label", for: "email" %>
 
     <div class="invalid-feedback persisted-email">
       <%= @contact.errors[:email].to_s[/\w([^"]*)/] %>
