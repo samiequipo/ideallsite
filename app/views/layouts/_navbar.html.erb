@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top shadowNav" id="mainNav">
     <div iv class="container">
       <%= link_to root_path, {class: "navbar-brand js-scroll-trigger logo-ideall", href: "#page-top"} do %>
-        <%= image_tag 'LC_logo_web', class: "logo--luis"  %>
+        <%= image_tag 'LC_logo_web', alt: "logo", class: "logo--luis"  %>
       <% end %>
 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -82,7 +82,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top shadowNav navbar-shrink" id="mainNav">
     <div iv class="container">
       <%= link_to root_path, {class: "navbar-brand js-scroll-trigger", target: '_blank'} do %>
-        <%= image_tag 'LC_logo_web', class: "logo--luis my-2"  %>
+        <%= image_tag 'LC_logo_web', alt: "logo", class: "logo--luis my-2"  %>
       <% end %>
 
       <button class="navbar-toggler navbar-toggler-right <%=  which_pacotes?("button")%>" type="button"
