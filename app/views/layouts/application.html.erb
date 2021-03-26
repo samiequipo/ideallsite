@@ -111,14 +111,16 @@
       });
       
       $call.on("click", function (event) {
-        event.stopPropagation();
-        $callItems.slideToggle(200);
-        $callMenu.find("i").toggleClass("fa-bars fa-times");
-        $call.css('width', '3.4rem');
-        $ligueExpand.empty();
-      
-        $screen.toggle();
-      
+        if (localStorage.acceptCookies == 'true') {
+          $screen.toggle();
+          event.stopPropagation();
+          $callItems.slideToggle(200);
+          $callMenu.find("i").toggleClass("fa-bars fa-times");
+          $call.css('width', '3.4rem');
+          $ligueExpand.empty();
+        
+          $screen.toggle();
+        }
       });
     </script>
 
