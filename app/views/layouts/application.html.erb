@@ -64,7 +64,9 @@
     
     <!-- AOS Moving-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <%= javascript_pack_tag 'service' %>
+    <script>
+      AOS.init();const menu=document.querySelector(".menu"),navOpen=document.querySelector(".hamburger"),navClose=document.querySelector(".close"),navBar=document.querySelector(".nav"),links=[...document.querySelectorAll(".scroll-link")];links.map(e=>{e.addEventListener("click",e=>{e.preventDefault();const t=e.target.getAttribute("href").slice(1),n=document.getElementById(t);navBar.classList.contains("fix-nav");let o=n.offsetTop-navHeight;window.scrollTo({top:o,left:0}),navBar.classList.remove("show"),menu.classList.remove("show"),document.body.classList.remove("show")})});
+    </script>
 
     <!-- Target Blank whatsapp -->
     <script>
