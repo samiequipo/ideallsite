@@ -18,6 +18,26 @@
   </div>
 
   <div class="imgBox imgBox-nos" data-aos="fade-down" data-aos-duration="3000">
-    <%= image_tag 'appletv', data: { src: "appletv"}, alt:"nos_image", class:"starbucks img-nos" %>
+    <%= image_tag 'appletv', data: { src: "appletv"}, alt:"nos_image", class:"starbucks img-nos lazyLoad" %>
   </div>
 </div>
+
+<script>
+
+// Este es el método que vamos a llamar
+// cada vez que se detecte una intersección
+function onScrollEvent(entries, observer) {
+    entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+            var attributes = entry.target.attributes;
+            var src = attributes['data-src'].textContent;
+            entry.target.src = src;
+            entry.target.classList.add('visible');
+        }
+    });
+}
+
+// Utilizamos como objetivos todos los
+// elementos que tengan la clase lazyLoad,
+// que vimos en el HTML de ejemplo.
+</script>
