@@ -1120,13 +1120,13 @@ ul.social-buttons li a:hover {
     min-width: 25rem !important;
   }
 
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-
   .margin-drop {
     margin-left: -10rem !important;
   }
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 .separator {
