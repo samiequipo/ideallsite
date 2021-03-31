@@ -3,16 +3,43 @@
 <div class="content align-items-center align-items-lg-start">
   <div class="textBox">
     <div class="texBox--phrase">
-      <h2 class= "texBox--title mb-4" id="textBoxSlogan" data-aos="fade-right" data-aos-duration="3000">As melhores ofertas de<br>
-        <span id="letterSlogan" class="letter letter--nos ml-md-3">NOS</span>
+      <h2 class= "texBox--title mb-4" id="textBoxSlogan" data-aos="fade-right" data-aos-duration="3000">Receba um Box Apple TV 4K<br>
+        <span id="letterSlogan" class="letter letter--nos ml-md-3">NOS 4</span>
       </h2>
     </div>
 
     <p data-aos="fade-down" data-aos-duration="3000" class="text-justify text">
-      Com apenas <strong>51,99 €/mês</strong> aproveite a programação de <strong>150 Canais</strong> incluindo. <strong>Box Apple TV 4K</strong>. Mais 1º cartão de <strong>500Mb</strong> em telemovel. <strong>100 Mbps</strong> de Internet e Chamadas para <strong>&#xab;31 destinos internacionais&#xbb;</strong>
+      Com apenas <strong>51,99 €/mês</strong> dê para sua casa um pacote de:
+
+      <ul class="ul-promo" data-aos="flip-up" data-aos-duration="2000">
+        <li>
+          <i class="fas fa-wifi"></i>
+          <strong>100 Mbps</strong> de Internet.
+        </li>
+        
+        <li>
+          <i class="fas fa-tv"></i>
+          150 canais <strong>inclu&iacute;dos</strong>.
+        </li>
+        
+        <li>          
+          <i class="fas fa-mobile-alt"></i>
+          1º cartão de <strong>500 MB</strong> em telemovel.
+        </li>
+        
+        <li>
+          <i class="fas fa-phone-volume"></i>
+          Chamadas para <strong>31 destinos internacionais.</strong>
+        </li>
+        
+        <li>
+          <i class="fas fa-money-bill-wave"></i>
+            Box Apple TV 4K <strong>por apenas 4,99€</strong>
+        </li>
+      </ul>   
     </p>
 
-    <div class="button_promo" data-aos="fade-up" data-aos-duration="2000">
+    <div class="button_promo mt-2">
       <%= link_to "adira já!", new_contact_path(package_id: @type.second.packages.first.id), remote: true, class: "mb-2 text-decoration-none text-uppercase order-btn order-btn-nos", role: "button" %>
     </div>
   </div>
