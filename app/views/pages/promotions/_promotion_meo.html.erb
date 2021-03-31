@@ -10,7 +10,7 @@
 
     <p data-aos="fade-down" data-aos-duration="3000" class="text-justify text">
       Com apenas <strong>51,99 €/mês</strong> dê para sua casa um pacote de: <br>
-      <ul>
+      <ul class="ul-promo" data-aos="flip-up" data-aos-duration="2000">
         <li>
           <i class="fas fa-wifi"></i>
           <strong>100/100 Mbps</strong> de Internet.
@@ -32,12 +32,13 @@
         </li>
         
         <li>
-          E um Samsung Galaxy A02s <strong>&#xab;totalmente gratuito&#xbb;</strong>
+          <i class="fas fa-money-bill-wave"></i>
+          Samsung Galaxy A02s <strong>&#xab;totalmente gratuito&#xbb;</strong>
         </li>
       </ul>
     </p>
 
-    <div class="button_promo" data-aos="fade-up" data-aos-duration="2000">
+    <div class="button_promo mt-2">
       <%= link_to "adira já!", new_contact_path(package_id: current_visit.auxiliar_package), remote: true, class: "mb-0 text-decoration-none text-uppercase order-btn order-btn", role: "button" %>
     </div>
   </div>
