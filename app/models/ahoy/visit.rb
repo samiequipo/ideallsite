@@ -7,6 +7,6 @@ class Ahoy::Visit < ApplicationRecord
 
   # By extract Vodafone Package
   def auxiliar_package
-    Type.where(plano: "Telemóvel").second.packages.first.id
+    Type.where(plano: "Telemóvel").first.packages.first.id
   end
 end
