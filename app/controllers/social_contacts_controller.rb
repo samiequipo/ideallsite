@@ -10,15 +10,15 @@ class SocialContactsController < ApplicationController
   
   private
     def pc_phone
-      redirect_to "tel:+351912486630"
+      redirect_to "tel:+351961877108"
     end
 
     def whatsapp
-      redirect_to "https://web.whatsapp.com/send?phone=351912486630"
+      redirect_to "https://web.whatsapp.com/send?phone=351961877108"
     end
     
     # whatsapp mobil
     def mobil_phone
-      redirect_to "https://wa.me/351912486630"
+      redirect_to "https://wa.me/351961877108"
     end
 end
