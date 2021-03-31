@@ -684,7 +684,7 @@ ul.social-buttons li a:hover {
 .section-portfolio {
   position: relative;
   width: 100%;
-  min-height: 87vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -696,7 +696,6 @@ ul.social-buttons li a:hover {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .content .textBox h2 {
@@ -955,7 +954,7 @@ ul.social-buttons li a:hover {
   }
 
   .content .textBox h2 {
-    font-size: 2.6em;
+    font-size: 2em;
     margin-bottom: 0.938rem;
   }
 
@@ -1135,13 +1134,6 @@ ul.social-buttons li a:hover {
 
 .hover-none:hover {
   color: #000 !important;
-}
-
-@media (min-width: 992px) {
-  .imgBox-nos,
-  .imgBox-meo {
-    width: 75rem !important;
-  }
 }
 
 .image-vision {

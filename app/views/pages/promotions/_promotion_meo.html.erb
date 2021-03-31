@@ -1,23 +1,48 @@
 <div class="circle circle-meo"></div>
 
-<div class="content">
+<div class="content align-items-center align-items-lg-start">
   <div class="textBox">
     <div class="texBox--phrase">
-      <h2 class= "texBox--title mb-4" id="textBoxSlogan" data-aos="fade-right" data-aos-duration="3000">As melhores ofertas de <br>
+      <h2 class= "texBox--title mb-4" id="textBoxSlogan" data-aos="fade-right" data-aos-duration="3000">Receba um Samsung Galaxy A02s<br>
         <span id="letterSlogan" class="letter letter--meo ml-md-3">MEO</span>
       </h2>
     </div>
 
     <p data-aos="fade-down" data-aos-duration="3000" class="text-justify text">
-      Com apenas <strong>51,99 €/mês</strong> dê para sua casa um pacote de <strong>150 canais</strong>. Mais 1º cartão de <strong>500 MB</strong> em telemovel. <strong>100/100 Mbps</strong> de Internet. <strong>1 cartão</strong> e Chamadas inclu&iacute;das para <strong>&#xab;50 destinos internacionais &#xbb;</strong>
+      Com apenas <strong>51,99 €/mês</strong> dê para sua casa um pacote de: <br>
+      <ul>
+        <li>
+          <i class="fas fa-wifi"></i>
+          <strong>100/100 Mbps</strong> de Internet.
+        </li>
+        
+        <li>
+          <i class="fas fa-tv"></i>
+          <strong>150 canais</strong>.
+        </li>
+        
+        <li>          
+          <i class="fas fa-mobile-alt"></i>
+          1º cartão de <strong>500 MB</strong> em telemovel.
+        </li>
+        
+        <li>
+          <i class="fas fa-phone-volume"></i>
+          Chamadas para <strong>50 destinos internacionais.</strong>
+        </li>
+        
+        <li>
+          E um Samsung Galaxy A02s <strong>&#xab;totalmente gratuito&#xbb;</strong>
+        </li>
+      </ul>
     </p>
 
-    <div class="button_promo" data-aos="fade-up" data-aos-duration="3000">
+    <div class="button_promo" data-aos="fade-up" data-aos-duration="2000">
       <%= link_to "adira já!", new_contact_path(package_id: current_visit.auxiliar_package), remote: true, class: "mb-0 text-decoration-none text-uppercase order-btn order-btn", role: "button" %>
     </div>
   </div>
 
-  <div class="imgBox imgBox-meo mt-0" data-aos="fade-down" data-aos-duration="3000">
-    <%= image_tag 'kunfu', alt:"meo_image", class:"starbucks" %>
+  <div class="imgBox" data-aos="fade-down" data-aos-duration="3000">
+    <%= image_tag 'samsung-meo', alt:"meo_image", class:"starbucks img-nos" %>
   </div>
 </div>

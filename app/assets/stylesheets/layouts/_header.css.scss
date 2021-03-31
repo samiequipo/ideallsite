@@ -406,6 +406,12 @@
   }
 }
 
+@media only screen and (min-width: 1210px) and (min-height: 750px) {
+  .section-portfolio {
+    min-height: 84vh;
+  }
+}
+
 .btn-header-1 {
   color: #40132b !important;
   background: white !important;
