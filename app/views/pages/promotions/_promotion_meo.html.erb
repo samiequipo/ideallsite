@@ -47,13 +47,3 @@
     <%= image_tag 'samsung-meo',  data: { src: 'samsung-meo' }, alt:"meo_image", class:"starbucks img-nos" %>
   </div>
 </div>
-
-<script>
-  let imagesToLoad = document.querySelectorAll('img[data-src]');
-  const loadImages = (image) => {
-    image.setAttribute('src', image.getAttribute('data-src'));
-    image.onload = () => {
-      image.removeAttribute('data-src');
-    };
-  };
-</script>
