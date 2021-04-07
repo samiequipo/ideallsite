@@ -19,9 +19,17 @@
   <p> <strong>Telefone:</strong> (+593)<%= @contact.phone %></p>
   <p> <strong>Email:</strong> <%= @contact.email %></p>
   ---------------------------------------
+  <p> <strong>Navegador:</strong> <%= @contact.visit.browser %></p>
+  <p> <strong>Sistema Operativo:</strong> <%= @contact.visit.os %></p>
+  <p> <strong>Dispositivo:</strong> <%= @contact.visit.device_type %></p>
+  ---------------------------------------
   <p> <strong>País:</strong> <%= @contact.visit.country %></p>
   <p> <strong>Cidade:</strong> <%= @contact.visit.city %></p>
   <p> <strong>Região:</strong> <%= @contact.visit.region %></p>
+  ---------------------------------------
+  <p> <strong>Longitude:</strong> <%= @contact.visit.longitude %></p>
+  <p> <strong>Latitude:</strong> <%= @contact.visit.latitude %></p>
+
   <br>
 </div>
 
